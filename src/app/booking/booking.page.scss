@@ -1,0 +1,705 @@
+.c-13x3f2z {
+    position: relative;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    min-width: 100vw;
+    padding: 50px 0px;
+}
+.c-9zatoj {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.c-10izwvm {
+    width: 100%;
+    margin: 0px auto;
+}
+.c-1vrj4pl {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(238, 42, 36);
+    width: 1130px;
+    margin: 20px auto 28px;
+}
+.c-19uh84g {
+    margin-right: 5px;
+    vertical-align: text-bottom;
+    outline: 0px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.c-19uh84g svg {
+    fill: rgb(238, 42, 36);
+    transform: rotate(
+180deg
+);
+    height: 16px;
+}
+.c-19uh84g svg {
+    height: auto;
+    width: auto;
+}
+.c-isphd1 {
+    outline: 0px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+.c-9ugfym {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+}
+.c-172kp3s {
+    width: 648px;
+    border-radius: 4px;
+    margin-right: 24px;
+}
+.c-12qt2ez {
+    border-radius: 4px;
+    border: 1px solid rgba(245, 166, 35, 0.19);
+    background-color: rgb(254, 246, 233);
+    padding: 16px;
+    color: rgb(211, 140, 23);
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.c-8kaq9v {
+    border: 1px solid rgba(122, 122, 122, 0.17);
+    border-radius: 4px;
+}
+.c-i9gwvb {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 14px 24px;
+    color: #333;
+    background: rgb(249, 249, 251);
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: normal;
+    line-height: 1.6;
+    font-family: 'Segoe UI bold';
+}
+.c-1kz1i96 {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 0px 7px;
+    border-radius: 4px;
+    margin-right: 12px;
+    background: #04776d;
+}
+.c-i9gxme {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    color: #04776d;
+}
+.c-1rhsl0p {
+    text-align: left;
+    padding: 0px 24px 24px;
+}
+.c-mjbegz {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.c-1s0ylt3 {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 24px 0px;
+    font-family: 'Segoe UI Regular';
+    font-weight: normal;
+}
+.c-qln3k6 {
+    flex: 0 1 46%;
+    box-sizing: border-box;
+    margin: 14px 20px 6px 0px;
+}
+.textInput__container {
+    position: relative;
+    border-radius: 4px;
+}
+.textInput__inputLabel {
+    margin: 0 0 9px;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: 'Segoe UI bold';
+    color: #333333;
+}
+input:not([type=checkbox]):not([type=radio]) {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+.textInput__input:invalid, .textInput__input:required {
+    box-shadow: none;
+}
+.textInput__input {
+    color: #000;
+    border-radius: 2px!important;
+    border: 1px solid hsla(0,0%,65%,.2);
+    padding: 12px 0 12px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: normal;
+    outline: none;
+    margin-bottom: 12px;
+}
+.textInput__inputLabelHelper {
+    font-size: 14px;
+    color: #ee2e24;
+    position: absolute;
+    top: calc(50% - 18px);
+    cursor: text;
+    left: 80%;
+    cursor: pointer;
+    display: inline-block;
+}
+.c-1ogcbvc {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+}
+.c-hfz6zg {
+    border-radius: 4px;
+    border: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 14px;
+    width: auto;
+    height: auto;
+    margin-bottom: -24px;
+    flex: 1 1 50%;
+    margin-right: 24px;
+    display: block;
+    outline: 0px;
+    color: rgb(255, 255, 255);
+    background: rgb(223, 223, 223);
+}
+.c-1j05m3z {
+    text-align: left;
+    margin-top: 16px;
+    height: 100%;
+}
+.c-pkit67 {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 50%;
+}
+.c-1yn8ri2 {
+    font-size: 12px;
+    line-height: 1.33;
+    text-align: left;
+    margin-top: 16px;
+    color: rgb(109, 120, 125);
+}
+.textInput__inputLabel {
+    margin: 0 0 9px;
+    font-size: 16px;
+}
+.textTelInput__container {
+    position: relative;
+}
+.textTelInput__input:invalid, .textTelInput__input:required {
+    box-shadow: none;
+}
+.textTelInput__inputLabel {
+    font-size: 15px;
+    color: #333;
+    font-weight: 400;
+    text-transform: uppercase;
+    top: 10px;
+    left: 81px;
+    position: absolute;
+    transition: all .3s ease;
+    cursor: text;
+}
+.textTelInput__inputLabel {
+    display: none;
+}
+.c-1o67u6n {
+    top: 16px;
+    font-size: 14px;
+}
+.textTelInput__inputCountryCode:after {
+    content: " . ";
+    color: transparent;
+    margin-left: 6px;
+    width: 10px;
+    display: inline-block;
+}
+.textTelInput__input {
+    border-radius: 2px!important;
+    border: 1px solid hsla(0,0%,65%,.2);
+    padding: 12px 0 12px 80px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    box-sizing: border-box;
+    outline: none;
+    transition: border .3s ease;
+}
+.c-i8a8ez {
+    margin: 24px 0px;
+    border: 1px solid rgba(122, 122, 122, 0.17);
+    border-radius: 4px;
+}
+.c-1evv4gu {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgba(34, 34, 34, 0.38);
+    padding: 18px 24px;
+}
+.c-kcj7o1 {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: rgb(153, 153, 153);
+    padding: 3px 7px;
+    border-radius: 4px;
+    margin-right: 12px;
+}
+
+.c-1qpcdvy {
+    min-width: 376px;
+    max-width: 450px;
+    border-radius: 4px;
+    border: 1px solid rgba(122, 122, 122, 0.17);
+    box-shadow: rgb(125 125 125 / 10%) 0px 2px 26px 0px;
+    padding: 24px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 24px;
+}
+.c-gg4vpm {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.c-5hicrt {
+    margin-right: 12px;
+}
+.c-6a3y35 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    width: 280px;
+    margin-bottom: 8px;
+    font-family: 'Segoe UI bold';
+    color: #04776d;
+}
+.c-zpzivj {
+    opacity: 0.4;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgb(12, 10, 21);
+    margin-bottom: 8px;
+}
+.hotelRating {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+}
+.hotelRating__rating, .hotelRating__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.hotelRating__wrapper {
+    outline: none;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+.hotelRating__rating--clickable {
+    cursor: pointer;
+}
+.hotelRating__rating--excellent {
+    background-color: #1ab64f;
+}
+.hotelRating__rating {
+    border-radius: 2px;
+    padding: 3px 6px;
+    margin-right: 9px;
+    background-color: #52b520;
+    font-size: 12px;
+    color: #fff;
+}
+.hotelRating__rating, .hotelRating__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.is-fontBold {
+    font-weight: 600;
+}
+.hotelRating__ratingSummary {
+    font-size: 12px;
+    color: #222;
+}
+.c-sh83s0 {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 2;
+    color: rgb(12, 10, 21);
+}
+.c-2clfy8 {
+    border-radius: 4px;
+    box-shadow: rgb(125 125 125 / 10%) 0px 2px 6px 0px;
+    width: 79px;
+    height: 62px;
+    opacity: 1.2;
+    border: 1px solid rgb(151, 151, 151);
+    background-color: rgb(216, 216, 216);
+}
+.c-e2r6u2 {
+    color: rgba(0,0,0,0.54);
+    background: #f3f5f7;
+    height: 100%;
+    width: 100%;
+    background: #f3f5f7;
+    -webkit-animation: none;
+    animation: none;
+}
+.c-2tglnv {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.c-1six52r {
+    border-radius: 4px;
+    margin: 18px 0px;
+}
+.c-79elbk {
+    position: relative;
+}
+.c-g4aqpa {
+    box-shadow: none;
+    cursor: default;
+    border-width: 0px 0px 1px;
+    border-top-style: initial;
+    border-right-style: initial;
+    border-left-style: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    border-image: initial;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(240, 240, 240);
+}
+.c-gx0lhm {
+    margin-bottom: 0px;
+}
+.c-9whsf3 {
+    max-width: 100%;
+}
+.c-1thcb3a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 16px;
+    width: 100%;
+}
+.c-1pzykbe {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 4px;
+    padding: 0px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.c-165dyj5 {
+    margin-top: 2px;
+    height: 20px;
+    width: 20px;
+}
+.c-165dyj5 svg {
+    height: auto;
+    width: auto;
+}
+.datePickerDesktop--hotel {
+    border: 0;
+    width: 100%;
+    margin: 0 12px;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 14px 0!important;
+}
+.oyo-row.oyo-row--no-spacing>.oyo-cell {
+    margin: 0;
+}
+.datePickerDesktop--hotel .datePickerDesktop__checkInOut {
+    font-size: 14px;
+    color: #0c0a15;
+    line-height: 1.71;
+    font-weight: 600;
+    background: #fff;
+    padding: 0;
+    display: block;
+}
+.c-107tt68 {
+    border: 0px;
+}
+.c-14mt3w6 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: relative;
+}
+.guestRoomPicker--hotel {
+    border: 0;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 14px 0!important;
+}
+.guestRoomPicker {
+    position: relative;
+    color: rgba(0,0,0,.87);
+    background-color: transparent;
+    border: 0px solid rgba(0,0,0,.07);
+    transition: .2s;
+    box-sizing: border-box;
+}
+.oyo-row.oyo-row--no-spacing>.oyo-cell {
+    margin: 0;
+}
+.guestRoomPicker--hotel .guestRoomPicker__guestRoomCount {
+    font-size: 14px;
+    color: #0c0a15;
+    line-height: 1.71;
+    font-weight: 600;
+    background: #fff;
+    padding: 0;
+    margin-left: 22px!important;
+    margin-right: 12px!important;
+}
+.c-18fyjan {
+    position: absolute;
+    border-right: 1px solid #f0f0f0;
+    top: 10px;
+    height: 30px;
+    left: 0;
+}
+.c-abzw2p {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+.c-2pbfgc {
+    display: flex;
+    padding: 12px 0px;
+    border-radius: 4px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0px;
+    box-shadow: none;
+    border: 0px;
+}
+.c-1953uyt {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.71;
+    display: flex;
+    margin: 0px;
+}
+.c-1bb5hkt {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+}
+.c-1bb5hkt svg {
+    height: 100%;
+    width: 100%;
+}
+.c-1w0k317 {
+    margin-left: 10px;
+}
+.c-1jbawm2 {
+    margin: 16px 0px;
+}
+.c-18axi1k {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin: 12px 0px;
+}
+.c-6xf37g {
+    font-size: 14px;
+    line-height: 2;
+    color: rgb(34, 34, 34);
+}
+.c-tvy9fi {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 2;
+    color: rgb(34, 34, 34);
+}
+.c-bjdcis {
+    border: 1px solid rgb(240, 240, 240);
+    margin: 24px 0px;
+}
+.c-dgqod7 {
+    color: rgb(34, 34, 34);
+    font-size: 16px;
+    line-height: 1.56;
+    width: 70%;
+}
+.c-m8gzcb {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.67;
+    opacity: 0.54;
+}
+.c-11tk0uk {
+    color: rgb(34, 34, 34);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.33;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.c-19uh84g svg {
+    fill: rgb(238, 42, 36);
+    transform: rotate(180deg);
+    height: 16px;
+}
+.textTelInput__inputCountryCode {
+    font-size: 16px;
+    color: #222;
+    font-weight: 600;
+    top: 12px;
+    left: 14px;
+    position: absolute;
+    transition: all .3s ease;
+    cursor: pointer;
+    outline: none;
+    text-decoration: underline;
+    width: auto;
+    min-width: 54px;
+    border-right: 1px solid hsla(0,0%,65%,.3);
+}
+.c-1o67u6n {
+    top: 16px;
+    font-size: 14px;
+}
+.textTelInput__inputCountryCode:after {
+    content: " . ";
+    color: transparent;
+    margin-left: 6px;
+    width: 10px;
+    display: inline-block;
+}
+.textTelInput__inputCountryCode--svg>svg {
+    transform: rotate(90deg);
+    height: 10px!important;
+    width: 10px!important;
+    margin-left: 6px;
+    fill: #a6a6a6;
+}
+.textTelInput__inputCountryCode {
+    font-size: 16px;
+    color: #222;
+    font-weight: 600;
+    top: 12px;
+    left: 14px;
+    position: absolute;
+    transition: all .3s ease;
+    cursor: pointer;
+    outline: none;
+    text-decoration: underline;
+    width: auto;
+    min-width: 54px;
+    border-right: 1px solid hsla(0,0%,65%,.3);
+}
+.c-1o67u6n {
+    top: 16px;
+    font-size: 14px;
+}
+.c-1rhsl0p {
+    text-align: left;
+    padding: 0px 24px 24px;
+}
+.textTelInput__container {
+    position: relative;
+}
+button.btn-pill {
+    background: #fedd00;
+    color: #0064d2;
+    padding: 12px 24px;
+    border-radius: 24px;
+    text-transform: uppercase;
+    border: none;
+    font-family: OpenSans-SemiBold,Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 1em;
+}
+button.btn-pill:hover {
+    background: #0064d2;
+    color: #fff;
+}
+#booking-page .payment-button-container button {
+    float: right;
+}
+#booking-page .payment-button-container:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+#booking-page .payment-button-container {
+    margin: 0;
+}
+.payment-button-container>p {
+    margin-bottom: 30px
+    ;
+}

@@ -1,0 +1,145 @@
+<ion-header no-border class="putih hidden-sm hidden-xs bayangan" *ngIf="showmenu"> 
+  <div class="corona-banner-component"><div class="corona-content"><p>Check the latest info about <a href="/" target="_blank"> booking</a> and <a href="/" target="_blank"> &amp; travel policy</a> during COVID-19.</p></div></div>
+  <div class="header__city mobile-hide no-banner"></div>
+   
+<div class="index_top bayangan" style="height: 52px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+  
+  <a routerDirection="root" [routerLink]="'/'" lines="none" class="logo_line">
+    <picture>
+      <source srcset="https://gqcms-res.s3.amazonaws.com/bayucms/staging/images/logo.png" type="image/webp">
+      <source srcset="https://gqcms-res.s3.amazonaws.com/bayucms/staging/images/logo.png" type="image/jpeg"> 
+      <img width="100%" height="auto" data-src="image.jpg" alt="campervan hire Australia">
+    </picture>
+  </a>
+  <ul class="nav_list menu">
+     <li auto-hide="true" *ngFor="let p of pokemon; let i = index" class="hassubs podsx">
+       <a href="{{p.url}}"><ion-item (click)="selectedIndex = i" routerDirection="root" lines="none" detail="false" [class.selected]="selectedIndex == i" class="normal">
+       <ion-label>{{ p.title }}</ion-label>
+       </ion-item>
+       </a>
+       <ul class="sub-menu">
+         <li auto-hide="true" *ngFor="let xx of p.sub;" class="subs podsx">
+           <a href="{{xx.url}}">
+           <ion-item (click)="selectedIndex = i" routerDirection="root" lines="none" detail="false" [class.selected]="" class="normal">
+           {{ xx.title }}
+           </ion-item>
+           </a>
+           <ul *ngIf="xx.sub != '[]'" class="pods">
+            
+             <li auto-hide="true" *ngFor="let aa of xx.sub;">
+               <a href="{{aa.url}}">
+               <ion-item (click)="selectedIndex = i" routerDirection="root" lines="none" detail="false" [class.selected]="selectedIndex == i" class="normal">
+               {{aa.title}}
+             </ion-item>
+             </a>
+           </li>
+           </ul>
+           
+         </li>
+       </ul>
+   </li>  
+  </ul>
+  <div class="index_top_r">
+      
+    <ul class="menukanan">
+      <a href="/check-order" class="header-right-item" data-click="{&quot;event&quot;:&quot;click&quot;,&quot;eventCategory&quot;:&quot;enterCheckOrderView&quot;,&quot;eventLabel&quot;:&quot;header&quot;}">Cek Order</a>
+      <a routerDirection="root" *ngIf="!inisial" [routerLink]="'/login'" class="header-right-item">Login  </a>
+     
+      <div onclick="myFunctionprof()" class="header-account"><a routerDirection="root" *ngIf="inisial" class="header-right-item"><span class="account-label">{{ inisial }}</span></a>
+        <div *ngIf="inisial" id="prof" class="account-modal header-modal" style="transition: all 300ms ease-in 0s; display: none; opacity: 1; margin-top: 0px;">
+            <div class="account-info">
+                <div class="account-image-container"><a class="account-image-span" href="/myaccount">{{ inisial }}</a></div>
+                <div class="account-name"><a href="/myaccount">{{full_name}}</a></div>
+                <div class="account-loyalty">
+                    <a href="/myaccount/tixpoint">
+                        <div class="loyalty-point"><img src="https://www.tiket.com/home-ms/assets/1013f31d.svg" alt="tixpoint" height="24" width="24"><span>29.972</span></div>
+                    </a>
+                </div>
+            </div>
+            <div class="account-link-list"><a class="account-item-container" href="/myorder" data-click="{&quot;event&quot;:&quot;click&quot;,&quot;eventCategory&quot;:&quot;enterMyOrderView&quot;,&quot;eventLabel&quot;:&quot;header&quot;}"><span class="account-item">My Order</span></a>
+                <a
+                    class="account-item-container" href="/myaccount/smart_traveler"><span class="account-item">Smart Profile</span></a><a class="account-item-container" href="/myaccount/smart_pay"><span class="account-item">Smart Pay</span></a><a class="account-item-container" href="/my-refund"><span class="account-item">Daftar Refund</span></a>
+                    <a
+                        class="account-item-container" href="/myreview" data-click="{&quot;event&quot;:&quot;click&quot;,&quot;eventCategory&quot;:&quot;seeAllReview&quot;,&quot;eventLabel&quot;:&quot;myReview&quot;}"><span class="account-item">My Review</span></a><a class="account-item-container" href="/myaccount/settings"><span class="account-item">Pengaturan</span></a>
+                        <div (click)="proseslogout()" class="account-item-container"><span class="account-item">Keluar</span></div>
+                        
+            </div>
+        </div>
+    </div>
+
+    
+     
+      <button *ngIf="!inisial"  class="header-register header-right-item" routerDirection="root" [routerLink]="'/register'" lines="none">Register</button> 
+    
+      
+        </ul>
+  </div>
+ 
+</div> 
+  
+  <!--
+  <div class="container">
+    <div class="d-flex justify-content-between bd-highlight">
+      <div class="bd-highlight">
+        <div class="logo" routerDirection="root" [routerLink]="'/'" lines="none">
+          
+            <picture>
+              <source srcset="https://gqcms-res.s3.amazonaws.com/bayucms/staging/images/logo.png" type="image/webp">
+              <source srcset="https://gqcms-res.s3.amazonaws.com/bayucms/staging/images/logo.png" type="image/jpeg"> 
+              <img width="100%" height="52px" data-src="image.jpg" alt="campervan hire Australia">
+            </picture>
+          
+         </div>
+      </div>
+    
+
+      <div class="bd-highlight">
+        <nav>
+             
+             <ul class="menu">
+            <li auto-hide="true" *ngFor="let p of pokemon; let i = index" class="hassubs podsx">
+              <a href="{{p.url}}"><ion-item (click)="selectedIndex = i" routerDirection="root" lines="none" detail="false" [class.selected]="selectedIndex == i" class="">
+              <ion-label>{{ p.title }}</ion-label>
+              </ion-item>
+              </a>
+              <ul class="sub-menu">
+                <li auto-hide="true" *ngFor="let xx of p.sub;" class="subs podsx">
+                  <a href="{{xx.url}}">
+                  <ion-item (click)="selectedIndex = i" routerDirection="root" lines="none" detail="false" [class.selected]="" class="">
+                  {{ xx.title }}
+                  </ion-item>
+                  </a>
+                  <ul *ngIf="xx.sub != '[]'" class="pods">
+                   
+                    <li auto-hide="true" *ngFor="let aa of xx.sub;">
+                      <a href="{{aa.url}}">
+                      <ion-item (click)="selectedIndex = i" routerDirection="root" lines="none" detail="false" [class.selected]="selectedIndex == i" class="">
+                      {{aa.title}}
+                    </ion-item>
+                    </a>
+                  </li>
+                  </ul>
+                  
+                </li>
+              </ul>
+          </li>
+            </ul>
+            </nav>
+      </div>
+      
+      <div class="bd-highlight hidden-md">
+       <ul class="menukanan">
+       
+      <a href="/rewards" class="header-right-item" data-click="{&quot;event&quot;:&quot;click&quot;,&quot;eventCategory&quot;:&quot;enterTixPointView&quot;,&quot;eventLabel&quot;:&quot;header&quot;,&quot;eventValue&quot;:null}">Elite Rewards</a>
+      <a href="/check-order" class="header-right-item" data-click="{&quot;event&quot;:&quot;click&quot;,&quot;eventCategory&quot;:&quot;enterCheckOrderView&quot;,&quot;eventLabel&quot;:&quot;header&quot;}">Cek Order</a>
+      <a routerDirection="root" [routerLink]="'/login'" class="header-right-item">Login {{ username }} </a>
+     
+      <button class="header-register header-right-item" routerDirection="root" [routerLink]="'/register'" lines="none">Register</button> 
+     
+        </ul>
+      </div>
+    </div>
+  </div>-->
+  
+</ion-header>
+<ion-router-outlet></ion-router-outlet>

@@ -1,0 +1,194 @@
+<ion-content class="hidden-xs">
+  <section id="homeBannertour" class="section section--borderless">
+    <div class="wck-homepagelog">
+      <div class="home">
+        <div class="bannerdokumen">
+          
+       
+             
+              <div class="desc-wrapper">
+            
+                <div class="hero_title_text">
+                  <div class="hero_title_text_top" style="width: 775px;">Dokumen 
+                    <span class="txt-rotate" data-period="2000" data-rotate="[ &quot;Visa...&quot;, &quot;Passport&quot; ]">
+                    <span class="sliding-text"> </span>
+                    </span>
+    
+                  </div>
+              </div>
+            </div>
+            <div class="cbBgPattern"></div>
+       
+      </div>
+      </div>
+    <div class="container">
+
+  <div *ngIf="details">
+    
+
+<div class="vehicle-details__header">
+  <div class="fluid-banner template-section"></div>
+  <div class="image-page">
+    <div class="multi-button template-section container">
+        <div>
+            
+        
+    <div class="multi-button-container">
+        <div class="multi-button-icon" style="width:100px;height:100px">
+          <img src="{{details.bendera}}" alt="urus visa di jakarta">
+        </div>
+        <div class="multi-button-text">Visa {{details.title}}</div>
+     </div>
+      </div>
+      </div>
+      </div>
+ 
+    
+  </div>
+
+   
+        <div class="col-md-12 tix-hotel-detail">
+              
+            <div class="tix-tabs">
+
+                <div class="tix-tabs-active-content">
+                
+                    <div class="tab-inactive">
+                        <div class="hotel-description">
+                         
+                            <div class="desc-text">
+                              <p [innerHTML]="details.content"></p>
+                            
+                            </div>
+
+                        </div>
+                        
+                        
+                    </div>
+
+                   
+                </div>
+            </div>
+       
+            
+    </div>
+
+    
+   
+   
+  </div>
+</div>
+</div>
+</section>
+<div [innerHTML]="footer"></div>
+</ion-content>
+
+<ion-header no-border class="hidden-lg hidden-md">
+    <ion-toolbar>
+         <ion-buttons slot="start">
+             <ion-back-button color="light" defaultHref="/"></ion-back-button>
+         </ion-buttons>
+         <ion-title class="ion-text-capitalize">{{ details?.title }}</ion-title>
+     </ion-toolbar>
+ </ion-header>
+
+ <ion-content class="hidden-lg hidden-md">
+    <div *ngIf="details">
+        <!--<div class="tix-detail-header">
+      <div class="slider-item cursor-pointer">
+        <img [src]="slides">
+
+        </div>
+        </div>-->
+        <div class="tix-hotel-detail">
+            <div>
+                <div class="tix-detail-header">
+                    <div>
+
+                        <div style="flex-direction: row; transition: transform 0.35s cubic-bezier(0.15, 0.3, 0.25, 1) 0s; direction: ltr; display: flex; transform: translate(0%, 0px);">
+                            <ion-slides pager="true" [options]="slideOpts1">
+                                <ion-slide *ngFor="let slides of details.images">
+
+                                    <div style="width:100%;-webkit-flex-shrink:0;flex-shrink:0;overflow:auto" aria-hidden="true" data-swipeable="true">
+                                        <div class="slider-item cursor-pointer swiper-slide">
+
+                                            <img [src]="slides">
+
+                                        </div>
+                                    </div>
+                                </ion-slide>
+                            </ion-slides> 
+                           
+                      
+                        </div>
+               
+                    </div>
+                    
+
+                </div>
+                <div class="tix-tabs">
+
+                    <div class="tix-tabs-active-content">
+                        <!--<div class="detail__price-info-wrap">
+    <div class="detail__evetn-attr">
+
+        <div class="detail__body__price-info__attr"><span class="detail__body__price-info__attr--imgVoucherTag"><img src="https://www.wickedcampers.com.au/templates/jsn_megazine_pro/favicon.ico" alt="Voucher Instan"></span><span>{{ details?.title }}</span></div>
+
+    </div>
+    </div>-->
+                        <!--<div class="hotel-name">
+                <h1><ion-title class="ion-text-capitalize" >{{ details?.title }}</ion-title></h1>
+        </div>-->
+                        <div class="tab-inactive">
+                            <div class="hotel-description">
+                                <div class="segment-title">Description</div>
+                                <div class="desc-text">
+                                    <p>{{ details.content }}</p>
+                                </div>
+
+                            </div>
+                            <div class="hotel-description">
+                                <div class="segment-title ">Package Includes</div>
+                                <div class="desc-text">
+                                    <p>{{ details.intro }}</p>
+                                   
+                                     <div class="accordion indicator-plus-before round-indicator" id="accordionHm" aria-multiselectable="true">
+                                      <div class="card m-b-0">
+                                        <div class="card-header collapsed" role="tab" id="headingOneHm" href="#collapseOneHm" data-toggle="collapse" data-parent="#accordionHm" aria-expanded="false" aria-controls="collapseOneHm">
+                                          <a class="card-title">7 Days / 6 Nights Darwin to Alice Springs Package Details: </a>
+                                        </div>
+                                        <div class="collapse" id="collapseOneHm" role="tabpanel" aria-labelledby="headingOneHm">
+                                          <div class="card-body">
+                                            Blue! No, Red!
+                                          </div>
+                                        </div>
+                                        <div class="card-header collapsed" role="tab" id="headingTwoH" href="#collapseTwoHm" data-toggle="collapse" data-parent="#accordionHm" aria-expanded="false" aria-controls="collapseTwoHm">
+                                          <a class="card-title">7 Days / 6 Nights Alice Springs to Darwin Package Details: </a>
+                                        </div>
+                                        <div class="collapse" id="collapseTwoHm" role="tabpanel" aria-labelledby="headingTwoHm">
+                                          <div class="card-body">
+                                            <img src="https://image.ibb.co/iMh9FF/XtHQKml.gif" alt="Who your daddy is?">
+                                          </div>
+                                        </div>
+                                        
+                                        
+                                      </div>
+                                    </div>	
+                             
+                                </div>
+                                
+                            </div>
+                           
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+ </ion-content>
+

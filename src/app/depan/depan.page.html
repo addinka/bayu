@@ -1,0 +1,1639 @@
+<ion-header no-border class="gelap hidden-md hidden-lg">
+    
+  <header class="z-index-999">
+      <div class="row header-app"> </div>
+     
+    </header>
+    
+    <div class="d-flex justify-content-end">
+        <div class="mr-auto">
+            <a href="/" class="url-icon">
+              <picture>
+                  <!--<source srcset="../../assets/images/logo.webp" type="image/webp">-->
+                  <source srcset="../../assets/images/logo.png" type="image/jpeg"> 
+                  <img class="logo" data-src="image.jpg" alt="campervan hire Australia">
+                </picture>
+            </a>
+        </div>
+        <div class="p-2 bd-highlight hidden-md">
+            <a href="tel:1800246869"><div class="font-weight-bold phone-number"><i class="fas fa-user-headset mr-2" aria-hidden="true"></i>+62 23509989</div></a>
+          </div>
+        <div class="p-2">
+            <div class="header-btn btn-setting">
+                <a routerLink="/menu" routerDirection="forward">
+                <div class="menu-trigger__container">
+                    <button class="menu-trigger__button" id="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-lable="Menu">
+                      <div class="inner">
+                        <span class="menu-trigger__icon"></span>
+                      </div>
+                    </button>
+                  </div>
+                </a>
+            </div>
+        </div>
+        
+      </div>
+  </ion-header>
+  
+<ion-content id="bodyxx" >
+    <div id="myDIV" onclick='bookfocusremove()'></div>
+  <section id="homeBanner" class="section section--borderless hidden-sm hidden-xs">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+           
+           <!-- <ion-slides #mySlider (ionSlidesDidLoad)="slidesDidLoad(mySlider)" pager="true" [options]="slideOpts">
+                <ion-slide *ngFor="let poke of pokemon;">
+                    <picture>
+                        <img srcset="{{ poke.img }}" media="(min-width: 1400px)" />
+                    </picture>
+               
+                </ion-slide>
+                </ion-slides>
+            -->
+          
+              
+               <div *ngFor="let poke of pokemon;" class="carousel-item {{poke.class}}" [routerLink]="['/promo/' + poke.slug ]">
+                  <picture>
+                    
+                    <img data-src="{{poke.thumbs}}" data-src="{{poke.thumbs}}" alt="Wicked Promo" class="lazy d-block img-fluid" loading="lazy"/>
+                    <!--<div class="cbBgPatternx cbBgTintx"></div>
+                    <div class="carousel-caption">
+                      <div id="sub" class="lifestyle_img ">
+                        <div class="content">
+                        <div id="title" class="cf">
+                        <h1 style="white-space: inherit; font-size: 40px; visibility: visible;">Bayu Buana Travel Services </h1>
+                        </div>
+                        <div id="subTitle">
+                        <p id="h1sub" class="hero-subtitle" style="white-space: inherit; font-size: 26px; visibility: visible;">Search OVER A MILLION Flights, Hotels, Packages and more</p>
+                        </div>
+                        </div>
+                        </div>
+                     </div>-->
+                 
+                  </picture>
+                <div class="test"></div>
+
+              </div>
+             
+             
+         
+            
+            <!--<ion-slides #mySlider (ionSlidesDidLoad)="slidesDidLoad(mySlider)" pager="true" [options]="slideOpts">
+                <ion-slide *ngFor="let poke of pokemon;">
+                <a href="promo"><img src="{{ poke.img }}"></a>
+                </ion-slide>
+                </ion-slides>-->
+          
+        </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+          </a>
+      </div>
+      
+  </section>
+ 
+  <div class="wck-homepage hidden-sm hidden-xs">
+
+      <div class="container">
+     
+    
+          <section class="banner-padding absolute-banner pb-0 hidden-xs hidden-sm">
+              <div id="myDIV" onclick='bookfocusremove()'></div>
+              <div class="header-data true">
+                  <div class="header-v3">
+                      <div class="container absolute-bg">
+                          
+                            <div>
+                              <a class="scroll-to-top rounded" style="display: inline;text-decoration: none;">
+                                 
+
+                                  <div id="productWidget" class="product-widget widget-container" tabindex="0">
+                                    
+                                      <div onclick="bookfocus()" class="product-list-container hidden-md">
+                                          <div class="product-list-title">
+                                              <span><i class="fas fa-badge-check"></i> Bayu Buana Travel Services</span>
+                                          </div>
+                                           <!-- START TABS DIV -->
+                                           <div class="product-list-content">
+                                              <ul class="nav" id="myTab" role="tablist">
+                                                <li class="nav-item">
+                                                  <a class="active" id="first-tab" data-toggle="tab" href="#first" role="tab" aria-controls="first" aria-selected="true">
+                                                      
+                                                      <div class="product-box" tabindex="-1">
+                                                          <div class="product-logo">
+                                                            <picture>
+                                                                <source srcset="../../assets/icon/flight.jpeg" type="image/jpeg"> 
+                                                                <img class="" data-src="image.jpg" alt="campervan">
+                                                                <div class="active-product"><i class="far fa-check"></i></div>
+                                                              </picture>
+                                                          </div>
+                                                          <span class="product-label">Tiket Pesawat</span>
+                                                      </div> 
+                                                      
+                                                  </a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                  <a class="" id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second" aria-selected="false">
+                                                      <div class="product-box" tabindex="-1">
+                                                          <div class="product-logo">
+                                                            <picture>
+                                                                <source srcset="../../assets/icon/hotel.jpeg" type="image/jpeg"> 
+                                                                <img class="" data-src="image.jpg" alt="4wdhire">
+                                                            </picture>    
+                                                          </div>
+                                                          <span class="product-label">Hotel</span>
+                                                      </div>   
+                                                  </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="" id="tiga-tab" data-toggle="tab" href="#tiga" role="tab" aria-controls="tiga" aria-selected="false">
+                                                      <div class="product-box" tabindex="-1">
+                                                          <div class="product-logo">
+                                                            <picture>
+                                                                <!--<source srcset="https://bookings.wickedcampers.com.au/newapi/assets/media/vehicles/galleries/allridey-car/0.webp" type="image/webp">-->
+                                                                <source srcset="../../assets/icon/tour.jpeg" type="image/jpeg"> 
+                                                                <img class="" data-src="image.jpg" alt="car hire">
+                                                            </picture>
+                                                            </div>
+                                                          <span class="product-label">Paket Tour</span>
+                                                      </div>   
+                                                  </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="" id="empat-tab" data-toggle="tab" href="#empat" role="tab" aria-controls="empat" aria-selected="false">
+                                                      <div class="product-box" tabindex="-1">
+                                                          <div class="product-logo">
+                                                            <picture>
+                                                              
+                                                                <source srcset="../../assets/icon/kreta.jpeg" type="image/jpeg"> 
+                                                                <img class="" data-src="image.jpg" alt="mini campers">
+                                                            </picture> 
+                                                          </div>
+                                                          <span class="product-label">Tiket Kreta</span>
+                                                      </div>
+                                                  </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                  <a class="" id="lima-tab" data-toggle="tab" href="#lima" role="tab" aria-controls="lima" aria-selected="false">
+                                                      <div class="product-box" tabindex="-1">
+                                                          <div class="product-logo">
+                                                            <picture>
+                                                              
+                                                                <source srcset="../../assets/icon/car.jpeg" type="image/jpeg"> 
+                                                                <img class="" data-src="image.jpg" alt="bus hire">
+                                                            </picture>
+                                                            </div>
+                                                          <span class="product-label">Rental mobil</span>
+                                                          
+                                                      </div>
+                                                  </a>
+                                                </li>
+                                              </ul>
+                                          </div>  
+
+
+                                          <!--<div class="product-list-content">
+                                              <div class="product-box active" tabindex="-1">
+                                                  <div class="product-logo">
+                                                    <picture>
+                                                        <source srcset="../../assets/icon/flight.jpeg" type="image/jpeg"> 
+                                                        <img class="" data-src="image.jpg" alt="campervan">
+                                                        <div class="active-product"><i class="far fa-check"></i></div>
+                                                      </picture>
+                                                  </div>
+                                                  <span class="product-label">Tiket Pesawat</span>
+                                              </div>
+                                              <div class="product-box" tabindex="-1">
+                                                  <div class="product-logo">
+                                                    <picture>
+                                                        <source srcset="../../assets/icon/hotel.jpeg" type="image/jpeg"> 
+                                                        <img class="" data-src="image.jpg" alt="4wdhire">
+                                                    </picture>    
+                                                  </div>
+                                                  <span class="product-label">Hotel</span>
+                                              </div>
+                                              <div class="product-box" tabindex="-1">
+                                                  <div class="product-logo">
+                                                    <picture>
+                                                      
+                                                        <source srcset="../../assets/icon/kreta.jpeg" type="image/jpeg"> 
+                                                        <img class="" data-src="image.jpg" alt="mini campers">
+                                                    </picture> 
+                                                  </div>
+                                                  <span class="product-label">Tiket Kreta</span>
+                                              </div>
+                                              <div class="product-box" tabindex="-1">
+                                                  <div class="product-logo">
+                                                    <picture>
+                                                      
+                                                        <source srcset="../../assets/icon/car.jpeg" type="image/jpeg"> 
+                                                        <img class="" data-src="image.jpg" alt="bus hire">
+                                                    </picture>
+                                                    </div>
+                                                  <span class="product-label">Rental mobil</span>
+                                              </div>
+                                              <div class="product-box" tabindex="-1">
+                                                  <div class="product-logo">
+                                                    <picture>
+                                                     
+                                                        <source srcset="../../assets/icon/tour.jpeg" type="image/jpeg"> 
+                                                        <img class="" data-src="image.jpg" alt="car hire">
+                                                    </picture>
+                                                    </div>
+                                                  <span class="product-label">Paket Tour</span>
+                                              </div>
+                                          </div>-->
+
+                                      </div>
+                                       
+                                      <!--<iframe async ng-onload="myLoadEvent()" class="app-iframe" src="https://bookings.wickedcampers.com.au/bookingminicomnew" loading="lazy" seamless="seamless" scrolling="no" style="position: relative; width: 100%; height: 200px; border: none;"></iframe>-->
+                                          <div class="tab-content">
+                                                      <div class="tab-pane show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+                                                  <form #step1form="ngForm" (ngSubmit)="step1form.form.valid &&gotostep2(0)">
+                                                      <div class="product-form">
+                                                          <div class="product-form-container product-form-header-group">
+                                                              <div class="product-form-header-top"><span class="product-form-logo" style="background-color: rgb(255 194 42); transform: rotate(360deg);"><i class="fas fa-plane"></i></span><span class="product-form-subtitle">Cari harga tiket pesawat murah &amp; promo di sini</span>
+                                                                  <!--<div class="product-form-last-search placeholder-container"><span class="form-last-search-text">Pencarian Terakhir</span><span class="form-last-search-logo-container"><i class="fas fa-chevron-right"></i></span></div>-->
+                                                              </div>
+                                                              <div class="product-form-header-bottom">
+                                                                  <div class="product-form-flight-type placeholder-container">
+                                                                      <div class="radio v3"><input type="radio" id="oneWay" name="flightType" tabindex="-1"><label for="oneWay">Sekali Jalan</label></div>
+                                                                  </div>
+                                                                  <div class="product-form-flight-type placeholder-container">
+                                                                      <div class="radio v3"><input type="radio" id="roundTrip" name="flightType" checked="" tabindex="-1"><label for="roundTrip">Pulang-Pergi</label></div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="product-form-container product-form-search-group">
+                                                              <div class="form-to-input-group-container product-form-search-input-group">
+                                                                  <div class="form-to-input-group" id="fromInput">
+                                                                      <div class="widget-input-container from-to-input from-input"><label class="product-search-input-label" for="productSearchFrom">Dari</label>
+                                                                          <div class="product-search-input-container"><span class="product-search-logo"><i class="far fa-plane-departure"></i></span><input class="product-search-input" id="productSearchFrom" type="text" placeholder="Mau ke mana?" autocomplete="off" value=""></div>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="form-to-input-group" id="toInput"><span class="from-to-reverse" style="transform: rotate(0deg);"><i class="tix tix-round-trip"></i></span>
+                                                                      <div class="widget-input-container from-to-input"><label class="product-search-input-label" for="productSearchTo">Ke</label>
+                                                                          <div class="product-search-input-container"><span class="product-search-logo"><i class="far fa-plane-arrival"></i></span><input class="product-search-input" id="productSearchTo" type="text" placeholder="Mau ke mana?" autocomplete="off" value=""></div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="widget-date-input-group-container product-form-search-input-group">
+                                                                  <div class="input-date-type" id="startDate">
+                                                                      <div class="widget-input-container"><label class="product-search-input-label" for="productSearchDeparture">Berangkat</label>
+                                                                          <div class="product-search-input-container"><span class="product-search-logo"><i class="far fa-calendar-day"></i></span><input class="product-search-input" id="productSearchDeparture" type="text" placeholder="" readonly="" value="Jum, 26 Mar 2021"></div>
+                                                                      </div>
+                                                                      <div tabindex="-1" role="dialog" aria-modal="true" class="widget-drop-down" style="transition: all 300ms ease-in 0s; opacity: 0; visibility: hidden; margin-top: -35px; width: 688px; left: -28px;">
+                                                                          <div class="widget-drop-down-content"><span class="widget-drop-down-close-btn"><i class="tix tix-cancel"></i></span>
+                                                                              <div class="widget-date-picker">
+                                                                                  <div class="widget-date-picker-title widget-date-picker-container">Pilih tanggal pergi</div>
+                                                                                  <div class="widget-date-picker-content"></div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="input-date-type" id="endDate">
+                                                                      <div class="widget-input-container"><label class="product-search-input-label" for="productSearchReturn"><div class="check v3"><input id="productSearchReturnCheckbox" tabindex="-1" type="checkbox" checked=""><label for="productSearchReturnCheckbox">Pulang</label></div>
+                                                                      </label>
+                                                                      <div class="product-search-input-container"><span class="product-search-logo"><i class="far fa-calendar-day"></i></span><input class="product-search-input" id="productSearchReturn" type="text" placeholder="" readonly="" value="Sab, 27 Mar 2021"></div>
+                                                                  </div>
+                                                                  <div tabindex="-1" role="dialog" aria-modal="true" class="widget-drop-down" style="transition: all 300ms ease-in 0s; opacity: 0; visibility: hidden; margin-top: -35px; width: 688px; left: -28px;">
+                                                                      <div class="widget-drop-down-content"><span class="widget-drop-down-close-btn"><i class="tix tix-cancel"></i></span>
+                                                                          <div class="widget-date-picker end-date">
+                                                                              <div class="widget-date-picker-title widget-date-picker-container">Pilih tanggal pulang</div>
+                                                                              <div class="widget-date-picker-content"></div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="widget-flight-passenger-cabin product-form-search-input-group" id="passengerCabin">
+                                                              <div class="widget-input-container"><label class="product-search-input-label" for="productSearchPassengerCabin">Penumpang &amp; Kelas Kabin</label>
+                                                                  <div class="product-search-input-container"><input class="product-search-input" id="productSearchPassengerCabin" type="text" placeholder="" readonly="" value="1 penumpang, Ekonomi"><span class="product-search-logo product-search-reversed-logo"><i class="tix tix-chevron-down" style="transform: rotate(0deg);"></i></span></div>
+                                                              </div>
+                                                              <div tabindex="-1" role="dialog" aria-modal="true" class="widget-drop-down" style="transition: all 300ms ease-in 0s; opacity: 0; visibility: hidden; margin-top: -35px; width: 477px; right: 28px;">
+                                                                  <div class="widget-drop-down-content"><span class="widget-drop-down-close-btn"><i class="tix tix-cancel"></i></span>
+                                                                      <div class="passenger-cabin-drop-down-container">
+                                                                          <div class="passenger-cabin-drop-down-title-container">
+                                                                              <div class="passenger-cabin-title passenger-cabin-container" style="width: 254px;">Penumpang</div>
+                                                                              <div class="passenger-cabin-title passenger-cabin-container" style="width: 224px;">Kelas Kabin</div>
+                                                                          </div>
+                                                                          <div class="passenger-cabin-drop-down-content-container">
+                                                                              <div class="passenger-cabin-content-list" style="width: 254px;">
+                                                                                  <div class="passenger-cabin-item-list">
+                                                                                      <div class="widget-passenger-cabin-type-container">
+                                                                                          <div class="widget-passenger-cabin-type">Dewasa</div>
+                                                                                          <div class="wiget-passenger-type-note">Usia 12+</div>
+                                                                                      </div>
+                                                                                      <div class="widget-passenger-counter-container">
+                                                                                          <div class="widget-passenger-logo-container widget-passenger-counter-item disabled"><i class="tix tix-minus"></i></div>
+                                                                                          <div class="widget-passenger-counter widget-passenger-counter-item">1</div>
+                                                                                          <div class="widget-passenger-logo-container widget-passenger-counter-item"><i class="tix tix-plus"></i></div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="passenger-cabin-item-list">
+                                                                                      <div class="widget-passenger-cabin-type-container">
+                                                                                          <div class="widget-passenger-cabin-type">Anak</div>
+                                                                                          <div class="wiget-passenger-type-note">Usia 2-11</div>
+                                                                                      </div>
+                                                                                      <div class="widget-passenger-counter-container">
+                                                                                          <div class="widget-passenger-logo-container widget-passenger-counter-item disabled"><i class="tix tix-minus"></i></div>
+                                                                                          <div class="widget-passenger-counter widget-passenger-counter-item">0</div>
+                                                                                          <div class="widget-passenger-logo-container widget-passenger-counter-item"><i class="tix tix-plus"></i></div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="passenger-cabin-item-list">
+                                                                                      <div class="widget-passenger-cabin-type-container">
+                                                                                          <div class="widget-passenger-cabin-type">Bayi</div>
+                                                                                          <div class="wiget-passenger-type-note">Di bawah 2</div>
+                                                                                      </div>
+                                                                                      <div class="widget-passenger-counter-container">
+                                                                                          <div class="widget-passenger-logo-container widget-passenger-counter-item disabled"><i class="tix tix-minus"></i></div>
+                                                                                          <div class="widget-passenger-counter widget-passenger-counter-item">0</div>
+                                                                                          <div class="widget-passenger-logo-container widget-passenger-counter-item"><i class="tix tix-plus"></i></div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                              <div class="passenger-cabin-content-list" style="width: 224px;">
+                                                                                  <div class="passenger-cabin-item-list">
+                                                                                      <div class="widget-passenger-cabin-type-container widget-cabin-type  selected">
+                                                                                          <div class="widget-passenger-cabin-type">Ekonomi</div><span class="widget-cabin-selected"><i class="tix tix-check"></i></span></div>
+                                                                                  </div>
+                                                                                  <div class="passenger-cabin-item-list">
+                                                                                      <div class="widget-passenger-cabin-type-container widget-cabin-type ">
+                                                                                          <div class="widget-passenger-cabin-type">Premium Ekonomi</div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="passenger-cabin-item-list">
+                                                                                      <div class="widget-passenger-cabin-type-container widget-cabin-type ">
+                                                                                          <div class="widget-passenger-cabin-type">Bisnis</div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="passenger-cabin-item-list">
+                                                                                      <div class="widget-passenger-cabin-type-container widget-cabin-type ">
+                                                                                          <div class="widget-passenger-cabin-type">First</div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="passenger-cabin-drop-down-footer">
+                                                                              <div class="passenger-cabin-drop-down-text"><span tabindex="0">SELESAI</span></div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          </div>
+                                                          <div class="product-form-container product-form-button-group"><button class="product-form-search-btn">CARI PENERBANGAN</button></div>
+                                                          
+                                                      </div>
+                                                  </form>            
+                                                  </div>
+                                                  
+                                                  <div class="tab-pane" id="second" role="tabpanel" aria-labelledby="second-tab">
+                                                      <form #step1form="ngForm" (ngSubmit)="step1form.form.valid &&gotostep2(0)">
+                                                          <div class="product-form">
+                                                              <div class="product-form-container product-form-header-group">
+                                                                  <div class="product-form-header-top"><span class="product-form-logo" style="background-color: rgb(251, 56, 126); transform: rotate(0deg);"><i class="fas fa-hotel"></i></span><span class="product-form-subtitle">Booking Hotel Murah Online dengan Harga Promo</span>
+                                                                      <!--<div class="product-form-last-search placeholder-container"><span class="form-last-search-text">Pencarian Terakhir</span><span class="form-last-search-logo-container"><i class="tix tix-chevron-right"></i></span></div>-->
+                                                                  </div>
+                                                                  <div class="product-form-header-bottom hide">
+                                                                      <div class="product-form-flight-type placeholder-container">
+                                                                          <div class="radio v3"><input type="radio" id="oneWay" name="flightType" tabindex="-1"><label for="oneWay">Sekali Jalan</label></div>
+                                                                      </div>
+                                                                      <div class="product-form-flight-type placeholder-container">
+                                                                          <div class="radio v3"><input type="radio" id="roundTrip" name="flightType" checked="" tabindex="-1"><label for="roundTrip">Pulang-Pergi</label></div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="product-form-container product-form-search-group">
+                                                                  <div class="widget-hotel-destination product-form-search-input-group" id="hotelDestination">
+                                                                      <div class="widget-input-container"><label class="product-search-input-label" for="productSearchDestination">Tujuan</label>
+                                                                          <div class="product-search-input-container"><span class="product-search-logo"><i class="fal fa-map-marker-alt"></i></span><input class="product-search-input" id="productSearchDestination" type="text" placeholder="Mau nginep ke mana?" autocomplete="off" value=""></div>
+                                                                      </div>
+                                                                      <div tabindex="-1" role="dialog" aria-modal="true" class="widget-drop-down" style="transition: all 300ms ease-in 0s; opacity: 0; visibility: hidden; margin-top: -35px; width: 500px; left: 0px;">
+                                                                          <div class="widget-drop-down-content"><span class="widget-drop-down-close-btn"><i class="tix tix-cancel"></i></span>
+                                                                              <div class="flight-search-airport-city">
+                                                                                  <div class="flight-search-airport-city-title">Pilih Kota Tujuan atau Nama Hotel</div>
+                                                                                  <div class="flight-search-airport-city-content">
+                                                                                      <div class="flight-search-airport-city-subtitle">Populer</div>
+                                                                                      <div id="destinationDropDownList" class="destinationDropDownList-list" style="max-height: 308px; overflow: auto;">
+                                                                                          <div id="destinationDropDownList-place1" class="hotel-drop-down-option destinationDropDownList active"><span class="drop-down-option-logo"><i class="tix tix-region"></i></span>
+                                                                                              <div class="drop-down-option-content">
+                                                                                                  <div class="destination-location">Bali</div>
+                                                                                                  <div class="destination-city-name">Indonesia</div>
+                                                                                              </div>
+                                                                                              <div class="drop-down-info-container">
+                                                                                                  <div class="drop-down-option-code">REGION</div>
+                                                                                                  <div class="drop-down-option-property">18030 Properti</div>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                          <div id="destinationDropDownList-place2" class="hotel-drop-down-option destinationDropDownList"><span class="drop-down-option-logo"><i class="tix tix-region"></i></span>
+                                                                                              <div class="drop-down-option-content">
+                                                                                                  <div class="destination-location">Jakarta</div>
+                                                                                                  <div class="destination-city-name">Indonesia</div>
+                                                                                              </div>
+                                                                                              <div class="drop-down-info-container">
+                                                                                                  <div class="drop-down-option-code">REGION</div>
+                                                                                                  <div class="drop-down-option-property">5511 Properti</div>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                          <div id="destinationDropDownList-place3" class="hotel-drop-down-option destinationDropDownList"><span class="drop-down-option-logo"><i class="tix tix-city"></i></span>
+                                                                                              <div class="drop-down-option-content">
+                                                                                                  <div class="destination-location">Bandung</div>
+                                                                                                  <div class="destination-city-name">Jawa Barat, Indonesia</div>
+                                                                                              </div>
+                                                                                              <div class="drop-down-info-container">
+                                                                                                  <div class="drop-down-option-code">CITY</div>
+                                                                                                  <div class="drop-down-option-property">2624 Properti</div>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                          <div id="destinationDropDownList-place4" class="hotel-drop-down-option destinationDropDownList"><span class="drop-down-option-logo"><i class="tix tix-region"></i></span>
+                                                                                              <div class="drop-down-option-content">
+                                                                                                  <div class="destination-location">Provinsi Yogyakarta</div>
+                                                                                                  <div class="destination-city-name">Indonesia</div>
+                                                                                              </div>
+                                                                                              <div class="drop-down-info-container">
+                                                                                                  <div class="drop-down-option-code">REGION</div>
+                                                                                                  <div class="drop-down-option-property">3430 Properti</div>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                          <div id="destinationDropDownList-place5" class="hotel-drop-down-option destinationDropDownList"><span class="drop-down-option-logo"><i class="tix tix-city"></i></span>
+                                                                                              <div class="drop-down-option-content">
+                                                                                                  <div class="destination-location">Surabaya</div>
+                                                                                                  <div class="destination-city-name">Jawa Timur, Indonesia</div>
+                                                                                              </div>
+                                                                                              <div class="drop-down-info-container">
+                                                                                                  <div class="drop-down-option-code">CITY</div>
+                                                                                                  <div class="drop-down-option-property">1225 Properti</div>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                          <div id="destinationDropDownList-place6" class="hotel-drop-down-option destinationDropDownList"><span class="drop-down-option-logo"><i class="tix tix-city"></i></span>
+                                                                                              <div class="drop-down-option-content">
+                                                                                                  <div class="destination-location">Semarang</div>
+                                                                                                  <div class="destination-city-name">Jawa Tengah, Indonesia</div>
+                                                                                              </div>
+                                                                                              <div class="drop-down-info-container">
+                                                                                                  <div class="drop-down-option-code">CITY</div>
+                                                                                                  <div class="drop-down-option-property">580 Properti</div>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                          <div id="destinationDropDownList-place7" class="hotel-drop-down-option destinationDropDownList"><span class="drop-down-option-logo"><i class="tix tix-city"></i></span>
+                                                                                              <div class="drop-down-option-content">
+                                                                                                  <div class="destination-location">Bogor</div>
+                                                                                                  <div class="destination-city-name">Jawa Barat, Indonesia</div>
+                                                                                              </div>
+                                                                                              <div class="drop-down-info-container">
+                                                                                                  <div class="drop-down-option-code">CITY</div>
+                                                                                                  <div class="drop-down-option-property">980 Properti</div>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                          <div id="destinationDropDownList-place8" class="hotel-drop-down-option destinationDropDownList"><span class="drop-down-option-logo"><i class="tix tix-city"></i></span>
+                                                                                              <div class="drop-down-option-content">
+                                                                                                  <div class="destination-location">Malang</div>
+                                                                                                  <div class="destination-city-name">Jawa Timur, Indonesia</div>
+                                                                                              </div>
+                                                                                              <div class="drop-down-info-container">
+                                                                                                  <div class="drop-down-option-code">CITY</div>
+                                                                                                  <div class="drop-down-option-property">1795 Properti</div>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                          <div id="destinationDropDownList-place9" class="hotel-drop-down-option destinationDropDownList"><span class="drop-down-option-logo"><i class="tix tix-region"></i></span>
+                                                                                              <div class="drop-down-option-content">
+                                                                                                  <div class="destination-location">Jawa Barat</div>
+                                                                                                  <div class="destination-city-name">Indonesia</div>
+                                                                                              </div>
+                                                                                              <div class="drop-down-info-container">
+                                                                                                  <div class="drop-down-option-code">REGION</div>
+                                                                                                  <div class="drop-down-option-property">6714 Properti</div>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                          <div id="destinationDropDownList-place10" class="hotel-drop-down-option destinationDropDownList"><span class="drop-down-option-logo"><i class="tix tix-region"></i></span>
+                                                                                              <div class="drop-down-option-content">
+                                                                                                  <div class="destination-location">Phuket</div>
+                                                                                                  <div class="destination-city-name">Thailand</div>
+                                                                                              </div>
+                                                                                              <div class="drop-down-info-container">
+                                                                                                  <div class="drop-down-option-code">REGION</div>
+                                                                                                  <div class="drop-down-option-property">8559 Properti</div>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="widget-date-input-group-container product-form-search-input-group widget-hotel-date-picker">
+                                                                      <div class="input-date-type" id="startDate">
+                                                                          <div class="widget-input-container"><label class="product-search-input-label" for="productSearchCheckIn">Check-in</label>
+                                                                              <div class="product-search-input-container"><span class="product-search-logo"><i class="far fa-calendar-day"></i></span><input class="product-search-input" id="productSearchCheckIn" type="text" placeholder="" readonly="" value="Sab, 27 Mar 2021"></div>
+                                                                          </div>
+                                                                          <div tabindex="-1" role="dialog" aria-modal="true" class="widget-drop-down" style="transition: all 300ms ease-in 0s; opacity: 0; visibility: hidden; margin-top: -35px; width: 688px; left: 0px;">
+                                                                              <div class="widget-drop-down-content"><span class="widget-drop-down-close-btn"><i class="tix tix-cancel"></i></span>
+                                                                                  <div class="widget-date-picker">
+                                                                                      <div class="widget-date-picker-title widget-date-picker-container">Tanggal Menginap</div>
+                                                                                      <div class="widget-date-picker-content"></div>
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                      <div class="widget-date-night-counter-container">
+                                                                          <div class="widget-date-night-content"><span class="night-counter-logo"><i class="fas fa-moon"></i></span> <span class="night-counter-number">1</span></div>
+                                                                          <div class="widget-date-night-content">Malam</div>
+                                                                      </div>
+                                                                      <div class="input-date-type" id="endDate">
+                                                                          <div class="widget-input-container"><label class="product-search-input-label" for="productSearchCheckOut">Check-out</label>
+                                                                              <div class="product-search-input-container"><span class="product-search-logo"><i class="far fa-calendar-day"></i></span><input class="product-search-input" id="productSearchCheckOut" type="text" placeholder="" readonly="" value="Min, 28 Mar 2021"></div>
+                                                                          </div>
+                                                                          <div tabindex="-1" role="dialog" aria-modal="true" class="widget-drop-down" style="transition: all 300ms ease-in 0s; opacity: 0; visibility: hidden; margin-top: -35px; width: 688px; left: 0px;">
+                                                                              <div class="widget-drop-down-content"><span class="widget-drop-down-close-btn"><i class="tix tix-cancel"></i></span>
+                                                                                  <div class="widget-date-picker end-date">
+                                                                                      <div class="widget-date-picker-title widget-date-picker-container">Tanggal Menginap</div>
+                                                                                      <div class="widget-date-picker-content"></div>
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="widget-hotel-guest-room product-form-search-input-group" id="hotelGuestRoom">
+                                                                      <div class="widget-input-container"><label class="product-search-input-label" for="productSearchGuestRoom">Tamu &amp; Kamar</label>
+                                                                          <div class="product-search-input-container"><span class="product-search-logo"><i class="fas fa-user"></i></span><input class="product-search-input" id="productSearchGuestRoom" type="text" placeholder="" readonly="" value="1 Tamu, 1 Kamar"></div>
+                                                                      </div>
+                                                                      <div tabindex="-1" role="dialog" aria-modal="true" class="widget-drop-down" style="transition: all 300ms ease-in 0s; opacity: 0; visibility: hidden; margin-top: -35px; width: 272px; left: 0px;">
+                                                                          <div class="widget-drop-down-content"><span class="widget-drop-down-close-btn"><i class="tix tix-cancel"></i></span>
+                                                                              <div class="passenger-cabin-drop-down-container">
+                                                                                  <div class="passenger-cabin-drop-down-title-container">
+                                                                                      <div class="passenger-cabin-title passenger-cabin-container" style="width: 100%;">Tamu dan Kamar</div>
+                                                                                  </div>
+                                                                                  <div class="passenger-cabin-drop-down-content-container">
+                                                                                      <div class="passenger-cabin-content-list" style="width: 100%;">
+                                                                                          <div class="passenger-cabin-item-list">
+                                                                                              <div class="widget-passenger-cabin-type-container">
+                                                                                                  <div class="widget-passenger-cabin-type">Tamu</div>
+                                                                                                  <div class="wiget-passenger-type-note"></div>
+                                                                                              </div>
+                                                                                              <div class="widget-passenger-counter-container">
+                                                                                                  <div class="widget-passenger-logo-container widget-passenger-counter-item disabled"><i class="tix tix-minus"></i></div>
+                                                                                                  <div class="widget-passenger-counter widget-passenger-counter-item">1</div>
+                                                                                                  <div class="widget-passenger-logo-container widget-passenger-counter-item"><i class="tix tix-plus"></i></div>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                          <div class="passenger-cabin-item-list">
+                                                                                              <div class="widget-passenger-cabin-type-container">
+                                                                                                  <div class="widget-passenger-cabin-type">Kamar</div>
+                                                                                                  <div class="wiget-passenger-type-note"></div>
+                                                                                              </div>
+                                                                                              <div class="widget-passenger-counter-container">
+                                                                                                  <div class="widget-passenger-logo-container widget-passenger-counter-item disabled"><i class="tix tix-minus"></i></div>
+                                                                                                  <div class="widget-passenger-counter widget-passenger-counter-item">1</div>
+                                                                                                  <div class="widget-passenger-logo-container widget-passenger-counter-item"><i class="tix tix-plus"></i></div>
+                                                                                              </div>
+                                                                                          </div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="passenger-cabin-drop-down-footer">
+                                                                                      <div class="passenger-cabin-drop-down-text"><span tabindex="0">SELESAI</span></div>
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="product-form-container product-form-button-group"><button class="product-form-search-btn">CARI HOTEL</button></div>
+                                                          </div>
+                                                       </form>            
+                                                    </div>  
+                                                      <div class="tab-pane" id="tiga" role="tabpanel" aria-labelledby="tiga-tab">
+                                                      <div id="experiences">
+                                                          <form #step1form="ngForm" (ngSubmit)="step1form.form.valid &&gotostep2(0)">
+                                                              <div class="product-form">
+                                                                       
+                                                                  
+                                                                      <div id="exp-search-form" class="container ">
+                                                                          <div class="header row">
+                                                                              <p class="search-heading-title">Ciptakan momen tak terlupakan dari sini</p>
+                                                                          </div>
+                                                                          <div class="search-input-container row"><input type="text" placeholder="Cari aktivitas liburan terbaik"><i></i></div>
+                                                                          <div class="search-dd ">
+                                                                              <div class="container default-menu">
+                                                                                  <div class="row destination-grid">
+                                                                                      <ul class="sidebar">
+                                                                                          <li class="menu-item"><span class="item-popular">Destinasi Populer</span></li>
+                                                                                          <li class="menu-item"><span>indonesia</span>
+                                                                                              <ul class="grid">
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/bali_s.jpg" alt="Bali"><span class="label-destination" data-destination-type="region">Bali</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/jakarta_s.jpg" alt="Jakarta"><span class="label-destination" data-destination-type="region">Jakarta</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/yogyakarta_s.jpg" alt="Yogyakarta"><span class="label-destination" data-destination-type="region">Yogyakarta</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/tangerang_s.jpg" alt="Tangerang"><span class="label-destination" data-destination-type="city">Tangerang</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/surabaya_s.jpg" alt="Surabaya"><span class="label-destination" data-destination-type="city">Surabaya</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/lombok_s.jpg" alt="Lombok"><span class="label-destination" data-destination-type="city">Lombok</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/bandung_s.jpg" alt="Bandung"><span class="label-destination" data-destination-type="city">Bandung</span></div>
+                                                                                                  </li>
+                                                                                              </ul>
+                                                                                          </li>
+                                                                                          <li class="menu-item"><span>singapore</span>
+                                                                                              <ul class="grid">
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/singapore_s.jpg" alt="Singapore"><span class="label-destination" data-destination-type="region">Singapore</span></div>
+                                                                                                  </li>
+                                                                                              </ul>
+                                                                                          </li>
+                                                                                          <li class="menu-item"><span>malaysia</span>
+                                                                                              <ul class="grid">
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/kuala-lumpur_s.jpg" alt="Kuala Lumpur"><span class="label-destination" data-destination-type="region">Kuala Lumpur</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/kuching_s.jpg" alt="Kuching"><span class="label-destination" data-destination-type="city">Kuching</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/kota-kinabalu_s.jpg" alt="Kota Kinabalu"><span class="label-destination" data-destination-type="city">Kota Kinabalu</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/langkawi_s.jpg" alt="Langkawi"><span class="label-destination" data-destination-type="city">Langkawi</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/penang_s.jpg" alt="Penang"><span class="label-destination" data-destination-type="region">Penang</span></div>
+                                                                                                  </li>
+                                                                                              </ul>
+                                                                                          </li>
+                                                                                          <li class="menu-item"><span>thailand</span>
+                                                                                              <ul class="grid">
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/bangkok_s.jpg" alt="Bangkok"><span class="label-destination" data-destination-type="region">Bangkok</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/pattaya_s.jpg" alt="Pattaya"><span class="label-destination" data-destination-type="city">Pattaya</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/phuket_s.jpg" alt="Phuket"><span class="label-destination" data-destination-type="region">Phuket</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/chiang-mai_s.jpg" alt="Chiang Mai"><span class="label-destination" data-destination-type="region">Chiang Mai</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/image-loader.png" alt="Koh Samui"><span class="label-destination" data-destination-type="city">Koh Samui</span></div>
+                                                                                                  </li>
+                                                                                              </ul>
+                                                                                          </li>
+                                                                                          <li class="menu-item"><span>japan</span>
+                                                                                              <ul class="grid">
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/tokyo_s.jpg" alt="Tokyo"><span class="label-destination" data-destination-type="region">Tokyo</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/osaka_s.jpg" alt="Osaka"><span class="label-destination" data-destination-type="region">Osaka</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/kyoto_s.jpg" alt="Kyoto"><span class="label-destination" data-destination-type="region">Kyoto</span></div>
+                                                                                                  </li>
+                                                                                              </ul>
+                                                                                          </li>
+                                                                                          <li class="menu-item"><span>explore</span>
+                                                                                              <ul class="grid">
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/seoul_s.jpg" alt="Seoul"><span class="label-destination" data-destination-type="region">Seoul</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/new-york_s.jpg" alt="New York"><span class="label-destination" data-destination-type="region">New York</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/paris_s.jpg" alt="Paris"><span class="label-destination" data-destination-type="city">Paris</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/london_s.jpg" alt="London"><span class="label-destination" data-destination-type="city">London</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/sydney_s.jpg" alt="Sydney"><span class="label-destination" data-destination-type="city">Sydney</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/dubai_s.jpg" alt="Dubai"><span class="label-destination" data-destination-type="region">Dubai</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/hanoi_s.jpg" alt="Hanoi"><span class="label-destination" data-destination-type="region">Hanoi</span></div>
+                                                                                                  </li>
+                                                                                                  <li class="img-grid">
+                                                                                                      <div class="img-destination-container">
+                                                                                                          <div class="overlay"></div><img class="img-destination-small" src="https://www.tiket.com/to-do/assets/taipei_s.jpg" alt="Taipei"><span class="label-destination" data-destination-type="region">Taipei</span></div>
+                                                                                                  </li>
+                                                                                              </ul>
+                                                                                          </li>
+                                                                                      </ul>
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                      
+                                                               
+                                                              
+                                                      </div>
+                                                  </form> 
+                                              </div>         
+                                                      </div>
+                                                      <div class="tab-pane" id="empat" role="tabpanel" aria-labelledby="empat-tab">
+                                                          <form #step1form="ngForm" (ngSubmit)="step1form.form.valid &&gotostep2(0)">
+                                                              <div class="product-form">
+                                                                  <div>
+                                                                  <div class="form-style">			
+                                                
+                                                                          Kreta 
+                                                               
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </form>       
+                                                      </div>
+                                                      <div class="tab-pane" id="lima" role="tabpanel" aria-labelledby="lima-tab">
+                                                          <form #step1form="ngForm" (ngSubmit)="step1form.form.valid &&gotostep2(0)">
+                                                              <div class="product-form">
+                                                                  <div>
+                                                                  <div class="form-style">			
+                                                
+                                                                          Rental Mobil
+                                                               
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </form>       
+                                                      </div>                              
+                                                    </div>   
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          
+      </div>
+        
+
+
+      <!--why us-->
+      <div class="container">
+          <div class="widget mengapaBayubuana">
+      <h3><span>Mengapa Bayu Buana Travel Services</span></h3>
+      <div class="why-segments">
+        <div>
+          <span><img src="../../assets/images/bbpay.svg"></span>
+          <h4>Kemudahan Pembayaran</h4>
+          <p>Pilih metode pembayaran sesuai keinginan Anda (transfer, kartu kredit, pembayaran di swalayan, internet banking, dan cicilan).</p>
+        </div>
+        <div>
+          <span><img src="../../assets/images/bbtiket.svg"></span>
+          <h4>Diskon &amp; Promo</h4>
+          <p>Nikmati harga spesial untuk member bayubuana dan dapatkan juga beragam promo menarik lainnya.</p>
+        </div>
+        <div>
+          <span><img src="../../assets/images/bbpoin.svg"></span>
+          <h4>Bayupoin</h4>
+          <p>Kumpulkan bayupoin dari transaksi Anda dan gunakan sebagai potongan harga pada transaksi berikutnya.</p>
+        </div>
+        <div>
+          <span><img src="../../assets/images/bbhotel.svg"></span>
+          <h4>Best Price Guarantee</h4>
+          <p>bayubuana menjamin Anda mendapatkan harga terbaik saat melakukan pemesanan.</p>
+        </div>
+      </div>
+    </div>
+      </div>
+      <!--end why us-->
+      <div class="landing-desktop hidden-sm hidden-xs">
+          <div class="hero-section"></div>
+          <div class="container">
+              <div class="section landing-top-picks-desktop" data-impression='{"event":"impression","eventCategory":"hotelContent","eventLabel":"behavioralCard"}' data-visible="true">
+                  <div class="top-picks-head">
+                      <h1 class="section-title"><span>Best Hotel Deals</span> </h1>
+                      <!--<hr role="tournament6" />-->
+                  </div>
+                  <!--<div class="top-picks-content">
+                      <div class="container">
+                          <div class="col-xs-4 col-md-4">
+                              <div class="tp-animation-container">
+                                  <div class="bg-top-pick blue">
+                                      <a href="/p/campervans-for-sale" class="bg-top-pick blue">
+                                          <div><label class="tp-card-title">Campervan for Sale</label></div>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-xs-4 col-md-4">
+                              <div class="tp-animation-container">
+                                  <div class="bg-top-pick dark-blue">
+                                      <a href="/p/cars-for-sale" class="bg-top-pick dark-blue">
+                                          <div><label class="tp-card-title">Car for Sale</label></div>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-xs-4 col-md-4">
+                              <div class="tp-animation-container">
+                                  <div class="bg-top-pick pink">
+                                      <a
+                                          href="/p/buying-from-wicked"
+                                          class="bg-top-pick pink"
+                                      >
+                                          <div><label class="tp-card-title">Buying From Wicked</label></div>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>-->
+                 
+                        
+                    <ion-list lines="none" *ngIf="pokemon.length == 0">
+                        <ion-item *ngFor="let i of [1]">
+                          <ion-skeleton-text animated style="width: 33.333333%;height: 155px;margin-right: 5px;"></ion-skeleton-text>
+                          <ion-skeleton-text animated style="width: 33.333333%;height: 155px;margin-right: 5px;"></ion-skeleton-text>
+                          <ion-skeleton-text animated style="width: 33.333333%;height: 155px;"></ion-skeleton-text>
+                        </ion-item>
+                      </ion-list>
+                      
+                      <!--<ion-slides #mySlider (ionSlidesDidLoad)="slidesDidLoad(mySlider)" pager="true" [options]="slideOpts" >
+                          <ion-slide *ngFor="let hotel of hotel | slice:0:12" [routerLink]="['our-vehicles/' + hotel.slug_category + '/' + hotel.slug]">
+                             
+                              <div class="card-deck">
+                                <div class="card">
+                                    <picture>
+                                     
+                                        <source srcset="{{hotel.thumbs}}" type="image/jpeg"> 
+                                        <img class="lazy" data-src="{{hotel.thumbs}}" data-src="{{hotel.thumbs}}" alt="campervan">
+                                        <div class="priceinfo">
+                                          <div class="fromprice">from <br><span class="prcr">IDR</span></div>
+                                          <strong class="currency-value" data-value="297000">{{ hotel.harga }}</strong>
+                                      </div>
+                                      </picture>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ hotel.name }}</h5>
+                                    <p class="card-text">{{ hotel.intro }}</p>
+                               </div>
+                              </div>
+                             
+                              
+                          </ion-slide>
+                      </ion-slides>-->
+                      <ion-slides #mySliderkomen (ionSlidesDidLoad)="slidesDidLoad(mySlider)" pager="true" [options]="slideOpts">
+                          <ion-slide *ngFor="let hotel of hotel | slice:0:5" [routerLink]="['hotel/' + hotel.slug]">
+                              <div class="hotelCardSuggestion oyo-row oyo-row--no-spacing hotelCardSuggestion__card">
+                                  
+                                  <div class="oyo-cell--12-col hotelCardSuggestion__cardImage">
+                                      <div class="c-ahj8kj">
+                                          
+                                          <img alt="Capital O 166 Hotel Princess" src="{{hotel.thumbs}}" class="c-2tglnv hotelCardSuggestion__image" placeholdertype="hotel" lazyload="true">
+                                          <div class="priceinfo">
+                                             
+                                              <strong class="currency-value-hotel" data-value="5577">{{ hotel.name }}</strong>
+                                          </div>
+                                          <div class="kuning-bayu"></div>
+                                      </div>
+                                  </div>
+                                  <div class="oyo-cell--12-col hotelCardSuggestion__cardData">
+                                      <p class="u-textEllipsis">Near Palembang Indah Mall, Palembang</p>
+                                      <div class="oyo-row oyo-row--no-spacing u-textCenter hotelCardSuggestion__info"><span class="is-fontBold hotelCardSuggestion__rating hotelCardSuggestion__rating--excellent">4.8 <span class="c-1owv2mq hotelCardSuggestion__ratingIcon"><svg viewBox="0 0 9 10" xmlns="http://www.w3.org/2000/svg"><path d="M7.25 9.5a.238.238 0 01-.12-.032L4.5 7.948l-2.63 1.52a.238.238 0 01-.265-.017.271.271 0 01-.102-.26l.48-3.042-1.91-2.021a.276.276 0 01-.061-.268.255.255 0 01.197-.18l2.874-.508L4.276.646A.25.25 0 014.5.5c.094 0 .181.057.223.146l1.194 2.526 2.874.508a.255.255 0 01.197.18.275.275 0 01-.061.268l-1.91 2.021.48 3.042c.015.1-.024.201-.102.26a.242.242 0 01-.145.049z"></path></svg></span></span>
+                                          <span
+                                              class="u-extraLineHeight hotelCardSuggestion__ratingSummary hotelCardSuggestion__ratingSummary--excellent u-textEllipsis">(560 reviews) • Excellent</span>
+                                      </div>
+                                      <div>
+                                          <div class="oyo-row oyo-row--no-spacing hotelCardSuggestion__info hotelCardSuggestion__info--block hotelCardSuggestion__info--noBottomMargin">
+                                              <div class="hotelCardSuggestion__price"><span>Rp</span><span>{{ hotel.harga }}</span></div>
+                                              <div class="hotelCardSuggestion__slashedContainer">
+                                                  <div class="hotelCardSuggestion__slashedPrice undefined"><span class="is-fontBold">Rp</span><span class="is-fontBold">641.666</span></div>
+                                                  <div class="hotelCardSuggestion__discount">17% off</div>
+                                              </div>
+                                          </div>
+                                          <div class="oyo-row oyo-row--no-spacing hotelCardSuggestion__bottomTip"> <span>per room per night</span></div>
+                                      </div>
+                                      <button class="btn">Booking Now</button>
+                                  </div>
+                              </div>
+                              <!--<div class="card-deck">
+                                  <div class="card">
+                                      <picture>
+                                          <source srcset="{{hotel.thumbs}}" type="image/jpeg"> 
+                                          <img class="lazy loca" data-src="{{hotel.thumbs}}" data-src="{{hotel.thumbs}}" alt="locations" image-lazy-background-image="true" image-lazy-loader="lines" image-lazy-distance-from-bottom-to-load="100">
+                                          <div class="priceinfo">
+                                              <div class="fromprice">from <br><span class="prcr">IDR</span></div>
+                                              <strong class="currency-value" data-value="297000">297,000</strong>
+                                          </div>                                                                       
+                                      </picture>
+                                  </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">{{ hotel.title }}</h5>
+                                      <p class="card-text">{{ hotel.intro }}</p>
+                                    </div>
+                              </div>-->
+                            
+                          </ion-slide>
+                      </ion-slides> 
+                    
+                 
+                   
+              </div>
+             
+
+              <div class="section">
+                  <h4 class="section-title h4 tix-font"><span>Best Tour Deals</span></h4>
+                 
+
+                  <div class="bestdealtour">
+                      <div class="official">
+                     
+                          <div class="official-partner clearfix">
+                             <div class="tab">
+                                  <div class="tab-link">
+                                      <ul class="nav">
+                                      <li><a  id="cost-saver-tab" data-toggle="tab" href="#cost-saver" class="active">Cost Saver</a></li>
+                                      <li><a  id="domestic-tab" data-toggle="tab" href="#domestic" >Domestic</a></li>
+                                      <li><a  id="one-day-tour-tab" data-toggle="tab" href="#one-day-tour" >One Day Tour</a></li>
+                                      <li><a  id="land-tour-tab" data-toggle="tab" href="#land-tour">Land Tour</a></li>
+                                    
+                                  </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                        <!-- Tab panes -->
+                        <div class="tab-content clearfix">
+                        <div class="tab-pane active" id="cost-saver">
+                         
+                        
+                              <ion-list lines="none" *ngIf="pokemon.length == 0">
+                                  <ion-item *ngFor="let i of [1]">
+                                    <ion-skeleton-text animated style="width: 33.333333%;height: 155px;margin-right: 5px;"></ion-skeleton-text>
+                                    <ion-skeleton-text animated style="width: 33.333333%;height: 155px;margin-right: 5px;"></ion-skeleton-text>
+                                    <ion-skeleton-text animated style="width: 33.333333%;height: 155px;"></ion-skeleton-text>
+                                  </ion-item>
+                                </ion-list>
+                                
+                                <ion-slides #mySliderkomen (ionSlidesDidLoad)="slidesDidLoad(mySlider)" pager="true" [options]="slideOpts">
+                                    <ion-slide *ngFor="let loca of location | slice:0:5" [routerLink]="['/' + 'tour/' + loca.category_slug + '/' + loca.slug]">
+                                        <!--<div class="card-deck">
+                                            <div class="card">
+                                                <picture>
+                                                    <source srcset="{{loca.thumbnail}}" type="image/jpeg"> 
+                                                    <img class="lazy loca" data-src="{{loca.thumbnail}}" data-src="{{loca.thumbnail}}" alt="locations" image-lazy-background-image="true" image-lazy-loader="lines" image-lazy-distance-from-bottom-to-load="100">
+                                                   <div class="kuning-bayu"></div>
+                                                    <div class="priceinfo">
+                                                        <div class="fromprice">from <br><span class="prcr">IDR</span></div>
+                                                        <strong class="currency-value" data-value="297000">{{ loca.harga | number }}</strong>
+                                                    </div>                                                                       
+                                                </picture>
+                                            </div>
+                                              <div class="card-body">
+                                                <h5 class="card-title">{{ loca.title }}</h5>
+                                                <p class="card-text">{{ loca.intro }}</p>
+                                              </div>
+                                        </div>-->
+                                        <div class="hotelCardSuggestion oyo-row oyo-row--no-spacing hotelCardSuggestion__card">
+                                  
+                                          <div class="oyo-cell--12-col hotelCardSuggestion__cardImage">
+                                              <div class="c-ahj8kj">
+                                                  <img class="" alt="Capital O 166 Hotel Princess" src="{{loca.thumbnail}}" class="c-2tglnv hotelCardSuggestion__image" placeholdertype="hotel" lazyload="true">
+                                                  <div class="priceinfo">
+                                                      <div class="fromprice">from <br><span class="prcr">IDR</span></div>
+                                                      <strong class="currency-value" data-value="5577">{{ loca.harga | number }}</strong>
+                                                  </div>
+                                              </div>
+                                              <div class="kuning-bayu"></div>
+                                              
+                                          </div>
+                                          <div class="oyo-cell--12-col hotelCardSuggestion__cardData">
+                                              <h2 class="is-fontBold u-textEllipsis">{{ loca.title }}</h2>
+                                              <p class="u-textEllipsis">Departure : {{ loca.keberangkatan }}</p>
+                                              
+                                              <button class="btn">Booking Now</button>
+                                          </div>
+                                      </div>
+                                      
+                                    </ion-slide>
+                                </ion-slides>
+                              <!-- <div class="swiper-button-next" (click)="swipeNext()"><i class="fas fa-chevron-circle-right"></i></div>
+                               <div class="swiper-button-prev" (click)="swipePrev()"><i class="fas fa-chevron-circle-left"></i></div>-->
+                               
+                           
+                              
+                        </div>
+                        <div class="tab-pane" id="domestic">
+                        
+                        
+                              <ion-list lines="none" *ngIf="pokemon.length == 0">
+                                  <ion-item *ngFor="let i of [1]">
+                                    <ion-skeleton-text animated style="width: 33.333333%;height: 155px;margin-right: 5px;"></ion-skeleton-text>
+                                    <ion-skeleton-text animated style="width: 33.333333%;height: 155px;margin-right: 5px;"></ion-skeleton-text>
+                                    <ion-skeleton-text animated style="width: 33.333333%;height: 155px;"></ion-skeleton-text>
+                                  </ion-item>
+                                </ion-list>
+                                
+                                <ion-slides #mySliderkomen (ionSlidesDidLoad)="slidesDidLoad(mySlider)" pager="true" [options]="slideOpts">
+                                    <ion-slide *ngFor="let loca of location | slice:0:5" [routerLink]="['locations/' + loca.category_slug + '/' + loca.slug]">
+                                        <div class="hotelCardSuggestion oyo-row oyo-row--no-spacing hotelCardSuggestion__card">
+                                  
+                                            <div class="oyo-cell--12-col hotelCardSuggestion__cardImage">
+                                                <div class="c-ahj8kj">
+                                                    <img class="" alt="Capital O 166 Hotel Princess" src="{{loca.thumbnail}}" class="c-2tglnv hotelCardSuggestion__image" placeholdertype="hotel" lazyload="true">
+                                                    <div class="priceinfo">
+                                                        <div class="fromprice">from <br><span class="prcr">IDR</span></div>
+                                                        <strong class="currency-value" data-value="5577">{{ loca.harga | number }}</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="kuning-bayu"></div>
+                                                
+                                            </div>
+                                            <div class="oyo-cell--12-col hotelCardSuggestion__cardData">
+                                                <h2 class="is-fontBold u-textEllipsis">{{ loca.title }}</h2>
+                                                <p class="u-textEllipsis">Departure : {{ loca.keberangkatan }}</p>
+                                                
+                                                <button class="btn">Booking Now</button>
+                                            </div>
+                                        </div>
+                                      
+                                    </ion-slide>
+                                </ion-slides>
+                               <div class="swiper-button-next" (click)="swipeNext()"><i class="fas fa-chevron-circle-right"></i></div>
+                               <div class="swiper-button-prev" (click)="swipePrev()"><i class="fas fa-chevron-circle-left"></i></div>
+                               
+                           
+                             
+                        </div>
+                        <div class="tab-pane" id="one-day-tour" >
+                        
+                        
+                              <ion-list lines="none" *ngIf="pokemon.length == 0">
+                                  <ion-item *ngFor="let i of [1]">
+                                    <ion-skeleton-text animated style="width: 33.333333%;height: 155px;margin-right: 5px;"></ion-skeleton-text>
+                                    <ion-skeleton-text animated style="width: 33.333333%;height: 155px;margin-right: 5px;"></ion-skeleton-text>
+                                    <ion-skeleton-text animated style="width: 33.333333%;height: 155px;"></ion-skeleton-text>
+                                  </ion-item>
+                                </ion-list>
+                                
+                                <ion-slides #mySliderkomen (ionSlidesDidLoad)="slidesDidLoad(mySlider)" pager="true" [options]="slideOpts">
+                                    <ion-slide *ngFor="let loca of location | slice:0:5" [routerLink]="['locations/' + loca.category_slug + '/' + loca.slug]">
+                                        <div class="hotelCardSuggestion oyo-row oyo-row--no-spacing hotelCardSuggestion__card">
+                                  
+                                            <div class="oyo-cell--12-col hotelCardSuggestion__cardImage">
+                                                <div class="c-ahj8kj">
+                                                    <img class="" alt="Capital O 166 Hotel Princess" src="{{loca.thumbnail}}" class="c-2tglnv hotelCardSuggestion__image" placeholdertype="hotel" lazyload="true">
+                                                    <div class="priceinfo">
+                                                        <div class="fromprice">from <br><span class="prcr">IDR</span></div>
+                                                        <strong class="currency-value" data-value="5577">{{ loca.harga | number }}</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="kuning-bayu"></div>
+                                                
+                                            </div>
+                                            <div class="oyo-cell--12-col hotelCardSuggestion__cardData">
+                                                <h2 class="is-fontBold u-textEllipsis">{{ loca.title }}</h2>
+                                                <p class="u-textEllipsis">Departure : {{ loca.keberangkatan }}</p>
+                                                
+                                                <button class="btn">Booking Now</button>
+                                            </div>
+                                        </div>
+                                    </ion-slide>
+                                </ion-slides>
+                               <div class="swiper-button-next" (click)="swipeNext()"><i class="fas fa-chevron-circle-right"></i></div>
+                               <div class="swiper-button-prev" (click)="swipePrev()"><i class="fas fa-chevron-circle-left"></i></div>
+                               
+                           
+                             
+                        </div>
+                        <div class="tab-pane" id="land-tour" >
+                          
+                        
+                              <ion-list lines="none" *ngIf="pokemon.length == 0">
+                                  <ion-item *ngFor="let i of [1]">
+                                    <ion-skeleton-text animated style="width: 33.333333%;height: 155px;margin-right: 5px;"></ion-skeleton-text>
+                                    <ion-skeleton-text animated style="width: 33.333333%;height: 155px;margin-right: 5px;"></ion-skeleton-text>
+                                    <ion-skeleton-text animated style="width: 33.333333%;height: 155px;"></ion-skeleton-text>
+                                  </ion-item>
+                                </ion-list>
+                                
+                                <ion-slides #mySliderkomen (ionSlidesDidLoad)="slidesDidLoad(mySlider)" pager="true" [options]="slideOpts">
+                                    <ion-slide *ngFor="let loca of location | slice:0:5" [routerLink]="['locations/' + loca.category_slug + '/' + loca.slug]">
+                                        <div class="hotelCardSuggestion oyo-row oyo-row--no-spacing hotelCardSuggestion__card">
+                                  
+                                            <div class="oyo-cell--12-col hotelCardSuggestion__cardImage">
+                                                <div class="c-ahj8kj">
+                                                    <img class="" alt="Capital O 166 Hotel Princess" src="{{loca.thumbnail}}" class="c-2tglnv hotelCardSuggestion__image" placeholdertype="hotel" lazyload="true">
+                                                    <div class="priceinfo">
+                                                        <div class="fromprice">from <br><span class="prcr">IDR</span></div>
+                                                        <strong class="currency-value" data-value="5577">{{ loca.harga | number }}</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="kuning-bayu"></div>
+                                                
+                                            </div>
+                                            <div class="oyo-cell--12-col hotelCardSuggestion__cardData">
+                                                <h2 class="is-fontBold u-textEllipsis">{{ loca.title }}</h2>
+                                                <p class="u-textEllipsis">Departure : {{ loca.keberangkatan }}</p>
+                                                
+                                                <button class="btn">Booking Now</button>
+                                            </div>
+                                        </div>
+                                      
+                                    </ion-slide>
+                                </ion-slides>
+                               <div class="swiper-button-next" (click)="swipeNext()"><i class="fas fa-chevron-circle-right"></i></div>
+                               <div class="swiper-button-prev" (click)="swipePrev()"><i class="fas fa-chevron-circle-left"></i></div>
+                               
+                           
+                             
+                        </div>
+                        </div>
+                    
+                       
+                      
+                  <!--end tab-->
+
+                  
+
+                      <!--<div class="col-md-12 pad30">
+                        
+                        <ion-list lines="none" *ngIf="pokemon.length == 0">
+                            <ion-item *ngFor="let i of [1]">
+                              <ion-skeleton-text animated style="width: 33.333333%;height: 155px;margin-right: 5px;"></ion-skeleton-text>
+                              <ion-skeleton-text animated style="width: 33.333333%;height: 155px;margin-right: 5px;"></ion-skeleton-text>
+                              <ion-skeleton-text animated style="width: 33.333333%;height: 155px;"></ion-skeleton-text>
+                            </ion-item>
+                          </ion-list>
+                          
+                          <ion-slides #mySliderkomen (ionSlidesDidLoad)="slidesDidLoad(mySlider)" pager="true" [options]="slideOpts">
+                              <ion-slide *ngFor="let loca of location | slice:0:5" [routerLink]="['locations/' + loca.category_slug + '/' + loca.slug]">
+                                  <div class="card-deck">
+                                      <div class="card">
+                                          <picture>
+                                              <source srcset="{{loca.thumbnail}}" type="image/jpeg"> 
+                                              <img class="lazy loca" data-src="{{loca.thumbnail}}" data-src="{{loca.thumbnail}}" alt="locations" image-lazy-background-image="true" image-lazy-loader="lines" image-lazy-distance-from-bottom-to-load="100">
+                                              <div class="priceinfo">
+                                                  <div class="fromprice">from <br><span class="prcr">IDR</span></div>
+                                                  <strong class="currency-value" data-value="297000">297,000</strong>
+                                              </div>                                                                       
+                                          </picture>
+                                      </div>
+                                        <div class="card-body">
+                                          <h5 class="card-title">{{ loca.title }}</h5>
+                                          <p class="card-text">{{ loca.intro }}</p>
+                                        </div>
+                                  </div>
+                                
+                              </ion-slide>
+                          </ion-slides>
+                          <div class="swiper-button-next" (click)="swipeNext()"><i class="fas fa-chevron-circle-right"></i></div>
+                          <div class="swiper-button-prev" (click)="swipePrev()"><i class="fas fa-chevron-circle-left"></i></div>
+                        
+                     
+                        </div>-->
+                  </div>
+                  
+              </div>
+              <div class="section">
+                <h4 class="section-title h4 tix-font"><span>Latest Travel Post</span> </h4>
+               
+                <div class="">
+                   
+                        <ion-list lines="none" *ngIf="pokemon.length == 0">
+                            <ion-item *ngFor="let i of [1]">
+                                <ion-skeleton-text animated style="width: 33.333333%;height: 155px;margin-right: 5px;"></ion-skeleton-text>
+                                <ion-skeleton-text animated style="width: 33.333333%;height: 155px;margin-right: 5px;"></ion-skeleton-text>
+                                <ion-skeleton-text animated style="width: 33.333333%;height: 155px;"></ion-skeleton-text>
+                            </ion-item>
+                          </ion-list>
+                          
+                        <ion-slides #mySlider (ionSlidesDidLoad)="slidesDidLoad(mySlider)" pager="true" mode="ios" [options]="slideOpts">
+                            <ion-slide *ngFor="let s of special  | slice:0:6" [routerLink]="['blog/' + s.slug]">
+                                
+                                <!--<div class="card-deck">
+                                  <div class="card">
+                                      <picture>
+                                          
+                                          <source srcset="{{s.thumbs}}" type="image/jpeg"> 
+                                          <img class="lazy" data-src="{{s.thumbs}}" data-src="{{s.thumbs}}" alt="wicked van hire" image-lazy-background-image="true" image-lazy-loader="lines" image-lazy-distance-from-bottom-to-load="100">
+                                        </picture>
+                                    <div class="card-body">
+                                      <h5 class="card-title">{{ s.title }}</h5>
+                                      <p class="card-text">{{ s.intro }}</p>
+                                    </div>
+                                    
+                                  </div>
+                                </div>-->
+                                <div class="card-deck">
+                                  <div class="card">
+                                      <picture>
+                                          <source srcset="{{s.thumbs}}" type="image/jpeg"> 
+                                          <img class="lazy loca" data-src="{{s.thumbs}}" data-src="{{s.thumbs}}" alt="locations" image-lazy-background-image="true" image-lazy-loader="lines" image-lazy-distance-from-bottom-to-load="100">
+                                          <div class="kuning-bayu"></div>                                                               
+                                      </picture>
+                                  </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">{{ s.title }}</h5>
+                                      <p class="card-text">{{ s.intro }}</p>
+                                    </div>
+                              </div>
+                            
+                                
+                            </ion-slide>
+                        </ion-slides>
+                          
+                      
+                   
+                      
+                </div>
+            </div>
+          </div>
+      </div>
+      <!--<div class="cbBgPattern cbBgTint">
+      <div class="referral-program-banner zigzag-container hidden-xs" id="now">
+          
+          <div class="container">
+              <div class="banner-main">
+                  <div class="row m-b-40">
+                      <div class="col-md-12">
+                          <div class="banner-desc">
+                              <div class="banner-title"><p class="lead">Unforgettable Holidays</p></div>
+                              <ul class="list-unstyled mb-0">
+                                  <hr class="line mx-auto white" />
+                                  <li class="mb-5"><h6 class="text-center mb-0">Australia | New Zealand | North America | South Africa | UK &amp; Europe</h6></li>
+                                  <a href="/our-vehicles" class="btn red-gradient white-text font-weight-bold spacing btn-rounded pad red-shadow waves-effect waves-light"><strong>FIND MY RIDE</strong></a>
+                              </ul>
+                             
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+         
+      </div>
+    </div>-->
+    <div class="cbBgPattern cbBgTint">
+    <div class="referral-program-banner zigzag-container hidden-xs" id="now">
+    <div class="oyo-row oyoExpanding" data-cms-id="432737" data-cms-template="cWeb-OyoExpanding">
+        <img src="https://bayubuanatravel.com/media/760eea1a-7c29-4b84-84ef-c8e09b8c0611/r0-FzQ/LandingPageImage/Banner/header-01.jpg">
+      <!--<div class="oyo-cell oyo-cell--6-col oyo-cell--4-col-tablet oyo-cell--2-col-phone oyoExpanding__imageWrapper">
+          <div class="oyoExpanding__countryImage active " style="top: 175px; left: 275px; height: 130px; width: 110px;">
+              <div class="c-10le73q">
+                  <img alt="India" src="https://assets.oyoroomscdn.com/cmsMedia/432737_widgetCountryItems_itemImage_1.jpg" compact="true" transparent="true" lazyload="true" class="c-2tglnv">
+                  </div>
+                  <div class="c-79elbk oyoExpanding__tooltipWrapper">
+                      <div class="c-1xnmrhy oyoExpanding__tooltip"></div>
+                      <div class="c-1lmmwwo"> India</div>
+                  </div>
+              </div>
+              <div class="oyoExpanding__countryImage active " style="top: 11px; left: 450px; height: 130px; width: 110px;">
+                  <div class="c-10le73q">
+                      <img alt="China" src="https://assets.oyoroomscdn.com/cmsMedia/432737_widgetCountryItems_itemImage_2.jpg" compact="true" transparent="true" lazyload="true" class="c-2tglnv">
+                      </div>
+                      <div class="c-79elbk oyoExpanding__tooltipWrapper">
+                          <div class="c-1xnmrhy oyoExpanding__tooltip"></div>
+                          <div class="c-1lmmwwo"> China</div>
+                      </div>
+                  </div>
+                  <div class="oyoExpanding__countryImage active " style="top: 155px; left: 430px; height: 130px; width: 110px;">
+                      <div class="c-10le73q">
+                          <img alt="Malaysia" src="https://assets.oyoroomscdn.com/cmsMedia/432737_widgetCountryItems_itemImage_3.jpg" compact="true" transparent="true" lazyload="true" class="c-2tglnv">
+                          </div>
+                          <div class="c-79elbk oyoExpanding__tooltipWrapper">
+                              <div class="c-1xnmrhy oyoExpanding__tooltip"></div>
+                              <div class="c-1lmmwwo"> Malaysia</div>
+                          </div>
+                      </div>
+                      <div class="oyoExpanding__countryImage active " style="top: 35px; left: 310px; height: 130px; width: 110px;">
+                          <div class="c-10le73q">
+                              <img alt="Nepal" src="https://assets.oyoroomscdn.com/cmsMedia/432737_widgetCountryItems_itemImage_4.jpg" compact="true" transparent="true" lazyload="true" class="c-2tglnv">
+                              </div>
+                              <div class="c-79elbk oyoExpanding__tooltipWrapper">
+                                  <div class="c-1xnmrhy oyoExpanding__tooltip"></div>
+                                  <div class="c-1lmmwwo"> Nepal</div>
+                              </div>
+                          </div>
+                          <div class="oyoExpanding__countryImage active " style="top: 261px; left: 377px; height: 130px; width: 110px;">
+                              <div class="c-10le73q">
+                                  <img alt="Indonesia" src="https://assets.oyoroomscdn.com/cmsMedia/432737_widgetCountryItems_itemImage_5.jpg" compact="true" transparent="true" lazyload="true" class="c-2tglnv">
+                                  </div>
+                                  <div class="c-79elbk oyoExpanding__tooltipWrapper">
+                                      <div class="c-1xnmrhy oyoExpanding__tooltip"></div>
+                                      <div class="c-1lmmwwo"> Indonesia</div>
+                                  </div>
+                              </div>
+                              <div class="oyoExpanding__countryImage active " style="top: 64px; left: 131px; height: 130px; width: 110px;">
+                                  <div class="c-10le73q">
+                                      <img alt="UAE" src="https://assets.oyoroomscdn.com/cmsMedia/432737_widgetCountryItems_itemImage_6.jpg" compact="true" transparent="true" lazyload="true" class="c-2tglnv">
+                                      </div>
+                                      <div class="c-79elbk oyoExpanding__tooltipWrapper">
+                                          <div class="c-1xnmrhy oyoExpanding__tooltip"></div>
+                                          <div class="c-1lmmwwo"> UAE</div>
+                                      </div>
+                                  </div>
+                                  <img alt="map" src="https://assets.oyoroomscdn.com/cmsMedia/432737_widgetImage.jpg">
+                                  </div>-->
+                                  <!--<div class="oyo-cell oyo-cell--6-col oyo-cell--4-col-tablet oyo-cell--2-col-phone oyoExpanding__contentWrapper">
+                                      <h3 class="d-heading oyoExpanding__heading">Bayu Buana Corporate Services</h3>
+                                      <p class="d-text16 u-extraLineHeight oyoExpanding__text">Acara internasional dan insentif</p>
+                                      <div class="oyoExpanding__insights">
+                                          <div class="oyoExpanding__insightItemWrap">
+                                              <div class="d-text14 oyoExpanding__insightItem">
+                                                  <span class="is-fontBold">80</span> Countries
+                                              </div>
+                                          </div>
+                                          <div class="oyoExpanding__insightItemWrap">
+                                              <div class="d-text14 oyoExpanding__insightItem">
+                                                  <span class="is-fontBold">43000+</span> Hotels
+                                              </div>
+                                          </div>
+                                          <div class="oyoExpanding__insightItemWrap">
+                                              <div class="d-text14 oyoExpanding__insightItem">
+                                                  <span class="is-fontBold">150,000</span> Vacation Homes
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <ul class="oyoExpanding__countryList">
+                                          <li class="d-text16 is-fontBold oyoExpanding__country">
+                                              <span class="oyoExpanding__countryColor" style="background-color: rgb(26, 182, 79);">&nbsp;</span>
+                                              <span class="oyoExpanding__countryLink">India</span>
+                                          </li>
+                                          <li class="d-text16 is-fontBold oyoExpanding__country">
+                                              <span class="oyoExpanding__countryColor" style="background-color: rgb(255, 127, 123);">&nbsp;</span>
+                                              <span class="oyoExpanding__countryLink">China</span>
+                                          </li>
+                                          <li class="d-text16 is-fontBold oyoExpanding__country">
+                                              <span class="oyoExpanding__countryColor" style="background-color: rgb(245, 166, 35);">&nbsp;</span>
+                                              <span class="oyoExpanding__countryLink">Malaysia</span>
+                                          </li>
+                                          <li class="d-text16 is-fontBold oyoExpanding__country">
+                                              <span class="oyoExpanding__countryColor" style="background-color: rgb(95, 214, 242);">&nbsp;</span>
+                                              <span class="oyoExpanding__countryLink">Nepal</span>
+                                          </li>
+                                          <li class="d-text16 is-fontBold oyoExpanding__country">
+                                              <span class="oyoExpanding__countryColor" style="background-color: rgb(254, 148, 241);">&nbsp;</span>
+                                              <span class="oyoExpanding__countryLink">Indonesia</span>
+                                          </li>
+                                          <li class="d-text16 is-fontBold oyoExpanding__country">
+                                              <span class="oyoExpanding__countryColor" style="background-color: rgb(126, 137, 228);">&nbsp;</span>
+                                              <span class="oyoExpanding__countryLink">UAE</span>
+                                          </li>
+                                      </ul>
+                                  </div>-->
+                              </div>
+    </div>                        
+    </div>
+      <div class="landing-desktop hidden-xs">
+          <div class="hero-section"></div>
+          <div class="container">
+              <div class="section nha-section">
+                  <h4 class="section-title h4"><span translate="hm_customer_count" class="colorRed">1,000,000+</span><span class="hm_happy_customer">happy customers</span></h4>
+                  <hr role="tournament6" />
+                  <div class="nha-card-list j-box">
+                      <div class="col-md-12 col-xs-6">
+                          <div class="nha-card">
+                            <ion-list lines="none" *ngIf="pokemon.length == 0">
+                                <ion-item *ngFor="let i of [1]">
+                                    <ion-skeleton-text animated style="width: 33.333333%;height: 255px;margin-right: 5px;"></ion-skeleton-text>
+                                    <ion-skeleton-text animated style="width: 33.333333%;height: 255px;margin-right: 5px;"></ion-skeleton-text>
+                                    <ion-skeleton-text animated style="width: 33.333333%;height: 255px;"></ion-skeleton-text>
+                                </ion-item>
+                              </ion-list>
+                              
+                              <ion-slides #mySliderkomen (ionSlidesDidLoad)="slidesDidLoad(mySliderkomen)" pager="true" mode="md" [options]="slideOpts">
+                                  <ion-slide *ngFor="let rev of komen;" class="clientComment product-box text-center">
+                                      <picture>
+                                          <!--<source srcset="{{rev.thumbswebp }}" type="image/webp">-->
+                                          <source srcset="{{rev.thumbnail}}" type="image/jpeg"> 
+                                          <img data-src="{{ rev.thumbnail }}" class="lazy komen" image-lazy-background-image="true" image-lazy-loader="lines" image-lazy-distance-from-bottom-to-load="100" alt="wicked review"/>
+                                        </picture>
+                                      <div class="product-detail text-center">
+                                          <div>
+                                              <p>
+                                                  <span class="fontSize14">
+                                                      <i class="fas fa-quote-left"></i> {{ rev.review }} <i class="fas fa-quote-right"></i>
+                                                  </span>
+                                              </p>
+                                              <div class="colorBlack" ng-bind=" ::testimonial.name">{{ rev.name }}</div>
+                                          </div>
+                                      </div>
+                                  </ion-slide>
+                              </ion-slides>
+
+                              <div class="swiper-button-next" (click)="swipeNext()"><i class="fas fa-chevron-circle-right"></i></div>
+                              <div class="swiper-button-prev" (click)="swipePrev()"><i class="fas fa-chevron-circle-left"></i></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+
+              <!--<section class="section hidden-xs">
+                  <div class="banner banner--facebook"><span class="banner__wording">Like us on Facebook</span><div class="banner__action pull-right"><span class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/wickedcampers/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=885351928512415&amp;container_width=0&amp;href=https%3A%2F%2Fwww.facebook.com%2Fwickedcampers%2F&amp;layout=button_count&amp;locale=en_GB&amp;sdk=joey&amp;share=false&amp;show_faces=true&amp;size=large"><span style="vertical-align: bottom; width: 101px; height: 28px;"><iframe ng-onload="myLoadEvent()" async name="f10d2e35015e3a8" width="1000px" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.10/plugins/like.php?action=like&amp;app_id=885351928512415&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dfd51d6039796d8%26domain%3Dwww.wickedcampers.com.au%26origin%3Dhttps%253A%252F%252Fwww.wickedcampers.com.au%252Ffd81db2383f3c%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fwww.facebook.com%2Fwickedcampers%2F&amp;layout=button_count&amp;locale=en_GB&amp;sdk=joey&amp;share=false&amp;show_faces=true&amp;size=large" style="border: none; visibility: visible; width: 101px; height: 28px;" class=""></iframe></span></span></div></div>
+              </section>-->
+           
+              <!--<div>
+            
+              <div class="vcenter hidden-xs">
+                  <div class="row">
+                     
+                   
+                  <div class="col-8">
+                      <div class="heading-link"><h2>Frequently Asked Questions</h2></div>
+                      <div class="accordion" id="accordionExample">
+                          <div class="card">
+                              <div class="card-header" id="headingOne">
+                                  <h3 class="mb-0">
+                                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          How old do you have to be to hire a campervan in Australia?
+                                      </button>
+                                  </h3>
+                              </div>
+
+                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                      You need to be at least 18 years old to be able to hire a campervan in Australia. Yes you can hire a Wicked Camper just using a valid drivers license from your country. An International License is not
+                                      required.
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-header" id="headingTwo">
+                                  <h3 class="mb-0">
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          Can I choose my campervan hire design?
+                                      </button>
+                                  </h3>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                      Customers are welcome to put in a request for the design on the camper which we will try our best to accommodate if available. However as a lot of our hires are one way it is not guaranteed. Customers
+                                      are also welcome to request a 'tame' van if travelling with children etc.
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-header" id="headingThree">
+                                  <h3 class="mb-0">
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          What is the cheapest campervan hire in Australia?
+                                      </button>
+                                  </h3>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                      On average, one can hire a 2-berth campervan for $50 for a day. The price depends on the season and availability.
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-header" id="headingFour">
+                                  <h3 class="mb-0">
+                                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                          Do you have any suggestions for places to travel?
+                                      </button>
+                                  </h3>
+                              </div>
+                              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                      Sure! Just look in our Trip Ideas section HERE, there’s plenty of good ideas!
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h3 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        How to Book a Campervan or 4WD?
+                                    </button>
+                                </h3>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                  Wanna Hire a Campervan in Australia? Well look no further - we've got locations all around Australia and the World! Call our gorgeous Roadtrip Planners today (seriously - they're freakin smoking hot!):
+                                  please visit this <a href="http://bookings.wickedcampers.com.au/">link</a>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-4">
+                      <div class="heading-link">
+                          <h2><i class="fab fa-instagram"></i> Wickedcampers</h2>
+                         
+                          <iframe [src]="safeSrc" width="100%" height="400"  scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                          allowfullscreen></iframe> 
+                      </div>
+                  </div>
+              </div>
+              </div>
+            </div>-->
+           
+             
+          </div>
+      </div>
+      <!--<div class="container hidden-xs">
+        <section class="section"><div class="banner banner--youtube"><span class="banner__wording">Subscribe to us on Youtube</span><div class="banner__action pull-right"><div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 111px; height: 24px;" id="___ytsubscribe_0"><iframe async ng-onload="myLoadEvent()" ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 111px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1595489778756" name="I0_1595489778756" src="https://www.youtube.com/subscribe_embed?usegapi=1&amp;channelid=UCv6yJEqpLYaCrOkIciLzXwQ&amp;layout=default&amp;count=default&amp;origin=https%3A%2F%2Fwww.wickedcampers.com.au&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.id.rBw6XUnLR4E.O%2Fam%3DwQc%2Fd%3D1%2Fct%3Dzgms%2Frs%3DAGLTcCOXUMRWuQ3CBiJL5SRK3icoQvIUVg%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1595489778756&amp;_gfid=I0_1595489778756&amp;parent=https%3A%2F%2Fwww.wickedcampers.com.au&amp;pfname=&amp;rpctoken=14260252" data-gapiattached="true"></iframe>
+        </div></div></div></section>
+       </div>-->
+  </div>
+  <!--<div class="cont-about-pack hidden-sm hidden-xs">
+    <div class="wrap" style="position:relative;">
+        <div class="homedesk-left" style="margin-left:0px;">
+            <div align="center" class="homedesk-header"><div class="before"></div><div class="after"></div><b>Why Go Wicked? </b></div>
+            
+            <div class="fleft">
+              <picture>
+                
+                  <source srcset="https://bookings.wickedcampers.com.au/newapi/assets/media/vehicles/galleries/mystery-machine-2-3/apv-mystery-machine.png" type="image/png"> 
+                  <img data-src="image.jpg" alt="campervan" align="absbottom" style="width: 550px;margin-top: 0px;margin-bottom: -16px;">
+              </picture>
+              </div>
+            <ul>
+                <li>
+                    <h4>So Simple</h4>
+                    <p>Find your perfect campervan and hit the road, book online or call our road trip planners and we'll get you on your way.</p>
+                </li>
+                <li>
+                    <h4>Wicked Choices</h4>
+                    <p>From cars and mini-campers to campervans and fully equipped 4WD campers, we've got something to suit any budget.</p>
+                </li>
+                <li>
+                    <h4>Instant Quotes</h4>
+                    <p>Easily browse all our vehicles and locations, find your ideal ride and get an instant quote now.</p>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="homedesk-right">
+            <a href="../../assets/doc/Wicked-Campers-2020_EBook.pdf" target="”_blank”">
+              <picture>
+                 
+                  <source srcset="https://bookings.wickedcampers.com.au/newapi/assets/media/wicked-campers-travel-update.jpg" type="image/jpeg"> 
+                  <img class="lazy" data-src="image.jpg" alt="travel update">
+              </picture>
+          </a>
+        </div>
+        
+        <div class="clear"></div>
+    </div>
+</div>-->
+
+  <div class="hidden-sm hidden-xs" [innerHTML]="footer"></div>
+
+ 
+</ion-content>

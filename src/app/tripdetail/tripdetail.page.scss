@@ -1,0 +1,183 @@
+.home .bannerdokumen {
+    width: 100%;
+    background: url(../../assets/images/pageheader/passport.jpg);
+    background-size: cover;
+    /*background-position: center center;*/
+    height: 250px;
+    background-position: 0px 30%;
+    background-repeat: no-repeat;
+  }
+  .c-ahj8kj {
+    padding: 20px;
+    text-align: center;
+    border: dashed 1px #ddd;
+    margin-bottom: 15px;
+  }
+  .priceinfo {
+    font-weight: bold;
+    line-height: 25px;
+    margin-top: 15px;
+  }
+.cbBgPattern {
+  background-color: #29313C;
+  opacity: 0.6;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height:350px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+.desc-wrapper {
+  -webkit-animation: feature-text-anim .75s ease-in-out;
+  animation: feature-text-anim .75s ease-in-out;
+  z-index: 100;
+  position: relative;
+  width: 100%;
+  max-width: 956px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 80px;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+}
+.desc-wrapper p {
+  font-family: Finger Paint;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  letter-spacing: 0;
+  text-transform: none;
+  line-height: 1.1em;
+  color: #fff;
+  text-shadow: 2px 2px #101010;
+  font-display: swap;
+}
+.theme-bb h2 {
+  font-weight: bold;
+  color: #04776d;
+}
+//text jalan
+.hero_title_text .hero_title_text_top {
+  font-size: 42px;
+  line-height: 48px;
+  color: #fff;
+  font-family: "Open Sans",sans-serif;
+  text-shadow: 3px 0 7px rgb(0 0 0 / 10%);
+  -moz-text-shadow: 3px 0 7px rgba(0,0,0,0.1);
+  -webkit-text-shadow: 3px 0 7px rgba(0,0,0,0.1);
+  -o-text-shadow: 3px 0 7px rgba(0,0,0,0.1);
+  -ms-text-shadow: 3px 0 7px rgba(0,0,0,0.1);
+  width: 642px;
+  margin: 0 auto;
+  text-align: left;
+  font-weight: bold;
+}
+.txt-rotate > .wrap {
+  border-right: .02em solid #fff;
+}
+//collaps
+.accordion {
+    margin-top: 15px;
+    .card {
+      border: none;
+      margin-bottom: 20px;
+      border: 1px solid #f5f6fa;
+      h3 {
+        background: url(https://cdn0.iconfinder.com/data/icons/entypo/91/arrow56-512.png) no-repeat calc(100% - 10px) center;
+      background-size: 20px;
+        cursor: pointer;
+        font-size: 18px;
+        &.collapsed {
+              background-image: url(https://cdn0.iconfinder.com/data/icons/arrows-android-l-lollipop-icon-pack/24/expand2-256.png);
+        }
+      }
+      &-body {
+        padding: 16px;
+  
+      }
+    }
+    .card-head {
+        background: #f16134;
+        border: 0px solid #f5f6fa;
+        border-radius: 0px;
+        cursor: pointer;
+        padding: 0px 16px;
+        color: #ffffff;
+    }
+    .show {
+        background: #fbfcfe;
+    }
+  }
+  //end collaps
+.template-section {
+    margin-bottom: 40px;
+}
+.image-page .multi-button .multi-button-container {
+    display: inline-block;
+    vertical-align: top;
+   
+}
+.image-page .multi-button .multi-button-container .multi-button-icon {
+    margin: auto;
+    overflow: hidden;
+}
+.image-page .multi-button .multi-button-container .multi-button-icon img {
+    max-width: 100%;
+    height: auto;
+}
+.image-page .multi-button .multi-button-container.active .multi-button-text {
+    margin-top: 10px;
+    padding: 5px 11px 6px;
+    border: 1px solid #0064d2;
+    border-radius: 15px;
+}
+.image-page .multi-button {
+    text-align: center;
+}
+.image-page .multi-button .multi-button-container+.multi-button-container {
+    margin-left: 32px;
+}
+.image-page .multi-button .multi-button-container .multi-button-icon {
+    margin: auto;
+    overflow: hidden;
+}
+.multi-button-text {
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.holidays .table-bordered {
+    width: 100%;
+}
+.table-bordered {
+    border: 1px solid #ddd;
+}
+.holidays .table-bordered>thead>tr>td, .holidays .table-bordered>thead>tr>th {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #f1d6ce;
+}
+.subpage section h4 {
+    font-weight: bold;
+    color: #04776d;
+}
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+.holidays .table-bordered {
+    width: 100%;
+}
+.table-bordered {
+    border: 1px solid #ddd;
+}
+.holidays .table-bordered>thead>tr>td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #f1d6ce;
+}

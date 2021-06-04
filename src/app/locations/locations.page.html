@@ -1,0 +1,467 @@
+<ion-content class="hidden-xs hidden-sm">
+  <section id="homeBannertour" class="section section--borderless">
+    <div class="wck-homepage">
+      <div class="home">
+        <div class="bannerlocations">
+          <div class="slick-slider">
+            <div class="slick-slide">
+              <div class="cbBgPattern">
+              <div class="desc-wrapper">
+              <h1>Tours</h1>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>   
+    <div class="container">
+    <div class="col-md-12">
+
+      <!--new content-->
+      <div class="listing__topSection">
+        <aside class="sidebar">
+            <div class="sidebar__header">
+                <div class="filters__heading"><span>Filters</span></div><a tabindex="0" role="button" class="sidebar__clearAll"><span>Clear All</span></a></div>
+            <div class="filters">
+                <div class="filters__wrapper">
+                    <div class="filters__item">
+                        <div class="rangepicker">
+                            <h4>Price</h4>
+                            <!--<div aria-disabled="false" class="input-range"><span class="input-range__label input-range__label--min"><span class="input-range__label-container">Rp115648</span></span>
+                                <div class="input-range__track input-range__track--background">
+                                    <div class="input-range__track input-range__track--active" style="left: 0%; width: 100%;"></div><span class="input-range__slider-container" style="position: absolute; left: 0%;"><span class="input-range__label input-range__label--value"><span class="input-range__label-container">Rp115648</span></span>
+                                    <div aria-valuemax="357867"
+                                        aria-valuemin="115648" aria-valuenow="115648" class="input-range__slider" draggable="true" role="slider" tabindex="0"></div>
+                                    </span><span class="input-range__slider-container" style="position: absolute; left: 100%;"><span class="input-range__label input-range__label--value"><span class="input-range__label-container">Rp357867</span></span>
+                                    <div aria-valuemax="357867"
+                                        aria-valuemin="115648" aria-valuenow="357867" class="input-range__slider" draggable="true" role="slider" tabindex="0"></div>
+                                    </span>
+                                </div><span class="input-range__label input-range__label--max"><span class="input-range__label-container">Rp357867</span></span>
+                            </div>-->
+                            <div class="naek">
+                                <ion-range min="{{hargamin}}" max="{{hargamax}}" class="gede" id="dual-range" dual-knobs pin color="danger" [(ngModel)]="rangeValues"  (ionChange)="filterprice()">
+                                  
+                                </ion-range>
+                            </div>
+                            <div class="col-xs-6"><ion-label slot="start" class="color-grey">Rp {{rangeValues.lower|number:'3.0'}}</ion-label></div>
+                            <div class="col-xs-6" style="text-align: right;"> <ion-label slot="end" class="color-grey">Rp {{rangeValues.upper|number:'3.0'}}</ion-label></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filters__wrapper">
+                    <div class="filters__item">
+                        <div class="checkBoxGroup">
+                          <h4>Tour Categories</h4>
+                          <!--<label *ngFor="let cat of category" class="checkbox  " htmlfor="spoton">
+                              <input class=" " id="spoton" name="spoton" description="Budget stay with Comfortable bed and Clean washroom" label="[object Object]" data-state="[object Object]" excludequery="true" extraprops="[object Object]" type="checkbox">
+                            <span lazyload="true" class="checkbox__checkmark checkbox__checkmark--  c-q3spvb">
+                            <svg viewBox="0 0 12 9" version="1.1" id="checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Arash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Listing_ListView" transform="translate(-22.000000, -260.000000)" fill="#FFFFFF">
+                                        <g id="component/filters" transform="translate(0.000000, 96.000000)">
+                                            <g id="ic/checkbox/inactive-copy-4" transform="translate(20.000000, 160.000000)">
+                                                <polygon id="Fill-3-Copy-9" points="2 8.68138196 3.20857143 7.46353167 6.28571429 10.5556622 12.7914286 4 14 5.22648752 6.28571429 13"></polygon>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            </span>
+                            <div class="checkbox__label"><span><span class="is-fontBold">{{label.category}}</span></span></div>
+                          </label>-->
+                          
+                          
+                            <label class="checkbox" *ngFor="let cat of category">
+                            <input class="tandacek" id="group{{cat}}" name="group" description="Budget stay with Comfortable bed and Clean washroom" (change)="filtercat(cat);" label="[object Object]" data-state="[object Object]" excludequery="true" extraprops="[object Object]" type="checkbox">
+                            <span lazyload="true" class="checkbox__checkmark checkbox__checkmark--  c-q3spvb"></span>
+                            <div for="group{{cat}}" class="checkbox__label"><span><span class="is-fontBold">{{cat}}</span></span></div>
+                            </label>
+                           
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="filters__wrapper">
+                    <div class="filters__item">
+                        <div class="checkBoxGroup">
+                            <h4>Country</h4>
+                            <!--<label *ngFor="let country of pokemon;" class="checkbox  " htmlfor="0"><input class=" " id="0" name="0" label="Hotel" data-state="Hotel" excludequery="true" extraprops="[object Object]" type="checkbox">
+                              <span lazyload="true" class="checkbox__checkmark checkbox__checkmark--  c-q3spvb">
+                              <svg viewBox="0 0 12 9" version="1.1" id="checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                  <g id="Arash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                      <g id="Listing_ListView" transform="translate(-22.000000, -260.000000)" fill="#FFFFFF">
+                                          <g id="component/filters" transform="translate(0.000000, 96.000000)">
+                                              <g id="ic/checkbox/inactive-copy-4" transform="translate(20.000000, 160.000000)">
+                                                  <polygon id="Fill-3-Copy-9" points="2 8.68138196 3.20857143 7.46353167 6.28571429 10.5556622 12.7914286 4 14 5.22648752 6.28571429 13"></polygon>
+                                              </g>
+                                          </g>
+                                      </g>
+                                  </g>
+                              </svg>
+                            </span>
+                            <div class="checkbox__label">{{country.country}}</div>
+                            </label>-->
+                                <label class="checkbox" *ngFor="let cat of country">
+                                <input class="tandacek" id="group{{cat}}" name="group" description="Budget stay with Comfortable bed and Clean washroom" (change)="filtercountry(cat);" label="[object Object]" data-state="[object Object]" excludequery="true" extraprops="[object Object]" type="checkbox">
+                                <span lazyload="true" class="checkbox__checkmark checkbox__checkmark--  c-q3spvb"></span>
+                                <div for="group{{cat}}" class="checkbox__label"><span><span class="is-fontBold">{{cat}}</span></span></div>
+                                </label>
+                               
+                        </div>
+                    </div>
+                </div>
+                <div class="filters__wrapper">
+                  <div class="filters__item">
+                      <div class="checkBoxGroup">
+                          <h4>Tour Duration</h4>
+                          <!--<label *ngFor="let durasi of pokemon;" class="checkbox  " htmlfor="0"><input class=" " id="0" name="0" label="Hotel" data-state="Hotel" excludequery="true" extraprops="[object Object]" type="checkbox">
+                            <span lazyload="true" class="checkbox__checkmark checkbox__checkmark--  c-q3spvb">
+                            <svg viewBox="0 0 12 9" version="1.1" id="checkmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Arash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Listing_ListView" transform="translate(-22.000000, -260.000000)" fill="#FFFFFF">
+                                        <g id="component/filters" transform="translate(0.000000, 96.000000)">
+                                            <g id="ic/checkbox/inactive-copy-4" transform="translate(20.000000, 160.000000)">
+                                                <polygon id="Fill-3-Copy-9" points="2 8.68138196 3.20857143 7.46353167 6.28571429 10.5556622 12.7914286 4 14 5.22648752 6.28571429 13"></polygon>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                          </span>
+                          <div class="checkbox__label">{{durasi.durasitour}} Days</div>
+                          </label>-->
+                        
+                            <label class="checkbox" *ngFor="let cat of duration">
+                            <input class="tandacek" id="group{{cat}}" name="group" description="Budget stay with Comfortable bed and Clean washroom" (change)="filterdur(cat);" label="[object Object]" data-state="[object Object]" excludequery="true" extraprops="[object Object]" type="checkbox">
+                            <span lazyload="true" class="checkbox__checkmark checkbox__checkmark--  c-q3spvb"></span>
+                            <div for="group{{cat}}" class="checkbox__label"><span><span class="is-fontBold">{{cat}} Day</span></span></div>
+                            </label>
+                            
+                      </div>
+                  </div>
+              </div>
+               
+            </div>
+        </aside>
+        <section class="listing__content">
+            <div class="listing__contentWrapper">
+                <div class="ListingContentHeader">
+                    <div class="Breadcrumbs" itemscope="true" itemtype="http://schema.org/BreadcrumbList">
+                        <div class="Breadcrumbs__item">
+                          <span itemprop="itemListElement" itemscope="true" itemtype="http://schema.org/ListItem">
+                            <a href="/" class="Breadcrumbs__item--label" itemprop="item" itemtype="https://schema.org/Thing"> 
+                            <meta itemprop="name" content="home"><meta itemprop="position" content="1">Home
+                          </a>
+                          </span>
+                          <span
+                          class="Breadcrumbs__item--arrow">&gt;
+                          </span>
+                        </div>
+                        <div class="Breadcrumbs__item"><span class="Breadcrumbs__item--label">Tour</span></div>
+                    </div>
+                    <div class="ListingContentHeader__heading"><span><h1 class="ListingContentHeader__h1">Bayu Buana Travel ({{packcount}} Packages)<div *ngFor="let dtour of lama;"> {{lama.count}}</div></h1></span>
+                       <!--<div class="ListingContentHeader__mapToggle"><span class="ListingContentHeader__mapToggle--label">Map View</span><label class="ToggleButton"><input type="checkbox" class="ToggleButton__input" name="test"><span class="ToggleButton__sliderRound"></span></label></div>-->
+                        <div>
+                            <!--<div class="dropdown"><span class="dropdown__label">Sort By</span>
+                                <span tabindex="-1" class="dropdown__select">Popularity<span lazyload="true" class="c-1owv2mq dropdown__icon"><svg width="8" height="6" viewBox="0 0 8 6" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h8L4 6z" fill="#000" fill-rule="evenodd" opacity=".87"></path></svg></span>
+                                <ul
+                                    class="dropdown__list">
+                                    <li class="dropdown__item"><span>Popularity &nbsp;</span></li>
+                                    <li class="dropdown__item"><span>Guest Ratings &nbsp;</span></li>
+                                    <li class="dropdown__item"><span>Price Low to High &nbsp;</span></li>
+                                    <li class="dropdown__item"><span>Price High to Low &nbsp;</span></li>
+                                    </ul>
+                                    </span>
+                                </div>-->
+                                <div class="dropdown">
+                                <select #sort (change)='changesort(sort.value)' class="dropdown__select " id="exampleFormControlSelect1" style="padding: 0px 10px;margin-top: 0px;height: 42px;">
+                                        <option >Sort By</option>
+                                        <option value="title,asc">Name Ascending</option>
+                                        <option value="title,dsc">Name Descending</option>
+                                        <option value="harga,asc">Lowest Price</option>
+                                        <option value="harga,dsc">Highest Price</option>
+                                </select>
+                                </div>
+                            
+                        </div>
+                    </div>
+                    <div class="ListingContentHeader__divider"></div>
+                </div>
+              <div class="oyo-row oyo-row--no-spacing ListingHotelCardWrapper">
+                <div class="oyo-cell--12-col oyo-cell--8-col-tablet oyo-cell--4-col-phone">
+                <ion-list lines="none" *ngIf="pokemon.length == 0">
+                  <ion-item *ngFor="let i of [1,2,3,4]">
+                    <ion-skeleton-text animated style="width: 100%;height: 336px;"></ion-skeleton-text>
+               
+                </ion-item>
+                  </ion-list>
+                </div>
+                  <div *ngFor="let poke of pokemon;">
+                    <div class="oyo-cell--12-col oyo-cell--8-col-tablet oyo-cell--4-col-phone">
+                        <div class="oyo-row oyo-row--no-spacing hotelCardListing">
+                            <div class="hotelCardListing__imgCardWrapper">
+                                <div class="oyo-row oyo-row--no-spacing listingImageCard">
+                                    <div class="oyo-cell--10-col listingImageCard__carousel">
+                                        <div class="slick-slider slick-animatedSlideshow slick-animatedSlideshow--persistArrows slick-initialized" dir="ltr"><button type="button" data-role="none" class="slick-arrow slick-prev" style="display: block;"> Previous</button>
+                                            <div class="slick-list">
+                                                <div class="slick-track" style="opacity: 1; transform: translate3d(-380px, 0px, 0px); width: 10260px;">
+                                                    <div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 380px;"></div>
+                                                    <div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 380px;">
+                                                        <div>
+                                                            
+                                                            <div class="c-ahj8kj"><img alt="OYO 3092 Falah Residence Syariah" src="{{poke.thumbnail}}" placeholdertype="hotel" class="c-2tglnv listingImageCard__carousel__imgWrapper listingImageCard__carouselImg"
+                                                                    itemprop="image" tabindex="-1" style="width: 100%; display: inline-block;"></div>
+                                                                  
+                                                        </div>
+                                                    </div>
+                                                    <div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 380px;"></div>
+                                                    <div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 380px;"></div>
+                                                    <div data-index="3" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 380px;"></div>
+                                                    <div data-index="4" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 380px;"></div>
+                                                    <div data-index="5" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 380px;"></div>
+                                                    <div data-index="6" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 380px;"></div>
+                                                    <div data-index="7" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 380px;"></div>
+                                                    <div data-index="8" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 380px;"></div>
+                                                    <div data-index="9" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 380px;"></div>
+                                                    <div data-index="10" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 380px;"></div>
+                                                    <div data-index="11" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 380px;"></div>
+                                                    <div data-index="12" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 380px;"></div>
+                                                    <div data-index="13" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 380px;">
+                                                        <div>
+                                                            <div class="c-ahj8kj"><img alt="OYO 3092 Falah Residence Syariah" src="https://images.oyoroomscdn.com/uploads/hotel_image/97940/medium/f4bc3bb14b63a446.jpg" placeholdertype="hotel" class="c-2tglnv listingImageCard__carousel__imgWrapper listingImageCard__carouselImg"
+                                                                    itemprop="image" tabindex="-1" style="width: 100%; display: inline-block;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div data-index="14" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 380px;"></div>
+                                                    <div data-index="15" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 380px;"></div>
+                                                    <div data-index="16" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 380px;"></div>
+                                                    <div data-index="17" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 380px;"></div>
+                                                    <div data-index="18" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 380px;"></div>
+                                                    <div data-index="19" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 380px;"></div>
+                                                    <div data-index="20" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 380px;"></div>
+                                                    <div data-index="21" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 380px;"></div>
+                                                    <div data-index="22" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 380px;"></div>
+                                                    <div data-index="23" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 380px;"></div>
+                                                    <div data-index="24" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 380px;"></div>
+                                                    <div data-index="25" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 380px;"></div>
+                                                </div>
+                                            </div><button type="button" data-role="none" class="slick-arrow slick-next" style="display: block;"> Next</button></div>
+                                    </div>
+                                    <!--<div class="listingImageCard__sideImages">
+                                        <div class="listingImageCard__img">
+                                            <div class="c-ahj8kj"><img alt="OYO 3092 Falah Residence Syariah" src="https://images.oyoroomscdn.com/uploads/hotel_image/97940/thumb/0da687effe3977bd.jpg" placeholdertype="hotel" class="c-2tglnv listingImageCard__img--full listingImageCard__sideImages--borderRadius"
+                                                    itemprop="image"></div>
+                                        </div>
+                                        <div class="listingImageCard__img">
+                                            <div class="c-ahj8kj"><img alt="OYO 3092 Falah Residence Syariah" src="https://images.oyoroomscdn.com/uploads/hotel_image/97940/thumb/cbcd307f16f7fe70.jpg" placeholdertype="hotel" class="c-2tglnv listingImageCard__img--full " itemprop="image"></div>
+                                        </div>
+                                        <div class="listingImageCard__img">
+                                            <div class="c-ahj8kj"><img alt="OYO 3092 Falah Residence Syariah" src="https://images.oyoroomscdn.com/uploads/hotel_image/97940/thumb/a3877bfdee82ff80.jpg" placeholdertype="hotel" class="c-2tglnv listingImageCard__img--full " itemprop="image"></div>
+                                        </div>
+                                        <div class="listingImageCard__img">
+                                            <div class="c-ahj8kj"><img alt="OYO 3092 Falah Residence Syariah" src="https://images.oyoroomscdn.com/uploads/hotel_image/97940/thumb/f671c964ce1c21e1.jpg" placeholdertype="hotel" class="c-2tglnv listingImageCard__img--full " itemprop="image"></div>
+                                        </div>
+                                        <div class="listingImageCard__img">
+                                            <div class="c-ahj8kj"><img alt="OYO 3092 Falah Residence Syariah" src="https://images.oyoroomscdn.com/uploads/hotel_image/97940/thumb/c0250e88d2254344.jpg" placeholdertype="hotel" class="c-2tglnv listingImageCard__img--full listingImageCard__sideImages--lastBorderRadius"
+                                                    itemprop="image"></div>
+                                        </div>
+                                    </div>-->
+                                </div>
+                            </div>
+                            <div class="hotelCardListing__descriptionWrapper">
+                                <div class="oyo-row oyo-row--no-spacing listingHotelDescription" name="HotelListCard-97940" itemscope="true" itemtype="http://schema.org/Hotel">
+                                    <meta itemprop="telephone" content="+62 2129707600">
+                                    <meta itemprop="checkinTime" content="14:00:00">
+                                    <meta itemprop="checkoutTime" content="12:00:00">
+                                    <meta itemprop="url" content="https://www.oyorooms.com/id/97940/">
+                                    <meta itemprop="email" content="bookings@oyorooms.com">
+                                    <meta itemprop="image" content="https://images.oyoroomscdn.com/uploads/hotel_image/97940/f4bc3bb14b63a446.jpg">
+                                    <div class="oyo-cell--12-col listingHotelDescription__content">
+                                        <div itemprop="geo" itemscope="true" itemtype="http://schema.org/GeoCoordinates">
+                                            <meta itemprop="latitude" content="-0.9464263">
+                                            <meta itemprop="longitude" content="100.3974153">
+                                        </div>
+                                        <div class="listingHotelDescription__contentWrapper">
+                                            <div class="listingHotelDescription__contentWrapper--left u-fullWidth">
+                                                <a class="c-nn640c u-width100">
+                                                    <h3 title="{{ poke.title }}" class="listingHotelDescription__hotelName d-textEllipsis" itemprop="name">{{ poke.title }}</h3>
+                                                </a>
+                                                <div class="d-body-lg listingHotelDescription__hotelAddress" itemprop="address" itemscope="true" itemtype="http://schema.org/PostalAddress">
+                                               
+                                                    <span class="listingHotelDescription__dot"></span>
+                                                    <span title="View Map" class="listingHotelDescription__hotelAddressMap">
+                                                    <span class="c-1owv2mq">
+                                                    <svg width="15px" height="15px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                            <g id="Asssets" transform="translate(-662.000000, -147.000000)" fill="#EF4023">
+                                                                <path d="M670.535534,155.485281 L667,159 L663.464466,155.485281 C661.511845,153.544156 661.511845,150.39697 663.464466,148.455844 C665.417088,146.514719 668.582912,146.514719 670.535534,148.455844 C672.488155,150.39697 672.488155,153.544156 670.535534,155.485281 L670.535534,155.485281 Z M665.821489,153.142136 C666.472363,153.789177 667.527637,153.789177 668.178511,153.142136 C668.829385,152.495094 668.829385,151.446032 668.178511,150.79899 C667.527637,150.151948 666.472363,150.151948 665.821489,150.79899 C665.170615,151.446032 665.170615,152.495094 665.821489,153.142136 Z" id="Shape"></path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                    </span>
+                                                    <span class="listingHotelDescription__distanceText">{{poke.country}}</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--<div class="hotelRating">
+                                            <div itemprop="aggregateRating" itemscope="true" itemtype="http://schema.org/AggregateRating" class="hotelRating__wrapper" tabindex="-1">
+                                                <meta itemprop="ratingValue" content="4.7"><span class="is-fontBold hotelRating__rating hotelRating__rating--excellent hotelRating__rating--clickable"><span>4.7</span><span class="hotelRating__star"><span lazyload="true" class="c-t93z2l"><svg viewBox="0 0 9 10" xmlns="http://www.w3.org/2000/svg"><path d="M7.25 9.5a.238.238 0 01-.12-.032L4.5 7.948l-2.63 1.52a.238.238 0 01-.265-.017.271.271 0 01-.102-.26l.48-3.042-1.91-2.021a.276.276 0 01-.061-.268.255.255 0 01.197-.18l2.874-.508L4.276.646A.25.25 0 014.5.5c.094 0 .181.057.223.146l1.194 2.526 2.874.508a.255.255 0 01.197.18.275.275 0 01-.061.268l-1.91 2.021.48 3.042c.015.1-.024.201-.102.26a.242.242 0 01-.145.049z"></path></svg></span></span>
+                                                </span>
+                                                <meta itemprop="worstRating" content="1">
+                                                <meta itemprop="reviewCount" content="420">
+                                                <meta itemprop="bestRating" content="5"><span class="hotelRating__ratingSummary  hotelRating__rating--clickable">(420 Ratings)</span><span class="hotelRating__dot">·</span><span class="hotelRating__ratingSummary">Excellent</span></div>
+                                        </div>-->
+                                        <div class="amenityWrapper">
+                                            Duration {{poke.durasitour}} days
+                                        </div>
+                                        <div class="oyo-cell--12-col listingHotelDescription__labels"><span class="c-2z8wjd">{{poke.category}}</span></div>
+                                    </div>
+                                    <div class="oyo-cell--12-col listingHotelDescription__priceBtn">
+                                        <div class="listingHotelDescription__HotelCategory"><span>Start From</span></div>
+                                        <div class="oyo-row oyo-row--no-spacing">
+                                            <div class="oyo-cell--5-col">
+                                                <div class="listingPrice">
+                                                    <meta itemprop="priceRange" content="Rp136.057 - Rp288.071">
+                                                    <div class="listingPrice__numbers"><span class="listingPrice__finalPrice">Rp {{poke.harga|number}}</span>
+                                                      
+                                                      <!--<span class="listingPrice__slashedPrice d-body-lg">Rp288.071</span>
+                                                      <span class="listingPrice__percentage">52% off</span>
+                                                      -->
+                                                    </div>
+                                                    <div class="listingPrice__perRoomNight">per person</div>
+                                                </div>
+                                            </div>
+                                            <div class="oyo-cell--7-col listingHotelDescription__btnWrapper">
+                                              <button [routerLink]="[poke.category_slug + '/' + poke.slug]" class="c-17di9jl d-whiteButton" type="button"><span>View Details</span></button>
+                                              <!--<button [routerLink]="[poke.category_slug + '/' + poke.slug + '/order' ]" class="c-17di9jl d-greenButton" type="button"><span>Book Now</span></button>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ListingHotelCardWrapper--divider"></div>
+                  </div>
+                   
+               
+            </div>
+            <div class="listing__content--filler"></div>
+    </div>
+    </section>
+    </div>
+      <!--end newcontent-->
+
+
+        <!--<div class="col-xs-4">
+          <div class="product-card">
+            <div class="photo">
+              <img src="{{ poke.thumbnail }}" />
+            </div>
+            <div class="body">
+              <h2 class="product-name">{{ poke.title }}</h2>
+              <div class="loc-date">{{ poke.address }}</div>
+             
+              <div class="footer"><div class="price-info"><span class="amount">Opening Hours :</span></div></div>
+              <div class="opening-hours">Monday to Friday:9am to 4pm
+                Saturdays:9am to 12pm
+                Sundays:Closed
+              </div>
+
+        </div>
+        </div>
+      </div>-->
+      
+    
+      </div>
+   
+   
+    
+  
+  </div>
+  </div>
+  </section>
+  <div [innerHTML]="footer"></div>
+</ion-content>
+
+
+<ion-header no-border class="d-lg-none hidden-lg hidden-md">
+  <ion-toolbar>
+       <ion-buttons slot="start">
+           <ion-back-button color="light" defaultHref="/"></ion-back-button>
+       </ion-buttons>
+       <ion-title class="ion-text-capitalize">Locations</ion-title>
+   </ion-toolbar>
+</ion-header>
+<!---<ion-item class="filt hidden-lg">
+  <ion-label class="filter">Filter</ion-label>
+  <ion-select [(ngModel)]="type" (ionChange)="searchChanged($event)">
+    <ion-select-option value="">All</ion-select-option>
+    <ion-select-option value="movie">New South Wales</ion-select-option>
+    <ion-select-option value="series">Queensland</ion-select-option>
+    <ion-select-option value="episode">Victoria</ion-select-option>
+  <ion-select-option value="episode">Northern Territory</ion-select-option>
+  <ion-select-option value="episode">South Australia</ion-select-option>
+  <ion-select-option value="episode">Western Australia</ion-select-option>
+  <ion-select-option value="episode">Tasmania</ion-select-option>
+  </ion-select>
+</ion-item>-->
+
+<ion-content class="d-lg-none hidden-lg hidden-md">
+  <ion-list lines="none" *ngIf="pokemon.length == 0">
+    <ion-item *ngFor="let i of [1,2,3,4,5,6,7,8,9]">
+      <ion-skeleton-text animated style="width: 100%;height: 135px;"></ion-skeleton-text>
+    </ion-item>
+  </ion-list>
+  
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <div class="listing">		
+		<div class="filter-search-wrapper">		
+		<div class="search-result">
+	
+			<div id="app">
+
+    <div class="search-page__content">
+      <div class="subcategory-container"><div class="white-background"></div></div>
+      <div class="infinite-scroll-component__outerdiv">
+          <div class="infinite-scroll-component" style="height: auto; overflow: auto; -webkit-overflow-scrolling: touch;">
+              
+              
+              <div *ngFor="let poke of pokemon;" [routerLink]="[poke.category_slug + '/' + poke.slug]" class="product-card">
+                  <a href="/to-do/tiket-attraction-open-trip-bromo-sunrise" class="pc__link">
+                      <div class="image-ratio image-ratio--product">
+                          <img
+                              alt="Campervan Hire Locations"
+                              src="{{ poke.thumbnail }}"
+                          />
+                      </div>
+                      <div class="pc__content">
+                          <div class="pc__top">
+                              <span class="pc__city">{{ poke.title }}</span>
+                              <p class="pc__title">{{ poke.address }}</p>
+                          </div>
+                          
+                      </div>
+                  </a>
+              </div>
+          
+            
+          </div>
+      </div>
+    
+  </div>
+  </div>
+  </div>
+  </div>
+
+  </div>
+</ion-content>

@@ -1,0 +1,139 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>booking</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="c-13x3f2z">
+    <div class="c-9zatoj">
+        <div class="c-10izwvm">
+            <div class="c-1vrj4pl"><span (click)="goBack()" class="c-19uh84g"><svg xmlns="http://www.w3.org/2000/svg" id="chevron" viewBox="0 0 8 14"><path d="M.68-.04c.173 0 .346.066.48.2L8 7l-6.84 6.84a.677.677 0 01-.96 0 .677.677 0 010-.96L6.08 7 .2 1.12a.675.675 0 010-.96c.13-.134.305-.2.48-.2z"></path></svg></span>&nbsp;
+              
+              <span (click)="goBack()" class="c-isphd1"><span backButton>Memodifikasi pemesanan Anda</span></span>
+                 
+            </div>
+        </div>
+        <div class="c-9ugfym">
+            <div class="c-172kp3s">
+                <!--<div class="c-12qt2ez"><span><span role="img" aria-label="discount">🎉</span> <span>Selamat! Kamu sudah hemat Rp211.555 untuk booking ini!</span></span></div>-->
+                <div class="c-8kaq9v">
+                    <div class="c-0">
+                        <div>
+                            <div class="c-i9gwvb">
+                                <div class="c-1kz1i96">1</div>
+                                <div class="c-i9gxme"><span>Masukkan rincian Anda</span></div>
+                            </div>
+                        </div>
+                        <div id="booking-page" class="c-1rhsl0p">
+                            <div class="c-mjbegz">
+                                <div class="c-1s0ylt3"><span>Kami akan menggunakan informasi ini untuk berbagi informasi pemesanan Anda</span></div>
+                                <div class="c-qln3k6">
+                                    <div class="textInput__container">
+                                        <div class="textInput__inputLabel" htmlfor="name"><span>Name</span></div><input [(ngModel)]="full_name" class="textInput__input" type="search" placeholder="Enter fullname" id="full_name" maxlength="50" value="{{full_name}}" >
+                                        <div class="textInput__inputLabelHelper"></div>
+                                    </div>
+                                </div>
+                                <div class="c-qln3k6">
+                                    <div class="textInput__container">
+                                        <div class="textInput__inputLabel" htmlfor="email"><span>Email</span></div>
+                                        <input type="email"  name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required [(ngModel)]="email" class="textInput__input" type="email" placeholder="name@abc.com" id="email" maxlength="75" notshowflag="true" value="{{email}}" required >
+                                        <div class="textInput__inputLabelHelper"></div>
+                                    </div>
+                                </div>
+                                <div class="c-qln3k6">
+                                    <div class="textInput__inputLabel"><span>Phone / Mobile</span></div>
+                                    <input [(ngModel)]="phone_number" class="textInput__input" type="number" placeholder="Mobile phone number" id="phone_number" maxlength="75" notshowflag="true" value="{{phone_number}}" required="">
+                                    <div class="textInput__inputLabelHelper"></div>
+                            </div>
+                            <div class="c-qln3k6">
+                                <div class="textInput__container">
+                                    <div class="textInput__inputLabel" htmlfor="email"><span>Nationality</span></div><input [(ngModel)]="nationality" name="nationality" class="textInput__input" type="search" placeholder="optional" id="nationality" maxlength="75" notshowflag="true" required="">
+                                    <div class="textInput__inputLabelHelper"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-1j05m3z"></div>
+                        <div class="c-pkit67"></div>
+                        <div class="c-1yn8ri2"></div>
+                        <div class="payment-button-container"><p>By clicking "<strong>Continue to Payment</strong>" you agree to the rules, restrictions and <strong><a href="#">Terms &amp; Conditions</a></strong>.</p>
+                            <ion-button (click)="kirim()" expand="block" id="sign-up-submit-button" class="c-btn EmailSignInPanel__Button" type="submit" data-selenium="signup-submit-button" data-element-name="signup-submit-button">Submit</ion-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="c-i8a8ez">
+                <div class="c-1evv4gu">
+                    <div class="c-kcj7o1">2</div>
+                    <div class="c-i9gxme"><span>Pilih metode pembayaran</span></div>
+                </div>
+            </div>-->
+        </div>
+        <div>
+            <div class="c-1qpcdvy">
+                <div>
+                    <div class="c-gg4vpm">
+                        <div class="c-5hicrt">
+                            <div class="c-6a3y35">{{postdata.title}}</div>
+                            <div class="c-zpzivj"></div>
+                            
+                          
+                        </div>
+                        <div class="c-2clfy8">
+                            <div class="c-e2r6u2"><img alt="" src="{{postdata.thumbnail}}" lazyload="true" class="c-2tglnv"></div>
+                        </div>
+                    </div>
+                    <div class="c-1six52r">
+                        <div class="c-79elbk">
+                            <div class="c-1thcb3a c-9whsf3 c-gx0lhm c-g4aqpa">
+                                <div class="c-1pzykbe"><span class="c-165dyj5"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20"><path fill-opacity=".3" fill-rule="evenodd" d="M13.6 1.111V.556A.553.553 0 0013.05 0a.553.553 0 00-.55.556v.555h-7V.556A.553.553 0 004.95 0a.553.553 0 00-.55.556v.555H1.65C.74 1.111 0 1.86 0 2.778v15.555C0 19.253.74 20 1.65 20h14.7c.91 0 1.65-.748 1.65-1.667V2.778a1.66 1.66 0 00-1.65-1.667H13.6zM4.4 2.222V3.89c0 .307.246.555.55.555.304 0 .55-.248.55-.555V2.222h7V3.89c0 .307.246.555.55.555.304 0 .55-.248.55-.555V2.222h2.75c.304 0 .55.25.55.556v2.778H1.1V2.778c0-.307.246-.556.55-.556H4.4zM1.65 18.89a.553.553 0 01-.55-.556V6.667h15.8v11.666a.553.553 0 01-.55.556H1.65zm4.5-7.879h1.1c.304 0 .55-.249.55-.555a.553.553 0 00-.55-.556h-1.1a.553.553 0 00-.55.556c0 .306.246.555.55.555zm4.3 0h1.1c.304 0 .55-.249.55-.555a.553.553 0 00-.55-.556h-1.1a.553.553 0 00-.55.556c0 .306.246.555.55.555zm-4.3 3.434h1.1c.304 0 .55-.248.55-.555a.553.553 0 00-.55-.556h-1.1a.553.553 0 00-.55.556c0 .307.246.555.55.555zm4.3 0h1.1c.304 0 .55-.248.55-.555a.553.553 0 00-.55-.556h-1.1a.553.553 0 00-.55.556c0 .307.246.555.55.555z" style="mix-blend-mode:luminosity"></path></svg></span>
+                                    <div
+                                        class="oyo-row oyo-row--no-spacing datePickerDesktop datePickerDesktop--hotel">
+                                        <div class="oyo-cell oyo-cell--12-col oyo-cell--8-col-tablet oyo-cell--4-col-phone d-text16 is-fontBold datePickerDesktop__checkInOut u-textEllipsis"><span class="datePickerDesktop__checkInOutText">{{postdata.departdate}}</span></div><span></span></div>
+                            </div>
+                            <div class="c-14mt3w6 c-107tt68">
+                                <div class="oyo-row oyo-row--no-spacing guestRoomPicker guestRoomPicker--hotel ">
+                                    <div class="oyo-cell oyo-cell--12-col oyo-cell--8-col-tablet oyo-cell--4-col-phone d-text16 is-fontBold u-textEllipsis guestRoomPicker__guestRoomCount"></div><span></span></div>
+                                <div class="c-18fyjan"> &nbsp; </div>
+                            </div>
+                        </div>
+                        <div class="c-abzw2p"></div>
+                    </div>
+                    <div class="c-2pbfgc">
+                        <div class="c-1953uyt"><span class="c-1bb5hkt" isrtl="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <path fill="#000" fill-rule="nonzero" d="M4.756.968v.008c-.002 0 0-.002 0-.008zm0 18.55h-.951V.968A.96.96 0 0 1 4.755 0H15.22c.525 0 .95.444.95.968v18.544h-.951V.968c0 .008-10.464.008-10.464.008v18.542zm0-18.55l-.001.008.001-.008zm0 18.056H15.22V.968c0 .008-10.464.008-10.464.008v18.048zm-.951 0V.968A.96.96 0 0 1 4.755 0H15.22c.525 0 .95.444.95.968v18.056h3.353c.263 0 .476.219.476.488 0 .27-.213.488-.476.488H.476A.482.482 0 0 1 0 19.512c0-.27.213-.488.476-.488h3.329zm9.233-8.167s-.878-1.303-.878-1.8c0-.498.393-.9.878-.9a.89.89 0 0 1 .878.9c0 .497-.878 1.8-.878 1.8z" opacity=".3"></path>
+</svg>
+</span>
+                            <div><span class="c-1w0k317">{{postdata.adult}} Adult, {{postdata.child}} Child  </span></div>
+                        </div>
+                    </div>
+                    <div class="c-1jbawm2">
+                        <div class="c-18axi1k">
+                            <div class="c-6xf37g">Room price for 1 Night X 2 Guests</div>
+                            <div class="c-tvy9fi">Rp {{postdata.harga|number}}</div>
+                        </div>
+                        <div class="c-18axi1k">
+                            <div class="c-6xf37g">Price Drop</div>
+                            <div class="c-tvy9fi">-Rp112.778</div>
+                        </div>
+                        <div class="c-18axi1k">
+                            <div class="c-6xf37g">40% Coupon Discount</div>
+                            <div class="c-tvy9fi">-Rp211.555</div>
+                        </div>
+                        <div class="c-bjdcis"></div>
+                        <div class="c-18axi1k">
+                            <div class="c-dgqod7"><span>Jumlah yang dapat dibayarkan</span>
+                                <div class="c-m8gzcb">termasuk pajak</div>
+                            </div>
+                            <div class="c-11tk0uk">Rp{{postdata.harga|number}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div [innerHTML]="footer"></div>
+</ion-content>

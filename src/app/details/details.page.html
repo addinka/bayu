@@ -1,0 +1,1081 @@
+<ion-content class="hidden-xs hidden-sm">
+    <section id="DetailBanner" class="section section--borderless">
+        <div id="myDIV" style="display:none">
+            <div class="container">
+            <div class="tutupnya" onclick="myFunction()"><i class="fas fa-times-circle fa-2x"></i></div>
+            </div>
+            <div class="form_wrapper">
+              <div class="form_container">
+                <iframe ng-onload="myLoadEvent()" src="https://bookings.wickedcampers.com.au/bookingminicomnew" loading="lazy" seamless="seamless" scrolling="no" style="width:100%;height:205px;border:none;"></iframe>
+            </div>
+            </div>
+        </div>
+      <div class="wck-homepage">
+        <!--<section class="banner-besar">
+			<img src="https://bayubuanatravel.com/media/1091c899-4543-4eea-a7ec-ce25310793f2/hZlLlg/SubpageImage/Middle%20East/TT3SQ-Foto-01-02.jpg" class="img-responsive" style="width: 100%;">
+			<div class="brcrmb-part">
+				<div class="container">
+					<h2>TT3SQ - Cost Saver 11D/08N Turkey Tulip With Quad Safari Experience</h2>
+				</div>
+			</div>
+		</section>-->
+      <div class="container">
+
+        
+
+    <div *ngIf="details">
+        
+        
+
+        <!--isi content test-->
+        <div id="product-details" class="landing">
+            <ul class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li><a href="hotel">Hotel</a></li>
+                <li>{{details.title}}</li></ul>
+        <section class="row">
+            <div class="container header">
+
+                <div class="media-container media-total-5">
+                    <div class="media-renderer" *ngFor="let slides of details.slides | slice:0:1">
+                        <img alt="Timbis Paragliding Bali (5).jpg" class="image" src="{{slides.url}}">
+                        <img src="https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit19201280gsm/events/2020/12/20/67376b86-b30d-4a8e-bd63-290bd995e8d7-1608418614600-6edb917ad0a16ed0f675071dc0091c7e.jpg" class="image-blur">
+                    </div>
+                    <div class="remaining" >
+                        <div *ngFor="let slides of details.slides | slice:1:5">
+                          
+                               
+                                <div class="slider-item  cursor-pointer">          
+                            <img src="{{slides.url}}">
+                        </div>
+                      
+                    </div>
+                    </div>
+                    <button class="semibold-font see-more-btn"><div class="icon icon-photo"></div><span>Lihat 9 foto lain</span></button>
+                </div>
+                
+            </div>
+        </section>
+       
+        
+                
+            <!--<div *ngFor="let slides of details.slides">
+                <div style="width:100%;-webkit-flex-shrink:0;flex-shrink:0;overflow:auto" aria-hidden="true">
+                   
+                    <div class="slider-item  cursor-pointer">          
+                <img src="{{slides.url}}">
+            </div>
+            </div>
+        </div>-->
+           
+            
+     
+        <section class="row content">
+            <div class="container">
+                <div class="left-section">
+                    <section class="product__info">
+                        <h1 class="product__title">{{ details.title }}</h1>
+                        <div class="product__location">
+                            <div class="location">
+                                <div class="icon icon-location-pin dark"></div><span>Atraksi di Badung</span></div>
+                        </div>
+                    </section>
+                    <section>
+                        <div id="Highlight" class="anchor"></div>
+                        <div class="text-box level-1 bordered-heading"><a href="" class="anchor" id="Highlight"></a>
+                            <h2 class="heading-title">Highlight</h2>
+                            <div class="inner-content">
+                                <div>
+                                    <ul>
+                                        <li>Menikmati pemandangan Bali dari udara.</li>
+                                        <li>Merasakan paragliding dengan tandem bersama tim profesional Timbis.</li>
+                                        <li>Merasakan adrenaline rushing and amazing bird eye view.</li>
+                                        <li>Cocok untuk: <strong>Keluarga Asyik dan Geng Asyik.</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box level-1 bordered-heading"><a href="" class="anchor" id="Deskripsi"></a>
+                            <h2 class="heading-title">Deskripsi</h2>
+                            <div class="inner-content">
+                                <div>
+                                    <p>Nikmati pengalaman mengasyikkan dengan paragliding di Bali. Lewat petualangan ini, kamu akan menikmati keindahan Bali dari udara, merasakan paragliding yang asyik dengan tandem bersama tim profesional Timbis, dan memacu adrenaline
+                                        kamu.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="level-2 open-hours">
+                            <div class="anchor" id="open-hours"></div>
+                            <h4>Jam Buka</h4>
+                            <div>
+                                <ul>
+                                    <li>Setiap hari pukul 07.00 - 17.00 WIB</li>
+                                    <li>Tur Timbis Paragliding Bali hanya tutup setiap Hari Raya Nyepi</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="inline-list-with-checkmark level-1 bordered-heading"><a href="" class="anchor" id="Tiket_Sudah_Termasuk"></a>
+                            <h2 class="heading-title">Tiket Sudah Termasuk</h2>
+                            <div class="content">
+                                <ul>
+                                    <li>Paragliding selama 15 menit</li>
+                                    <li> Paragliding solo</li>
+                                    <li> Foto</li>
+                                    <li> Video</li>
+                                    <li> Asuransi</li>
+                                    <li> Tandem paragliding</li>
+                                    <li> Sertifikat</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="section-break"></div>
+                    <section id="information">
+                        <div class="text-box level-1 bordered-heading"><a href="" class="anchor" id="Panduan_Ke_Lokasi"></a>
+                            <h2 class="heading-title">Panduan Ke Lokasi</h2>
+                            <div class="inner-content">
+                                <div>
+                                    <p>Terdapat tiga lokasi penjemputan, yakni:</p>
+                                    <ul>
+                                        <li>Area Kuta, Seminyak, dan Sanur dengan biaya Rp 350.000</li>
+                                        <li>Area Nusa Dua, Jimbaran, dan Uluwatu dengan biaya Rp 250.000</li>
+                                        <li>Area Ubud dengan biaya Rp 450.000</li>
+                                    </ul>
+                                    <p>Kamu bisa juga langsung berkendara ke lokasi wisata karena tersedia tempat parkir yang luas. Kamu bisa mengendarai kendaraan sendiri, memesan taksi, atau, lebih praktis lagi, sewa mobil di tiket.com! Pilih mobil dan paket sewa
+                                        yang paling sesuai dan pesan sekarang dengan harga terjangkau di halaman Sewa Mobil kami!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="position:relative">
+                            <div id="location" class="anchor"></div>
+                            <div class="map level-1 bordered-heading"><a href="" class="anchor" id="Lokasi"></a>
+                                <h2 class="heading-title">Lokasi</h2>
+                                <div>
+                                    <div style="position: absolute; width: 100%; height: 100%;">
+                                        <div style="position: absolute; inset: 0px; height: 387px; border-radius: 4px; display: inherit; overflow: hidden;">
+                                            <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+                                                <div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
+                                                    <div tabindex="0" aria-label="Map" aria-roledescription="map" role="group" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;">
+                                                        <div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+                                                                <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                                                    <div style="position: absolute; z-index: 986; transform: matrix(1, 0, 0, 1, -132, -4);">
+                                                                        <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;"></div>
+                                                                        </div>
+                                                                        <div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;"></div>
+                                                                        </div>
+                                                                        <div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;"></div>
+                                                                        </div>
+                                                                        <div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;"></div>
+                                                                        </div>
+                                                                        <div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;"></div>
+                                                                        </div>
+                                                                        <div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;"></div>
+                                                                        </div>
+                                                                        <div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;"></div>
+                                                                        </div>
+                                                                        <div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;"></div>
+                                                                        </div>
+                                                                        <div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;"></div>
+                                                                        </div>
+                                                                        <div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;">
+                                                                            <div style="width: 256px; height: 256px;"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div>
+                                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div>
+                                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+                                                                <div style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+                                                                    <div style="position: absolute; z-index: 986; transform: matrix(1, 0, 0, 1, -132, -4);">
+                                                                        <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div>
+                                                                        <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;"></div>
+                                                                        <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;"></div>
+                                                                        <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;"></div>
+                                                                        <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: -256px;"></div>
+                                                                        <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;"></div>
+                                                                        <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 0px;"></div>
+                                                                        <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: -256px;"></div>
+                                                                        <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: -256px;"></div>
+                                                                        <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 0px;"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -14px; top: -43px; z-index: 0;"><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                            </div>
+                                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                                                <div style="position: absolute; z-index: 986; transform: matrix(1, 0, 0, 1, -132, -4);">
+                                                                    <div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i13433!3i8596!4i256!2m3!1e0!2sm!3i544269534!3m12!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAml3fda2mEZCbhyZxG8Wcz0sxXhsapgR4&amp;token=15030"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                    <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i13434!3i8596!4i256!2m3!1e0!2sm!3i544269378!3m12!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAml3fda2mEZCbhyZxG8Wcz0sxXhsapgR4&amp;token=60569"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                    <div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i13435!3i8596!4i256!2m3!1e0!2sm!3i544269378!3m12!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAml3fda2mEZCbhyZxG8Wcz0sxXhsapgR4&amp;token=67047"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                    <div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i13436!3i8596!4i256!2m3!1e0!2sm!3i544268622!3m12!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAml3fda2mEZCbhyZxG8Wcz0sxXhsapgR4&amp;token=38705"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                    <div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i13433!3i8595!4i256!2m3!1e0!2sm!3i544269726!3m12!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAml3fda2mEZCbhyZxG8Wcz0sxXhsapgR4&amp;token=76406"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                    <div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i13434!3i8595!4i256!2m3!1e0!2sm!3i544269726!3m12!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAml3fda2mEZCbhyZxG8Wcz0sxXhsapgR4&amp;token=82884"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                    <div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i13435!3i8595!4i256!2m3!1e0!2sm!3i544269666!3m12!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAml3fda2mEZCbhyZxG8Wcz0sxXhsapgR4&amp;token=36527"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                    <div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i13432!3i8595!4i256!2m3!1e0!2sm!3i544269726!3m12!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAml3fda2mEZCbhyZxG8Wcz0sxXhsapgR4&amp;token=69928"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                    <div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i13436!3i8595!4i256!2m3!1e0!2sm!3i544269558!3m12!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAml3fda2mEZCbhyZxG8Wcz0sxXhsapgR4&amp;token=56175"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                    <div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i13432!3i8596!4i256!2m3!1e0!2sm!3i544269534!3m12!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyAml3fda2mEZCbhyZxG8Wcz0sxXhsapgR4&amp;token=8552"
+                                                                            style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;">
+                                                            <p class="gm-style-pbt"></p>
+                                                        </div>
+                                                        <div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
+                                                            <div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                                                                <div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div>
+                                                                <div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div>
+                                                                <div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;">
+                                                                    <div style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -14px; top: -43px; z-index: 0;"><img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false" usemap="#gmimap4" style="width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                                                                        <map
+                                                                            name="gmimap4" id="gmimap4"><area log="miw" coords="13.5,0,4,3.75,0,13.5,13.5,43,27,13.5,23,3.75" shape="poly" tabindex="-1" title="" style="cursor: pointer; touch-action: none;"></map>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div><iframe aria-hidden="true" frameborder="0" tabindex="-1" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe>
+                                                    <div style="pointer-events: none; width: 100%; height: 100%; box-sizing: border-box; position: absolute; z-index: 1000002; opacity: 0; border: 2px solid rgb(26, 115, 232);"></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div><button draggable="false" title="Toggle fullscreen view" aria-label="Toggle fullscreen view" type="button" class="gm-control-active gm-fullscreen-control" style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; display: none; top: 0px; right: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A" alt="" style="height: 18px; width: 18px;"></button></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div></div>
+                                                    <div>
+                                                        <div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
+                                                            <a target="_blank" rel="noopener" href="https://maps.google.com/maps?ll=-8.841992,115.192004&amp;z=14&amp;t=m&amp;hl=en&amp;gl=US&amp;mapclient=apiv3" title="Open this area in Google Maps (opens a new window)"
+                                                                style="position: static; overflow: visible; float: none; display: inline;">
+                                                                <div style="width: 66px; height: 26px; cursor: pointer;"><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div></div>
+                                                    <div>
+                                                        <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 166px; bottom: 0px; width: 87px;">
+                                                            <div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;">
+                                                                <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                                    <div style="width: 1px;"></div>
+                                                                    <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                                                                </div>
+                                                                <div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="text-decoration: none; cursor: pointer; display: none;">Map Data</a><span>Map data ©2021</span></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 95px; bottom: 0px;">
+                                                            <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                                <div style="width: 1px;"></div>
+                                                                <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                                                            </div>
+                                                            <div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en_US/help/terms_maps.html" target="_blank" rel="noopener" style="text-decoration: none; cursor: pointer; color: rgb(0, 0, 0);">Terms of Use</a></div>
+                                                        </div>
+                                                        <div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;">
+                                                            <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                                <div style="width: 1px;"></div>
+                                                                <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                                                            </div>
+                                                            <div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" rel="noopener" title="Report errors in the road map or imagery to Google" dir="ltr" href="https://www.google.com/maps/@-8.8419917,115.1920044,14z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3"
+                                                                    style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); text-decoration: none; position: relative;">Report a map error</a></div>
+                                                        </div>
+                                                        <div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
+                                                            <div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(0, 0, 0); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2021</div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 300px; height: 180px; position: absolute; left: 290px; top: 104px;">
+                                                        <div style="padding: 0px 0px 10px; font-size: 16px; box-sizing: border-box;">Map Data</div>
+                                                        <div style="font-size: 13px;">Map data ©2021</div><button draggable="false" title="Close" aria-label="Close" type="button" class="gm-ui-hover-effect" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; top: 0px; right: 0px; width: 37px; height: 37px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="pointer-events: none; display: block; width: 13px; height: 13px; margin: 12px;"></button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div class="address">
+                                    <div class="address-container">
+                                        <div class="icon icon-location-pin dark"></div>
+                                        <div class="content-adress">
+                                            <p class="name">Timbis Flying Site</p>
+                                            <p>BADUNG INDONESIA</p>
+                                        </div><a href="https://www.google.com/maps/search/?api=1&amp;query=-8.8419917,115.1920044" target="_blank" rel="noopener noreferrer" class="direction">Penunjuk Arah</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="text-box level-1 bordered-heading"><a href="" class="anchor" id="Yang_Harus_Kamu_Ketahui"></a>
+                            <h2 class="heading-title">Yang Harus Kamu Ketahui</h2>
+                            <div class="inner-content">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="collapsible level-2 close">
+                            <div class="heading">
+                                <h3>Penukaran Tiket</h3>
+                                <div class="icon icon-chevron down   "></div>
+                            </div>
+                            <div class="content">
+                                <div class="level-2">
+                                    <ul>
+                                        <li>Kamu wajib reservasi &nbsp;H-1 dengan menghubungi ke +62 813-2751-9094 dan memberikan data terkait nama lengkap, tempat dan tanggal lahir, nomor telepon dan e-mail, kewarganegaraan, berat badan, dan umur.</li>
+                                        <li>E-tiket tidak perlu dicetak. Cukup tunjukkan e-tiket dari smartphone kamu saat penukaran atau di pintu masuk. Mohon sesuaikan kecerahan layarmu.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapsible level-2 close">
+                            <div class="heading">
+                                <h3>Syarat &amp; Ketentuan</h3>
+                                <div class="icon icon-chevron down   "></div>
+                            </div>
+                            <div class="content">
+                                <div class="level-2">
+                                    <p><strong>Umum</strong></p>
+                                    <ul>
+                                        <li>Harga sudah termasuk pajak.</li>
+                                        <li>Tiket yang sudah dibeli tidak dapat dikembalikan (<em>non-refundable</em>).</li>
+                                        <li>Tiket yang sudah dibeli tidak dapat diganti jadwalnya</li>
+                                        <li>Pembeli wajib mengisi data diri pribadi saat memesan.</li>
+                                        <li>Penjualan tiket sewaktu-waktu dapat dihentikan atau dimulai oleh tiket.com sesuai dengan kebijakan dari promotor atau tiket.com.</li>
+                                    </ul>
+                                    <p><strong>E-tiket</strong></p>
+                                    <ul>
+                                        <li>E-tiket tidak dapat diuangkan.</li>
+                                        <li>E-tiket tidak dapat digabungkan dengan promosi lainnya.</li>
+                                    </ul>
+                                    <p><strong>Syarat dan Ketentuan Timbis Paragliding Bali</strong></p>
+                                    <ul>
+                                        <li>Peserta yang bisa ikut Paragliding yakni dengan umur 5 - 60 tahun.</li>
+                                        <li>Tidak memiliki riwayat penyakit jantung dan epilepsi.</li>
+                                        <li>Berat badan maksimal 110 kilogram.</li>
+                                        <li>Mengikuti standar protokol kesehatan Covid-19.</li>
+                                        <li>Minimal jumlah peserta yakni sebanyak satu orang.</li>
+                                        <li>Maksimal pemesanan sebanyak 50 orang per hari.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapsible level-2 close">
+                            <div class="heading">
+                                <h3>Informasi Tambahan</h3>
+                                <div class="icon icon-chevron down   "></div>
+                            </div>
+                            <div class="content">
+                                <div class="level-2">
+                                    <ul>
+                                        <li>Gunakan pakaian dan alas kaki yang nyaman</li>
+                                        <li>Gunakan sepatu olahraga, sunblock, dan sunglasses.</li>
+                                    </ul>
+                                    <p><strong>Paket Timbis Paragliding Bali tidak termasuk:</strong></p>
+                                    <ul>
+                                        <li>Makanan dan minuman</li>
+                                        <li>Akomodasi antarjemput (tersedia dengan dikenakan biaya tambahan)</li>
+                                        <li>Kebutuhan pribadi</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>-->
+                    </section>
+                    <div class="section-break"></div>
+                    <!--<section>
+                        <div id="Packages" class="anchor"></div>
+                        <div class="level-1 bordered-heading">
+                            <div class="anchor" id="Katalog_Paket"></div>
+                            <h2 class="heading-title">Katalog Paket</h2>
+                            <div class="package-list">
+                                <div data-code="1" class="package-card initial AVAILABLE one-tier">
+                                    <div class="package-card__header">
+                                        <h5>Paket Tandem Paragliding</h5><button class="btn-text">Detail</button></div>
+                                    <div class="semi-header">
+                                        <p class="pt__subtitle"></p>
+                                    </div>
+                                    <div class="pt__features">
+                                        <div class="pt__feature pt__feature--flexi">
+                                            <div class="icon icon-tiket-flexi"></div>tiket FLEXI</div>
+                                        <div class="pt__feature">
+                                            <div class="icon icon-hourglass bg"></div>
+                                          Berlaku hingga 30 Sep 2021</div>
+                                        <div class="pt__feature">
+                                            <div class="icon icon-calendar dark"></div>Reservasi paling lambat 1 hari sebelumnya</div>
+                                        <div class="pt__feature">
+                                            <div class="icon icon-refund"></div>Tidak bisa refund</div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="pt__price">
+                                            <h5>Mulai Dari</h5><span class="price__strikethrough">IDR 1.650.000</span><span class="price__sell">IDR >1.000.000</span></div>
+                                        <div class="pt__cta"><button class="btn-pill select-date-btn">Pilih</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>-->
+                </div>
+                <div id="sidebar" class="right-section">
+                    <div class="sticky-container sticky">
+                        <div class="ticket-info package-info ">
+                            <div class="ticket-info-dynamic">
+                                <div class="price-label">Mulai Dari</div>
+                                <div class="price semibold-font">IDR {{details.harga}}</div>
+                                <div class="open-date"><span>Tiket tersedia hari ini</span></div><button class="pill">Pesan</button>
+                                <div class="break-section"></div>
+                                <div class="section-ticket-info section-ticket-info--tiketClean">
+                                    <div class="flexi-clean flexi-clean--flexi">
+                                        <div class="icon icon-flexi"></div>
+                                        <div class="flexi-clean__content">Pesan sekarang buat nanti! Fleksibel tentukan jadwal aktivitasmu.
+                                            <!-- --><a href="https://www.tiket.com/info/tiket-flexi">Lebih Lanjut</a></div>
+                                    </div>
+                                </div>
+                                <div class="section-ticket-info ">
+                                    <a class="open-hours">
+                                        <div class="icon icon-watch"></div>
+                                        <h2>Lihat Keberangkatan</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </div>
+        <!--end isi content test-->
+    
+  <!--      
+  <div class="vehicle-details__header">
+  <div class="col-md-5 nopadding">
+  
+      <div class="vehicle-details__header-content">
+  
+        
+        <div class="vehicleTitleContainer">
+          <h1 class="vehicle-title">{{ details.title }}</h1>
+          <h2 class="vehicle-subtitle"></h2>
+        </div>
+  
+        
+        <div id="vehicle-overview">
+          
+          <div id="divVehicleOverview"><p data-pm-slice="1 1 [&quot;table&quot;,null,&quot;tableRow&quot;,null,&quot;tableCell&quot;,null]">{{ details.intro }}</p></div>
+          <a class="cta-btn cta-btn--green-fill cta-btn--medium openBookingModal" style="bottom: -60px;font-weight: bold;font-size: 15px;" href="{{bookurl}}">Get a Quote</a>
+        </div>
+        
+        
+       
+  
+      </div>
+    </div>
+  
+    <div class="col-md-7 nopadding">
+  <div class="tix-detail-header">  
+      <div>
+      <div style="flex-direction: row; transition: transform 0.35s cubic-bezier(0.15, 0.3, 0.25, 1) 0s; direction: ltr; display: flex; transform: translate(0%, 0px);">
+          <ion-slides #mySlider (ionSlidesDidLoad)="(mySlider)"  pager="true" mode="md" [options]="slideOpts1">
+                  
+              <ion-slide *ngFor="let slides of details.slides">
+                  <div style="width:100%;-webkit-flex-shrink:0;flex-shrink:0;overflow:auto" aria-hidden="true">
+                     
+                      <div class="slider-item  cursor-pointer">          
+                  <img src="{{slides.url}}">
+              </div>
+              </div>
+              </ion-slide>
+             
+              
+          </ion-slides>
+          <div class="swiper-button-next" (click)="swipeNext()"><i class="fas fa-chevron-circle-right"></i></div>
+          <div class="swiper-button-prev" (click)="swipePrev()"><i class="fas fa-chevron-circle-left"></i></div>
+      </div>
+      </div>
+      
+      
+      </div>
+  
+      </div>
+      
+    </div>
+-->
+  
+      
+         <!-- <div class="col-md-9 tix-hotel-detail">
+                
+              <div class="tix-tabs">
+  
+                  <div class="tix-tabs-active-content">
+                  
+                      <div class="tab-inactive">
+                          <div class="hotel-description">
+                              <div class="segment-title ">Description</div>
+                              <div class="desc-text">
+                                  <p>{{ details.description }}</p>
+                              </div>
+  
+                          </div>
+                        
+
+                         
+                          <div class="review-summary tix-summary-card">
+                              <div class="segment-title">Campervan Specifications</div>
+                              <ion-item class="rapih" *ngFor="let loc of spec;">
+                                  <div class="heading"><img src="{{loc.class}}"/><b>{{ loc.value }}</b></div>
+                              </ion-item>
+  
+                          </div>
+                          <div class="hotel-description">
+                              <div class="segment-title ">License Requirements</div>
+                              <div class="desc-text">
+                                  <p>{{ details.license }}</p>
+                              </div>
+  
+                          </div>
+                      </div>
+  
+                      <div class="tab-inactive">
+                          <div style="position:relative">
+  
+                              <div style="background:white">
+  
+                                  <div class="segment-title ">Available on Depot </div>
+  
+                                  <ion-item class="rapih" *ngFor="let loc of availoc;" >
+                                      <div class="tix-list-body">
+                                          <div class="poi-list-item">
+                                              <div class="poi-wrap">
+                                                  <div class="poi-marker">
+                                                      <img src="../../assets/img/bfbe895a.svg" alt="marker image">
+                                                      <span class="poi-marker-label">{{ loc.number }}</span>
+                                                  </div>
+                                                  <div class="poi-info">
+                                                      <div class="poi-info-name">{{ loc.title }}</div>
+                                                      <div class="poi-info-address"></div>
+                                                  </div>
+                                              </div>
+                                              <div class="poi-distance" >
+  
+                                                  <a href ="/locations/{{ loc.slug }}">Detail addres</a>
+                                                </div>
+                                          </div>
+                                      </div>
+  
+                                  </ion-item>
+                                  <div class="turunbgd"></div>
+  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+         
+  
+      </div>
+      <div class="col-md-3">
+        <img src="../../assets/images/campervan-hire-van.jpg">
+     </div>
+    -->
+     
+     
+    </div>
+  </div>
+  </div>
+  </section>
+  <div [innerHTML]="footer"></div>
+  </ion-content>
+  
+  <ion-header no-border class="hidden-lg hidden-md">
+      <ion-toolbar>
+           <ion-buttons slot="start">
+               <ion-back-button color="light" defaultHref="/"></ion-back-button>
+           </ion-buttons>
+           <ion-title class="ion-text-capitalize">{{ details?.title }}</ion-title>
+       </ion-toolbar>
+   </ion-header>
+  
+   <ion-content class="hidden-lg hidden-md">
+      <div *ngIf="details">
+          <!--<div class="tix-detail-header">
+        <div class="slider-item cursor-pointer">
+          <img [src]="slides">
+  
+          </div>
+          </div>-->
+          <div class="tix-hotel-detail">
+              <div>
+                  <div class="tix-detail-header">
+                      <div>
+  
+                          <div style="flex-direction: row; transition: transform 0.35s cubic-bezier(0.15, 0.3, 0.25, 1) 0s; direction: ltr; display: flex; transform: translate(0%, 0px);">
+                              <ion-slides pager="true" [options]="slideOpts1">
+                                  <ion-slide *ngFor="let slides of details.images">
+  
+                                      <div style="width:100%;-webkit-flex-shrink:0;flex-shrink:0;overflow:auto" aria-hidden="true" data-swipeable="true">
+                                          <div class="slider-item cursor-pointer swiper-slide">
+  
+                                              <img [src]="slides">
+  
+                                          </div>
+                                      </div>
+                                  </ion-slide>
+                              </ion-slides> 
+                             
+                        
+                          </div>
+                 
+                      </div>
+                      
+  
+                  </div>
+                  <div class="tix-tabs">
+  
+                      <div class="tix-tabs-active-content">
+                          <!--<div class="detail__price-info-wrap">
+      <div class="detail__evetn-attr">
+  
+          <div class="detail__body__price-info__attr"><span class="detail__body__price-info__attr--imgVoucherTag"><img src="https://www.wickedcampers.com.au/templates/jsn_megazine_pro/favicon.ico" alt="Voucher Instan"></span><span>{{ details?.title }}</span></div>
+  
+      </div>
+      </div>-->
+                          <!--<div class="hotel-name">
+                  <h1><ion-title class="ion-text-capitalize" >{{ details?.title }}</ion-title></h1>
+          </div>-->
+
+                        <!--content mobile bayubuana-->
+                        <div id="product-detail">
+                            
+                            <div class="pd__overview">
+                                <div class="pd__title-wrapper">
+                                    <h1 class="pd__title">Timbis Paragliding Bali</h1>
+                                    <div class="share-button">
+                                        <a>
+                                            <div class="icon icon-share black"></div>
+                                        </a>
+                                    </div>
+                                </div><span class="pd__category">Permainan &amp; Hobi di Badung</span></div>
+                            <div class="section-container section-container--ticket">
+                                <section class="tix-section ">
+                                    <div>
+                                        <div class="ts__outer__container">
+                                            <div class="ts__container">
+                                                <div class="ts__inner__container">
+                                                    <div class="ts__item ts__item--pdp-flexi">
+                                                        <div class="flexi-clean">
+                                                            <div class="icon icon-flexi"></div>
+                                                            <div class="flexi-clean__content">Pesan sekarang buat nanti! Fleksibel tentukan jadwal aktivitasmu.
+                                                                <!-- --><a href="https://www.tiket.com/info/tiket-flexi">Selengkapnya</a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <section class="section-container section-loyalty-benefit">
+                                <div class="time-and-campaign-container">
+                                    <div class="time-and-promo"><span class="pd__clock"><div class="icon icon-clock black" color="black" style="margin-right:8px"></div>Lihat Jam Buka</span></div>
+                                </div>
+                            </section>
+                            <section class="section-container">
+                                <div class="text-box level-undefined"><a class="anchor" id="Highlight"></a>
+                                    <h2 class="section__head">Highlight</h2>
+                                    <div class="content front">
+                                        <ul>
+                                            <li>Menikmati pemandangan Bali dari udara.</li>
+                                            <li>Merasakan paragliding dengan tandem bersama tim profesional Timbis.</li>
+                                            <li>Merasakan adrenaline rushing and amazing bird eye view.</li>
+                                            <li>Cocok untuk: <strong>Keluarga Asyik dan Geng Asyik.</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="text-box level-undefined"><a class="anchor" id="Deskripsi"></a>
+                                    <h2 class="section__head">Deskripsi</h2>
+                                    <div class="content front">
+                                        <p>Nikmati pengalaman mengasyikkan dengan paragliding di Bali. Lewat petualangan ini, kamu akan menikmati keindahan Bali dari udara, merasakan paragliding yang asyik dengan tandem bersama tim profesional Timbis, dan memacu adrenaline kamu.</p>
+                                    </div>
+                                </div>
+                                <div class="inline-list-with-checkmark  level-undefined"><a class="anchor" id="Tiket_Sudah_Termasuk"></a>
+                                    <h2 class="section__head">Tiket Sudah Termasuk</h2>
+                                    <div class="content">
+                                        <ul>
+                                            <li>Paragliding selama 15 menit</li>
+                                            <li> Paragliding solo</li>
+                                            <li> Foto</li>
+                                            <li> Video</li>
+                                            <li> Asuransi</li>
+                                            <li> Tandem paragliding</li>
+                                            <li> Sertifikat</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="section-container">
+                                <div class="text-box level-undefined"><a class="anchor" id="Panduan_Ke_Lokasi"></a>
+                                    <h2 class="section__head">Panduan Ke Lokasi</h2>
+                                    <div class="content front">
+                                        <p>Terdapat tiga lokasi penjemputan, yakni:</p>
+                                        <ul>
+                                            <li>Area Kuta, Seminyak, dan Sanur dengan biaya Rp 350.000</li>
+                                            <li>Area Nusa Dua, Jimbaran, dan Uluwatu dengan biaya Rp 250.000</li>
+                                            <li>Area Ubud dengan biaya Rp 450.000</li>
+                                        </ul>
+                                        <p>Kamu bisa juga langsung berkendara ke lokasi wisata karena tersedia tempat parkir yang luas. Kamu bisa mengendarai kendaraan sendiri, memesan taksi, atau, lebih praktis lagi, sewa mobil di tiket.com! Pilih mobil dan paket sewa yang paling
+                                            sesuai dan pesan sekarang dengan harga terjangkau di halaman Sewa Mobil kami!</p>
+                                    </div>
+                                </div>
+                                <div class="map-wrapper">
+                                    <h2 class="section__head">Lokasi</h2><a class="anchor" id="Lokasi"></a>
+                                    <div class="map level-undefined">
+                                        <div>
+                                            <div style="position: absolute; width: 100%; height: 100%;">
+                                                <div style="position: absolute; inset: 0px; border-radius: 4px; display: inherit; overflow: hidden;">
+                                                    <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+                                                        <div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
+                                                            <div tabindex="0" aria-label="Map" aria-roledescription="map" role="group" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;">
+                                                                <div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                                                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+                                                                        <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                                                            <div style="position: absolute; z-index: 986; transform: matrix(1, 0, 0, 1, -132, -4);">
+                                                                                <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
+                                                                                    <div style="width: 256px; height: 256px;"></div>
+                                                                                </div>
+                                                                                <div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;">
+                                                                                    <div style="width: 256px; height: 256px;"></div>
+                                                                                </div>
+                                                                                <div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;">
+                                                                                    <div style="width: 256px; height: 256px;"></div>
+                                                                                </div>
+                                                                                <div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;">
+                                                                                    <div style="width: 256px; height: 256px;"></div>
+                                                                                </div>
+                                                                                <div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;">
+                                                                                    <div style="width: 256px; height: 256px;"></div>
+                                                                                </div>
+                                                                                <div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;">
+                                                                                    <div style="width: 256px; height: 256px;"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div>
+                                                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div>
+                                                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+                                                                        <div style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+                                                                            <div style="position: absolute; z-index: 986; transform: matrix(1, 0, 0, 1, -132, -4);">
+                                                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div>
+                                                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;"></div>
+                                                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;"></div>
+                                                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;"></div>
+                                                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: -256px;"></div>
+                                                                                <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -14px; top: -43px; z-index: 0;"><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                    </div>
+                                                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                                                        <div style="position: absolute; z-index: 986; transform: matrix(1, 0, 0, 1, -132, -4);">
+                                                                            <div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i13433!3i8596!4i256!2m3!1e0!2sm!3i544269534!3m12!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyDgMIufVRiye-f1mg3_WUeDiTTTcc4jHcM&amp;token=42328"
+                                                                                    style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                            <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i13434!3i8596!4i256!2m3!1e0!2sm!3i544269378!3m12!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyDgMIufVRiye-f1mg3_WUeDiTTTcc4jHcM&amp;token=87867"
+                                                                                    style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                            <div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i13435!3i8596!4i256!2m3!1e0!2sm!3i544269378!3m12!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyDgMIufVRiye-f1mg3_WUeDiTTTcc4jHcM&amp;token=94345"
+                                                                                    style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                            <div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i13433!3i8595!4i256!2m3!1e0!2sm!3i544269726!3m12!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyDgMIufVRiye-f1mg3_WUeDiTTTcc4jHcM&amp;token=103704"
+                                                                                    style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                            <div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i13435!3i8595!4i256!2m3!1e0!2sm!3i544269762!3m12!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyDgMIufVRiye-f1mg3_WUeDiTTTcc4jHcM&amp;token=103000"
+                                                                                    style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                            <div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i13434!3i8595!4i256!2m3!1e0!2sm!3i544269762!3m12!2sen!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e0&amp;key=AIzaSyDgMIufVRiye-f1mg3_WUeDiTTTcc4jHcM&amp;token=96522"
+                                                                                    style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;">
+                                                                    <p class="gm-style-pbt"></p>
+                                                                </div>
+                                                                <div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
+                                                                    <div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                                                                        <div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div>
+                                                                        <div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div>
+                                                                        <div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;">
+                                                                            <div title="" style="width: 43px; height: 59px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: -22px; top: -51px; z-index: 0;"><img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false" style="width: 43px; height: 59px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                                                                        </div>
+                                                                        <div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div><iframe aria-hidden="true" frameborder="0" tabindex="-1" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe>
+                                                            <div style="pointer-events: none; width: 100%; height: 100%; box-sizing: border-box; position: absolute; z-index: 1000002; opacity: 0; border: 2px solid rgb(26, 115, 232);"></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div><button draggable="false" title="Toggle fullscreen view" aria-label="Toggle fullscreen view" type="button" class="gm-control-active gm-fullscreen-control" style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; display: none; top: 0px; right: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A" alt="" style="height: 18px; width: 18px;"></button></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div>
+                                                                <div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
+                                                                    <a target="_blank" rel="noopener" href="https://maps.google.com/maps?ll=-8.841992,115.192004&amp;z=14&amp;t=m&amp;hl=en&amp;gl=US&amp;mapclient=apiv3" title="Open this area in Google Maps (opens a new window)" style="position: static; overflow: visible; float: none; display: inline;">
+                                                                        <div style="width: 66px; height: 26px; cursor: pointer;"><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div></div>
+                                                            <div>
+                                                                <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 166px; bottom: 0px; width: 87px;">
+                                                                    <div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;">
+                                                                        <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                                            <div style="width: 1px;"></div>
+                                                                            <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                                                                        </div>
+                                                                        <div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="text-decoration: none; cursor: pointer; display: none;">Map Data</a><span>Map data ©2021</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 95px; bottom: 0px;">
+                                                                    <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                                        <div style="width: 1px;"></div>
+                                                                        <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                                                                    </div>
+                                                                    <div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en_US/help/terms_maps.html" target="_blank" rel="noopener" style="text-decoration: none; cursor: pointer; color: rgb(0, 0, 0);">Terms of Use</a></div>
+                                                                </div>
+                                                                <div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;">
+                                                                    <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                                        <div style="width: 1px;"></div>
+                                                                        <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                                                                    </div>
+                                                                    <div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" rel="noopener" title="Report errors in the road map or imagery to Google" dir="ltr" href="https://www.google.com/maps/@-8.8419917,115.1920044,14z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3"
+                                                                            style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); text-decoration: none; position: relative;">Report a map error</a></div>
+                                                                </div>
+                                                                <div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
+                                                                    <div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(0, 0, 0); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2021</div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 300px; height: 180px; position: absolute; left: 89px; top: 13px;">
+                                                                <div style="padding: 0px 0px 10px; font-size: 16px; box-sizing: border-box;">Map Data</div>
+                                                                <div style="font-size: 13px;">Map data ©2021</div><button draggable="false" title="Close" aria-label="Close" type="button" class="gm-ui-hover-effect" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; top: 0px; right: 0px; width: 37px; height: 37px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="pointer-events: none; display: block; width: 13px; height: 13px; margin: 12px;"></button></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <div class="address-info">
+                                        <div class="address-info__container">
+                                            <div class="icon icon-location dark"></div>
+                                            <div class="address-info__content">
+                                                <p class="address-info__location-name">Timbis Flying Site</p>
+                                                <p>BADUNG INDONESIA</p>
+                                            </div>
+                                        </div>
+                                        <a href="https://www.google.com/maps/search/?api=1&amp;query=-8.8419917,115.1920044" target="_blank" rel="noopener noreferrer" class="address-info__directions">
+                                            <div class="icon icon-direction"></div>Penunjuk Arah</a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="section-container">
+                                <div class="text-box level-undefined"><a class="anchor" id="Yang_Harus_Kamu_Ketahui"></a>
+                                    <h2 class="section__head">Yang Harus Kamu Ketahui</h2>
+                                </div>
+                                <div class="rectangle-container">
+                                    <h3>Penukaran Tiket</h3><span class="rectangle__click">Detail</span></div>
+                                <div role="presentation" class="MuiDialog-root" style="position:fixed;z-index:1300;right:0;bottom:0;top:0;left:0;visibility:hidden" aria-hidden="true">
+                                    <div class="MuiBackdrop-root" aria-hidden="true" style="opacity:0;visibility:hidden"></div>
+                                    <div tabindex="0" data-test="sentinelStart"></div>
+                                    <div class="MuiDialog-container MuiDialog-scrollBody" style="opacity:0;visibility:hidden" role="none presentation" tabindex="-1">
+                                        <div class="MuiPaper-root MuiDialog-paper MuiDialog-paperScrollBody MuiDialog-paperWidthSm MuiDialog-paperFullScreen MuiPaper-elevation24 MuiPaper-rounded" role="dialog">
+                                            <div class="detail-modal-component">
+                                                <div class="navigation navigation--fixed">
+                                                    <div class="close-button">
+                                                        <a>
+                                                            <div class="icon icon-close icon-close-undefined"></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="header-name">Penukaran Tiket</div>
+                                                </div>
+                                                <div class="package-detail__content">
+                                                    <div class="level-2">
+                                                        <ul>
+                                                            <li>Kamu wajib reservasi &nbsp;H-1 dengan menghubungi ke +62 813-2751-9094 dan memberikan data terkait nama lengkap, tempat dan tanggal lahir, nomor telepon dan e-mail, kewarganegaraan, berat badan, dan umur.</li>
+                                                            <li>E-tiket tidak perlu dicetak. Cukup tunjukkan e-tiket dari smartphone kamu saat penukaran atau di pintu masuk. Mohon sesuaikan kecerahan layarmu.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div tabindex="0" data-test="sentinelEnd"></div>
+                                </div>
+                                <div class="rectangle-container">
+                                    <h3>Syarat &amp; Ketentuan</h3><span class="rectangle__click">Detail</span></div>
+                                <div role="presentation" class="MuiDialog-root" style="position:fixed;z-index:1300;right:0;bottom:0;top:0;left:0;visibility:hidden" aria-hidden="true">
+                                    <div class="MuiBackdrop-root" aria-hidden="true" style="opacity:0;visibility:hidden"></div>
+                                    <div tabindex="0" data-test="sentinelStart"></div>
+                                    <div class="MuiDialog-container MuiDialog-scrollBody" style="opacity:0;visibility:hidden" role="none presentation" tabindex="-1">
+                                        <div class="MuiPaper-root MuiDialog-paper MuiDialog-paperScrollBody MuiDialog-paperWidthSm MuiDialog-paperFullScreen MuiPaper-elevation24 MuiPaper-rounded" role="dialog">
+                                            <div class="detail-modal-component">
+                                                <div class="navigation navigation--fixed">
+                                                    <div class="close-button">
+                                                        <a>
+                                                            <div class="icon icon-close icon-close-undefined"></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="header-name">Syarat &amp; Ketentuan</div>
+                                                </div>
+                                                <div class="package-detail__content">
+                                                    <div class="level-2">
+                                                        <p><strong>Umum</strong></p>
+                                                        <ul>
+                                                            <li>Harga sudah termasuk pajak.</li>
+                                                            <li>Tiket yang sudah dibeli tidak dapat dikembalikan (<em>non-refundable</em>).</li>
+                                                            <li>Tiket yang sudah dibeli tidak dapat diganti jadwalnya</li>
+                                                            <li>Pembeli wajib mengisi data diri pribadi saat memesan.</li>
+                                                            <li>Penjualan tiket sewaktu-waktu dapat dihentikan atau dimulai oleh tiket.com sesuai dengan kebijakan dari promotor atau tiket.com.</li>
+                                                        </ul>
+                                                        <p><strong>E-tiket</strong></p>
+                                                        <ul>
+                                                            <li>E-tiket tidak dapat diuangkan.</li>
+                                                            <li>E-tiket tidak dapat digabungkan dengan promosi lainnya.</li>
+                                                        </ul>
+                                                        <p><strong>Syarat dan Ketentuan Timbis Paragliding Bali</strong></p>
+                                                        <ul>
+                                                            <li>Peserta yang bisa ikut Paragliding yakni dengan umur 5 - 60 tahun.</li>
+                                                            <li>Tidak memiliki riwayat penyakit jantung dan epilepsi.</li>
+                                                            <li>Berat badan maksimal 110 kilogram.</li>
+                                                            <li>Mengikuti standar protokol kesehatan Covid-19.</li>
+                                                            <li>Minimal jumlah peserta yakni sebanyak satu orang.</li>
+                                                            <li>Maksimal pemesanan sebanyak 50 orang per hari.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div tabindex="0" data-test="sentinelEnd"></div>
+                                </div>
+                                <div class="rectangle-container">
+                                    <h3>Informasi Lainnya</h3><span class="rectangle__click">Detail</span></div>
+                                <div role="presentation" class="MuiDialog-root" style="position:fixed;z-index:1300;right:0;bottom:0;top:0;left:0;visibility:hidden" aria-hidden="true">
+                                    <div class="MuiBackdrop-root" aria-hidden="true" style="opacity:0;visibility:hidden"></div>
+                                    <div tabindex="0" data-test="sentinelStart"></div>
+                                    <div class="MuiDialog-container MuiDialog-scrollBody" style="opacity:0;visibility:hidden" role="none presentation" tabindex="-1">
+                                        <div class="MuiPaper-root MuiDialog-paper MuiDialog-paperScrollBody MuiDialog-paperWidthSm MuiDialog-paperFullScreen MuiPaper-elevation24 MuiPaper-rounded" role="dialog">
+                                            <div class="detail-modal-component">
+                                                <div class="navigation navigation--fixed">
+                                                    <div class="close-button">
+                                                        <a>
+                                                            <div class="icon icon-close icon-close-undefined"></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="header-name">Informasi Lainnya</div>
+                                                </div>
+                                                <div class="package-detail__content">
+                                                    <div class="level-undefined">
+                                                        <ul>
+                                                            <li>Gunakan pakaian dan alas kaki yang nyaman</li>
+                                                            <li>Gunakan sepatu olahraga, sunblock, dan sunglasses.</li>
+                                                        </ul>
+                                                        <p><strong>Paket Timbis Paragliding Bali tidak termasuk:</strong></p>
+                                                        <ul>
+                                                            <li>Makanan dan minuman</li>
+                                                            <li>Akomodasi antarjemput (tersedia dengan dikenakan biaya tambahan)</li>
+                                                            <li>Kebutuhan pribadi</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div tabindex="0" data-test="sentinelEnd"></div>
+                                </div>
+                            </section>
+                            <div class="sticky-product ">
+                                <div class="sp__top"><span>Mulai dari</span><span class="spt__price"><span>IDR {{details.harga}}</span></span>
+                                </div><button class="MuiButtonBase-root MuiButton-root MuiButton-text sp__button undefined" tabindex="0" type="button"><span class="MuiButton-label">Book Now</span><span class="MuiTouchRipple-root"></span></button></div>
+                        </div>
+
+                        <!--end content mobile bayubuana-->
+
+                          <!--<div class="tab-inactive">
+                              <div class="hotel-description">
+                                  <div class="segment-title">Description</div>
+                                     
+                                  <div class="desc-text">
+                                      <p>{{ details.description }}</p>
+                                  </div>
+                                  <div class="sticky-footer"><div class="room-price"></div><div><a class="button default block" href="{{bookurl}}">Get Quote</a></div></div>
+                                   
+                              </div>
+                              <div class="review-summary tix-summary-card">
+                                  <div class="segment-title">Campervan Specifications</div>
+                                  <ion-item class="rapih" *ngFor="let loc of spec;">
+                                      <div class="heading"><img src="{{ loc.class }}"> <b>{{ loc.value }}</b></div>
+                                  </ion-item>
+  
+                              </div>
+                              <div class="hotel-description">
+                                  <div class="segment-title ">License Requirements</div>
+                                  <div class="desc-text" >
+                                      <p *ngFor="let lic of details.license;">{{ lic }}</p>
+                                  </div>
+  
+                              </div>
+                          </div>
+  
+                          <div class="tab-inactive md">
+                              <div style="position:relative">
+  
+                                  <div style="background:white">
+  
+                                      <div class="segment-title ">Available on Depot </div>
+  
+                                      <ion-item class="rapih " detail="false" mode='md' *ngFor="let loc of availoc;" [routerLink]="['/locations/' + loc.slug]">
+                                          <div class="tix-list-body">
+                                              <div class="poi-list-item">
+                                                  <div class="poi-wrap">
+                                                      <div class="poi-marker">
+                                                          <img src="../../assets/img/bfbe895a.svg" alt="marker image">
+                                                          <span class="poi-marker-label">{{ loc.number }}</span>
+                                                      </div>
+                                                      <div class="poi-info">
+                                                          <div class="poi-info-name">{{ loc.title }}</div>
+                                                          <div class="poi-info-address"></div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="poi-distance">Detail addres</div>
+                                              </div>
+                                          </div>
+  
+                                      </ion-item>
+                                      
+                                      <div class="turunbgd"></div>
+                                  </div>
+                              </div>
+                          </div>-->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+  
+   </ion-content>
+  
+  

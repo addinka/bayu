@@ -1,0 +1,228 @@
+<ion-content>
+  <section id="homeBannertour" class="section section--borderless">
+    <div class="wck-homepagelog">
+      <div class="home">
+        <div class="bannerspecials">
+          <div class="slick-slider">
+            <div class="slick-slide">
+              <div class="cbBgPattern">
+              <div class="desc-wrapper">
+            
+            </div>
+          </div>
+         
+        </div>
+        </div>
+      </div>
+      </div>
+    <div class="container">
+      <!--<div class="row">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li><a href="/register">Register</a></li>
+            </ul>
+        </div>
+    </div>-->
+    <div class="col-md-12">
+      
+     
+      <div class="theme-bb">
+   
+        <div class="LoginModal__content">
+       
+          <div class="LoginModal__content--vertical-adjustment">
+              <div class="LoginModal__content--horizontal-adjustment LoginModal__content--relative">
+                  <div class="LoginPopUp-container">
+                      <div class="LoginPopUp-content LoginPopUp-content--afterOpen">
+                          <div class="SignUpPanel" data-selenium="signup-panel">
+                              <div class="LeftPanel">
+                                  <div class="SignUpContainer">
+                                      <div class="SignUpContainer__Header" data-selenium="signup-panel-header">
+                                          <h3 class="SignUpContainer__Title" data-selenium="signup-header-text">Daftar</h3>
+                                          <div class="signup-text-desc">Perjalanan serumu dimulai di sini.</div>
+                                      </div>
+                                    
+                                      <div class="SignUpContainer__Body" id="signup-panel-body" data-selenium="signup-panel-body">
+                                          <div>
+                                              <!--<div id="login-switcher" class="login-switcher">
+                                                  <div class="row">
+                                                      <div id="switcher-tab-email" class="switcher-tab col-xs-6 active" data-selenium="switcher-tab-email" data-element-name="switcher-tab-signup-email"><i class="ficon ficon-24 far fa-envelope"></i> EMAIL</div>
+                                                      <div id="switcher-tab-mobile" class="switcher-tab col-xs-6 " data-selenium="switcher-tab-mobile" data-element-name="switcher-tab-signup-mobile"><i class="ficon ficon-24 ficon-room-promotion-for-mobiledeal"></i> MOBILE</div>
+                                                  </div>
+                                              </div>-->
+                                              <div class="swipe-container">
+                                                  <div class="swipe-switcher-contents" data-tab="0">
+                                                      <div class="swipe-switcher-content">
+                                                   
+                                                        <!--<form [formGroup]="form" (submit)="onSubmit()">
+                                                          <ion-item>
+                                                            <ion-label position="floating">Email</ion-label>
+                                                            <ion-input type="text" required formControlName="email"></ion-input>
+                                                          </ion-item>
+                                                          <ion-item>
+                                                            <ion-label position="floating">Password</ion-label>
+                                                            <ion-input type="password" required formControlName="password"></ion-input>
+                                                          </ion-item>
+                                                            <ion-item>
+                                                              <ion-label position="floating">First Name</ion-label>
+                                                              <ion-input type="text" required formControlName="firstname"></ion-input>
+                                                            </ion-item>
+                                                            <ion-item>
+                                                              <ion-label position="floating">Last Name</ion-label>
+                                                              <ion-input type="text" required formControlName="lastname"></ion-input>
+                                                            </ion-item>
+                                                            <ion-button type="submit" class="ion-margin-top" expand="block" [disabled]="form.invalid">Register</ion-button>
+                                                          </form>-->
+                                                          <div class="EmailSignUpPanel">
+                                                            <div class="login-input-container"><label class="login-input-title">Full Name*</label>
+                                                                <div class="login-input-box"><i class="ficon ficon-24 far fa-envelope textinput-icon"></i><input [(ngModel)]="full_name" name="full_name" id="signup-email-input" class="form-control iconable-textinput " type="text" data-selenium="signup-email-input" autocomplete="email" data-pii="true" value=""></div>
+                                                            </div>
+                                                            <div class="login-input-container"><label class="login-input-title">Phone Number*</label>
+                                                                <div class="login-input-box"><i class="ficon ficon-24 fa fa-key textinput-icon"></i><input [(ngModel)]="phone_number" name="phone_number" id="signup-password-input" class="form-control iconable-textinput " type="number" data-selenium="signup-password-input" autocomplete="password" data-pii="true"
+                                                                        value=""></div>
+                                                            </div>
+                                                            <div class="login-input-container"><label class="login-input-title"> Email*</label>
+                                                                <div class="login-input-box"><i class="ficon ficon-24 undefined textinput-icon"></i><input [(ngModel)]="email" name="email" id="signup-email-input" class="form-control iconable-textinput " type="text" data-selenium="signup-email-input" autocomplete="email" data-pii="true" value=""></div>
+                                                            </div>
+                                                            <div class="login-input-container"><label class="login-input-title">Password*</label>
+                                                                <div class="login-input-box"><i class="ficon ficon-24 undefined textinput-icon"></i><input [(ngModel)]="password" name="password" id="signup-password-input" class="form-control iconable-textinput " type="password" data-selenium="signup-password-input" autocomplete="password" data-pii="true" value=""></div>
+                                                            </div>
+                                                            <div class="login-input-container"><label class="login-input-title">Confirm Password*</label>
+                                                              <div class="login-input-box"><i class="ficon ficon-24 undefined textinput-icon"></i><input [(ngModel)]="confirm_password" name="confirm_password" id="signup-confirm_password-input" class="form-control iconable-textinput " type="password" data-selenium="signup-confirm_password-input" autocomplete="confirm_password" data-pii="true" value=""></div>
+                                                          </div>
+                                                            <div class="news-letter-checkbox"><input data-selenium="send-me-special-offer-input" type="checkbox" class="send-me-offer-checkbox" id="send-me-special-offer-input" checked=""><span> Kirimkan saya promosi eksklusif Bayu Buana Travel Services. Saya bisa berhenti berlangganan kapan pun sesuai Kebijakan Privasi.</span></div>
+                                                            <!--<div
+                                                                class="captcha-css">
+                                                                <div id="signup-captcha-panel" class="captcha-container">
+                                                                    <div style="width: 304px; height: 78px;">
+                                                                        <div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdCwikTAAAAAN1uG5Edghnae8-Q3QBZkH8vwlzQ&amp;co=aHR0cHM6Ly93d3cuYWdvZGEuY29tOjQ0Mw..&amp;hl=en&amp;v=bfvuz6tShG5aoZp4K4zPVf5t&amp;size=normal&amp;cb=26ioao9u9ost" width="304"
+                                                                                height="78" role="presentation" name="a-ka2azotb6ccx" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div>
+                                                                        <textarea
+                                                                            id="g-recaptcha-response-4" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                              </div>-->
+                                                                <ion-button (click)="addRegister()" expand="block" id="sign-up-submit-button" class="c-btn EmailSignInPanel__Button" type="submit" data-selenium="signup-submit-button" data-element-name="signup-submit-button">Create account</ion-button>
+                                                                <div class="term-and-privacy" data-selenium="terms-and-privacy">By signing in, I agree to Bayubuanatravel's <a id="terms-link" href="/info/termsofuse.html?migration=2&amp;amp;option=reset-password&amp;amp;pid=direct&amp;amp;c=hotel_page_footer&amp;amp;af_siteid=1716632&amp;amp;site_id=1716632&amp;amp;af_sub1=desktop&amp;amp;ckuid=06dd9a9e-f667-4aaa-91d1-586056b1c060"
+                                                                        target="_blank">Terms of Use</a> and <a id="privacy-link" href="/info/privacy.html?migration=2&amp;amp;option=reset-password&amp;amp;pid=direct&amp;amp;c=hotel_page_footer&amp;amp;af_siteid=1716632&amp;amp;site_id=1716632&amp;amp;af_sub1=desktop&amp;amp;ckuid=06dd9a9e-f667-4aaa-91d1-586056b1c060"
+                                                                        target="_blank">Privacy Policy</a>.</div>
+                                                                </div>
+    
+    
+                                                           
+                                                  
+                                              </div>
+                                           
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--<div class="SignUpContainer__SocialSection">
+                                      <div class="sc-khAkjo jBMIBq">
+                                          <div class="sc-hTZhsR cysfcw"></div>or continue with
+                                          <div class="sc-hTZhsR cysfcw"></div>
+                                      </div>
+                                      <div class="sc-hKgILt HsfJT">
+                                          <div spacing="S" class="sc-jeGSBP dryNO">
+                                              <div class="sc-iNqMTl eAzCwf">
+                                                  <div class="SocialSignInBoxContainer">
+                                                      <div data-element-name="google-signin-button" class="sc-hKgILt fUyRHc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="sc-hKgILt ihQBhW"><path fill="#eb4134" d="M2.93 3.43A9.97 9.97 0 0 1 10 .5a9.97 9.97 0 0 1 7.07 2.93l-2.828 2.828A5.98 5.98 0 0 0 10 4.5a5.98 5.98 0 0 0-4.242 1.758L2.93 3.43z"></path><path fill="#34aa51" d="M14.242 14.742l2.828 2.828A9.97 9.97 0 0 1 10 20.5a9.97 9.97 0 0 1-7.07-2.93l2.828-2.828A5.98 5.98 0 0 0 10 16.5a5.98 5.98 0 0 0 4.242-1.758z"></path><path fill="#fbbe04" d="M2.93 3.43l2.828 2.828A5.98 5.98 0 0 0 4 10.5a5.98 5.98 0 0 0 1.758 4.242L2.93 17.57A9.97 9.97 0 0 1 0 10.5a9.97 9.97 0 0 1 2.93-7.07z"></path><path fill="#4186f7" d="M10 8.5h9.8a10.131 10.131 0 0 1 0 4 9.99 9.99 0 0 1-2.73 5.07l-2.828-2.828a6 6 0 0 0 1.416-2.242H10v-4z"></path></svg>
+                                                          <span
+                                                              class="sc-fubCfw gEwoLd sc-hKgILt cgPhex">Google</span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="sc-iNqMTl biRtRr">
+                                                  <div class="SocialSignInBoxContainer">
+                                                      <div data-selenium="fb-signin-button" data-element-name="fb-signin-button" class="sc-hKgILt fUyRHc"><svg width="1em" height="1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="sc-hOqqkJ fnLydR sc-dtwoBo inCwUZ"><path fill="#0A0B09" fill-rule="evenodd" d="M22.122 12.061C22.122 6.505 17.618 2 12.062 2 6.504 2 2 6.505 2 12.061c0 5.022 3.68 9.184 8.49 9.939v-7.03H7.933V12.06h2.555V9.845c0-2.522 1.502-3.915 3.8-3.915 1.101 0 2.252.197 2.252.197v2.476h-1.268c-1.25 0-1.64.775-1.64 1.57v1.888h2.79l-.446 2.908h-2.344V22c4.81-.755 8.49-4.917 8.49-9.939"></path></svg>
+                                                          <span
+                                                              class="sc-fubCfw gEwoLd sc-hKgILt cgPhex">Facebook</span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="sc-iNqMTl biRtRr">
+                                                  <div class="SocialSignInBoxContainer">
+                                                      <div data-element-name="apple-signin-button" class="sc-hKgILt fUyRHc"><svg width="1em" height="1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="sc-hOqqkJ fnLydR sc-dacFzL fIUiIW"><path d="M21.49 7.855c-3.926 2.109-3.272 7.709.728 9.236-.582 1.236-.8 1.745-1.527 2.836-1.018 1.455-2.327 3.346-4.073 3.346-1.527.072-1.963-.946-4-.946-2.036 0-2.473.946-4 .946-1.745 0-3.054-1.746-4-3.2-2.69-4.146-2.982-9.018-1.309-11.637 1.236-1.818 3.127-2.909 4.873-2.909 1.818 0 2.909 1.018 4.436 1.018 1.455 0 2.327-1.018 4.437-1.018 1.527 0 3.272.8 4.436 2.328zm-6.035-4.073c-.873 1.09-2.255 1.89-3.637 1.818-.218-1.382.364-2.764 1.164-3.71C13.855.874 15.309.074 16.545 0c.219 1.455-.363 2.836-1.09 3.782z"></path></svg>
+                                                          <span
+                                                              class="sc-fubCfw gEwoLd sc-hKgILt cgPhex">Apple</span>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>-->
+                              </div>
+                              <div class="SignUpContainer__Footer" data-selenium="signup-panel-footer">
+                                <div class="row">
+                                    <div class="l-col-6">
+                                        <div class="SignUpContainer__SignInText">Already have an account? </div>
+                                    </div>
+                                    <div class="l-col-6"><button (click)="formLogin()" routerDirection="root" id="signin-action" class="c-btn c-btn--primary SignUpContainer__SignInButton" data-selenium="signin-action" data-element-name="signin-action" type="button">Sign in</button></div>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="RightPanel RightPanel--signup">
+                          <div id="LoginBenefit-container" class="LoginBenefit LoginBenefit--signup">
+                              <div class="LoginBenefit__image-container"><img alt="" src="https://cdn6.agoda.net/images/desktop/login/illustration-deals-social.svg" class="LoginBenefit__image"></div>
+                              <div class="LoginBenefit__text" data-selenium="login-signup-section-text"><span>Up to </span><span class="LoginBenefit__text--highlight">30%</span><span> OFF with Bayubuana Insider Deals!</span> Prices drop the moment you sign up.</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="LoginModal__closeButton LoginModal__closeButton--onTop" data-element-name="LoginModal-closeButton" data-selenium="signup-close-icon"><span class="ficon ficon-20 ficon-x-icon ficon-line-close"></span></div>
+      </div>
+      </div>
+      </div>
+      </div>
+      
+    
+      </div>
+   
+   
+    
+  
+  </div>
+  </div>
+  </section>
+  <div [innerHTML]="footer"></div>
+</ion-content>
+
+
+
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="form" (submit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">First Name</ion-label>
+      <ion-input type="text" required formControlName="firstname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Last Name</ion-label>
+      <ion-input type="text" required formControlName="lastname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input type="text" required formControlName="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" required formControlName="password"></ion-input>
+    </ion-item>
+    <ion-button type="submit" class="ion-margin-top" expand="block" [disabled]="form.invalid">Register</ion-button>
+  </form>
+</ion-content>
+-->
+
+
+
+
